@@ -1,4 +1,5 @@
-import { Studbook } from './studbook';
+import { Studbook } from '../enums/studbook';
+import { Colour } from '../enums/colour';
 import { Height } from './height';
 
 export class Horse {
@@ -7,10 +8,10 @@ export class Horse {
     public Sex: string;
     public Height: Height;
     public Foaled: number;
-    public Colour: string;
+    public Colour: Colour;
     public Studbook: Studbook;
 
-    constructor(regdname: string, stablename: string, sex: string, height: Height, foaled: number, colour: string, studbook: Studbook) {
+    constructor(regdname: string, stablename: string, sex: string, height: Height, foaled: number, colour: Colour, studbook: Studbook) {
         this.RegdName = regdname;
         this.StableName = stablename;
         this.Sex = sex;
