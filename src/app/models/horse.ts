@@ -24,7 +24,6 @@ export class Horse {
         if (!this.Height.Hands) {
             return '';
         }
-// tslint:disable-next-line: max-line-length
         return this.Height.Hands + '.' + Math.floor(this.Height.Inches) + (this.Height.Inches === Math.floor(this.Height.Inches) ? '' : ' and ' + (this.Height.Inches - Math.floor(this.Height.Inches)));
     }
 

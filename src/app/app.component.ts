@@ -3,7 +3,7 @@ import { Horse, Height } from './models';
 import { Studbook, Colour, Sex } from './enums';
 
 @Component({
-  selector: 'app-root',
+  selector: 'sn-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
