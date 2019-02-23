@@ -1,9 +1,9 @@
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
   <hr />
 <div *ngFor="let horse of horses">
-  <sn-display-horse [horse] = "horse"></sn-display-horse>
+  <sn-horse [horse] = "horse"></sn-horse>
 </div>
 <router-outlet></router-outlet>

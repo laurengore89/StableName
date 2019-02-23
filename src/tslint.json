@@ -2,6 +2,7 @@
     "extends": "../tslint.json",
     "rules": {
         "max-line-length": false,
+        "variable-name": false,
         "directive-selector": [
             true,
             "attribute",

@@ -2,39 +2,47 @@ import { Studbook, Colour, Sex } from '../enums';
 import { Height } from './';
 
 export class Horse {
-    public RegdName: string;
-    public StableName: string;
-    public Sex: Sex;
-    public Height: Height;
-    public Foaled: number;
-    public Colour: Colour;
-    public Studbook: Studbook;
+    private _regdName: string;
+    private _stableName: string;
+    private _studbook: Studbook;
+    private _sex: Sex;
+    private _height: Height;
+    private _foaled: number;
+    private _colour: Colour;
 
     constructor(regdname: string, stablename: string, sex: Sex, height: Height, foaled: number, colour: Colour, studbook: Studbook) {
-        this.RegdName = regdname;
-        this.StableName = stablename;
-        this.Sex = sex;
-        this.Height = height;
-        this.Foaled = foaled;
-        this.Colour = colour;
-        this.Studbook = studbook;
+        this._regdName = regdname;
+        this._stableName = stablename;
+        this._sex = sex;
+        this._height = height;
+        this._foaled = foaled;
+        this._colour = colour;
+        this._studbook = studbook;
     }
 
-    public PrintHeight() {
-        if (!this.Height.Hands) {
+    public Name() {
+        return this._regdName + (this._stableName ? ' (' + this._stableName + ')' : '');
+    }
+
+    public Studbook() {
+        return this._studbook;
+    }
+
+    public Height() {
+        if (!this._height.Hands) {
             return '';
         }
-        return this.Height.Hands + '.' + Math.floor(this.Height.Inches) + (this.Height.Inches === Math.floor(this.Height.Inches) ? '' : ' and ' + (this.Height.Inches - Math.floor(this.Height.Inches)));
+        return this._height.Hands + '.' + Math.floor(this._height.Inches) + 'hh' + (this._height.Inches === Math.floor(this._height.Inches) ? '' : ' and ' + (this._height.Inches - Math.floor(this._height.Inches)));
     }
 
     public Age() {
-        if (!this.Foaled) {
+        if (!this._foaled) {
             return 0;
         }
-        return Math.floor((new Date().getTime() - new Date(this.Foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26));
+        return Math.floor((new Date().getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
     public BaseDescriptor() {
-        return Colour[this.Colour].toLocaleLowerCase() + ' ' + Sex[this.Sex].toLocaleLowerCase();
+        return Colour[this._colour].toLocaleLowerCase() + ' ' + Sex[this._sex].toLocaleLowerCase();
     }
 }
