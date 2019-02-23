@@ -2,8 +2,8 @@ Registered name: {{ horse.RegdName }}<br/>
 <span *ngIf="horse.StableName">Stable name: {{ horse.StableName }}<br/></span>
  <br/>
 Colour: {{ Colour[horse.Colour] }}<br/>
-Sex: {{ horse.Sex }}<br/>
-<span *ngIf="horse.Height.Hands">Height: {{ horse.Height.Hands }} {{horse.Height.Inches}}<br/></span>
-<span *ngIf="horse.Foaled">Foaled: {{ horse.Foaled }}<br/></span>
-Studbook: {{ horse.Studbook }}<br/> <br/>
+Sex: {{ Sex[horse.Sex] }}<br/>
+<span *ngIf="horse.Height.Hands">Height: {{ horse.PrintHeight() }}<br/></span>
+<span *ngIf="horse.Foaled">Age: {{ horse.Age() }} ({{ horse.Foaled }})<br/></span>
+Studbook: {{ horse.Studbook }}
 <hr />
