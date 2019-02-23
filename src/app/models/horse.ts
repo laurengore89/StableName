@@ -1,6 +1,5 @@
-import { Studbook } from '../enums/studbook';
-import { Colour } from '../enums/colour';
-import { Height } from './height';
+import { Studbook, Colour } from '../enums';
+import { Height } from './';
 
 export class Horse {
     public RegdName: string;

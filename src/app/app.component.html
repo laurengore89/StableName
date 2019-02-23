@@ -2,52 +2,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-<div>
-  Registered name: {{ myHorse.RegdName }}<br/>
-  Stable name: {{ myHorse.StableName }}<br/> <br/>
-  
-  Most frequent rider: Gemma Tattersall <br/>
-  Most recent rider: Gemma Tattersall <br/>
-  Most successful rider: Gemma Tattersall <br/> <br/>
-  
-  Colour: {{ myHorse.Colour }}<br/>
-  Sex: {{ myHorse.Sex }}<br/>
-  Height: {{ myHorse.Height.Hands }} {{ myHorse.Height.Inches }} <br/>
-  Foaled: {{ myHorse.Foaled }}<br/>
-  Studbook: {{ myHorse.Studbook }}<br/> <br/>
-  
-  Sire: Urkel  <br/>
-  Damsire: Quick Star
+  <hr />
+<div *ngFor="let horse of horses">
+  <display-horse [horse] = "horse"></display-horse>
 </div>
-<div>
-  Registered name: {{ myHorse2.RegdName }}<br/>
-  Stable name: {{ myHorse2.StableName }}<br/> <br/>
-  
-  Colour: {{ myHorse2.Colour }}<br/>
-  Sex: {{ myHorse2.Sex }}<br/>
-  Height: {{ myHorse2.Height.Hands }} {{ myHorse2.Height.Inches }} <br/>
-  Foaled: {{ myHorse2.Foaled }}<br/>
-  Studbook: {{ myHorse2.Studbook }}
-</div>
-<div>
-  Registered name: {{ myHorse3.RegdName }}<br/>
-  Stable name: {{ myHorse3.StableName }}<br/> <br/>
-  
-  Colour: {{ myHorse3.Colour }}<br/>
-  Sex: {{ myHorse3.Sex }}<br/>
-  Height: {{ myHorse3.Height.Hands }} {{ myHorse3.Height.Inches }} <br/>
-  Foaled: {{ myHorse3.Foaled }}<br/>
-  Studbook: {{ myHorse3.Studbook }}
-</div>
-<div>
-  Registered name: {{ myHorse4.RegdName }}<br/>
-  Stable name: {{ myHorse4.StableName }}<br/> <br/>
-  
-  Colour: {{ myHorse4.Colour }}<br/>
-  Sex: {{ myHorse4.Sex }}<br/>
-  Height: {{ myHorse4.Height.Hands }} {{ myHorse4.Height.Inches }} <br/>
-  Foaled: {{ myHorse4.Foaled }}<br/>
-  Studbook: {{ myHorse4.Studbook }}
-</div>
-
 <router-outlet></router-outlet>
