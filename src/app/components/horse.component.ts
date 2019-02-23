@@ -3,7 +3,7 @@ import { Horse } from '../models';
 import { Colour } from '../enums';
 
 @Component({
-    selector: 'display-horse',
+    selector: 'app-display-horse',
     templateUrl: './horse.component.html'
   })
   export class HorseComponent {
