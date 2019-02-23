@@ -1,5 +1,5 @@
 {{ horse.RegdName }}
 <span *ngIf="horse.StableName"> ({{ horse.StableName }})</span>
- <br /><span *ngIf="horse.Foaled">{{ horse.Age() }} y-o</span> {{ Colour[horse.Colour] }} {{ Sex[horse.Sex] }}<span *ngIf="horse.Height.Hands">, {{ horse.PrintHeight() }}hh</span>
+ <br /><span *ngIf="horse.Age()">{{ horse.Age() }}yo</span> {{ horse.BaseDescriptor() }}<span *ngIf="horse.PrintHeight()">, {{ horse.PrintHeight() }}hh</span>
  <br />Studbook: {{ horse.Studbook }}
 <hr />
