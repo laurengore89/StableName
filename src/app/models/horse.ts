@@ -43,6 +43,10 @@ export class Horse {
     }
 
     public BaseDescriptor() {
-        return Colour[this._colour].toLocaleLowerCase() + ' ' + Sex[this._sex].toLocaleLowerCase();
+        return this.Colour() + ' ' + Sex[this._sex].toLocaleLowerCase();
+    }
+
+    public Colour() {
+        return Colour[this._colour].toLocaleLowerCase();
     }
 }

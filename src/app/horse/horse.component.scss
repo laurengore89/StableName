@@ -1,16 +1,6 @@
-#mane-tail-fill {
+#signature {
     path {
         fill: black
-    }
-}
-#mane-tail-line {
-    path {
-        fill: rgb(60, 60, 60)
-    }
-}
-#body-fill {
-    path {
-        fill: saddlebrown
     }
 }
 #body-line {
@@ -18,14 +8,24 @@
         fill: black
     }
 }
-#body-highlight {
+#body-fill {
     path {
-        fill: rgb(95, 48, 14)
+        fill: white
     }
 }
-#hoof-fill {
+#body-highlight {
     path {
-        fill: rgb(32, 32, 32)
+        fill: dimgrey
+    }
+}
+#mane-tail-line {
+    path {
+        fill: black
+    }
+}
+#mane-tail-fill {
+    path {
+        fill: white
     }
 }
 #hoof-line {
@@ -33,13 +33,73 @@
         fill: black
     }
 }
+#hoof-fill {
+    path {
+        fill: rgb(32, 32, 32)
+    }
+}
 #eye-fill {
     path {
         fill: rgb(66, 33, 10)
     }
 }
-#signature {
-    path {
-        fill: black
+
+div.svg-bay {
+    #mane-tail-fill {
+        path {
+            fill: black
+        }
+    }
+    #mane-tail-line {
+        path {
+            fill: rgb(60, 60, 60)
+        }
+    }
+    #body-fill {
+        path {
+            fill: saddlebrown
+        }
+    }
+    #body-highlight {
+        path {
+            fill: rgb(95, 48, 14)
+        }
+    }
+}
+
+div.svg-chestnut {
+    #mane-tail-fill {
+        path {
+            fill: saddlebrown
+        }
+    }
+    #mane-tail-line {
+        path {
+            fill: rgb(95, 48, 14)
+        }
+    }
+    #body-fill {
+        path {
+            fill: saddlebrown
+        }
+    }
+    #body-highlight {
+        path {
+            fill: rgb(95, 48, 14)
+        }
+    }
+}
+
+div.svg-grey {
+    #body-fill {
+        path {
+            fill: whitesmoke
+        }
+    }
+
+    #hoof-fill {
+        path {
+            fill: lightgray
+        }
     }
 }
