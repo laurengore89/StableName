@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Horse, Rider } from './models';
+import { Horse, HorseDTO, Rider } from './models';
 import { Gender, Nationality } from './enums';
-import { HorseDTO } from './models/horseDTO';
+import horsesjson from './data.json';
 
 @Component({
   selector: 'sn-root',
@@ -16,10 +16,7 @@ export class AppComponent {
   constructor() {
     this.horses = [];
 
-    const datajson = '[{"regdName":"Quicklook V","stableName":"Pebbles","sex":"M","height":16.1,"foaled":2005,"colour":"G","studbook":"AES"},{"regdName":"Arctic Soul","stableName":"Spike","sex":"G","height":16.3,"foaled":2003,"colour":"B","studbook":"TB"}]';
-
-    const horsesjson: HorseDTO[] = JSON.parse(datajson) as HorseDTO[];
-    horsesjson.forEach(h => this.horses.push(new Horse(h)));
+    horsesjson.forEach((h: HorseDTO) => this.horses.push(new Horse(h)));
 
     // this.horses.push(new Horse('Chilli Morning', 'Chilli', Sex.Stallion, new Height(17, 0), 2000, Colour.Chestnut, Studbook.BB));
     // this.horses.push(new Horse('Chilli Knight', 'Alfie', Sex.Gelding, new Height(16, 2), 2010, Colour.Chestnut, Studbook.SHBGB));

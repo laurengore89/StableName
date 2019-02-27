@@ -1,22 +1,20 @@
-{
-    "horses": [
-        {
-            "regdName": "Quicklook V",
-            "stableName": "Pebbles",
-            "sex": "M",
-            "height": "16.1",
-            "foaled": "2005",
-            "colour": "grey",
-            "studbook": "AES"
-        },
-        {
-            "regdName": "Arctic Soul",
-            "stableName": "Spike",
-            "sex": "G",
-            "height": "16.3",
-            "foaled": "2003",
-            "colour": "bay",
-            "studbook": "TB"
-        }
-    ]
-}
+[
+    {
+        "regdName": "Quicklook V",
+        "stableName": "Pebbles",
+        "sex": "M",
+        "height": 16.1,
+        "foaled": 2005,
+        "colour": "G",
+        "studbook": "AES"
+    },
+    {
+        "regdName": "Arctic Soul",
+        "stableName": "Spike",
+        "sex": "G",
+        "height": 16.3,
+        "foaled": 2003,
+        "colour": "B",
+        "studbook": "TB"
+    }
+]

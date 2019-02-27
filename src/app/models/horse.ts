@@ -12,7 +12,6 @@ export class Horse {
     private _colour: Colour;
 
     constructor(dto: HorseDTO) {
-        console.log(dto);
         this._regdName = dto.regdName;
         this._stableName = dto.stableName;
         this._sex = Sex[dto.sex];
@@ -20,7 +19,6 @@ export class Horse {
         this._foaled = dto.foaled;
         this._colour = Colour[dto.colour];
         this._studbook = Studbook[dto.studbook];
-        console.log(this);
     }
 
     public Name(): string {
