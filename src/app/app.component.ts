@@ -16,12 +16,11 @@ export class AppComponent {
   constructor() {
     this.horses = [];
 
-    const datajson = '{"regdName":"Quicklook V","stableName":"Pebbles","sex":"M","height":16.1,"foaled":2005,"colour":"G","studbook":"AES"}';
+    const datajson = '[{"regdName":"Quicklook V","stableName":"Pebbles","sex":"M","height":16.1,"foaled":2005,"colour":"G","studbook":"AES"},{"regdName":"Arctic Soul","stableName":"Spike","sex":"G","height":16.3,"foaled":2003,"colour":"B","studbook":"TB"}]';
 
-    this.horses.push(new Horse(JSON.parse(datajson) as HorseDTO));
+    const horsesjson: HorseDTO[] = JSON.parse(datajson) as HorseDTO[];
+    horsesjson.forEach(h => this.horses.push(new Horse(h)));
 
-    // this.horses.push(new Horse('Quicklook V', 'Pebbles', 'Mare', 16.1, 2005, 'Grey', 'AES'));
-    this.horses.push(new Horse(new HorseDTO('Arctic Soul', 'Spike', 'G', 16.3, 2003, 'B', 'TB')));
     // this.horses.push(new Horse('Chilli Morning', 'Chilli', Sex.Stallion, new Height(17, 0), 2000, Colour.Chestnut, Studbook.BB));
     // this.horses.push(new Horse('Chilli Knight', 'Alfie', Sex.Gelding, new Height(16, 2), 2010, Colour.Chestnut, Studbook.SHBGB));
     // this.horses.push(new Horse('Cooley Rorkes Drift', 'Art', Sex.Stallion, new Height(0, 0), 2006, Colour.Bay, Studbook.ISH));
