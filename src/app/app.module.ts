@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HorseComponent } from './horse/horse.component';
-import { RiderComponent } from './rider/rider.component';
+import { HorseComponent } from './components/horse/horse.component';
+import { RiderComponent } from './components/rider/rider.component';
 
 @NgModule({
   declarations: [

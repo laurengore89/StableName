@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Horse } from '../models';
+import { Horse } from '../../models';
 
 @Component({
   selector: 'sn-horse',

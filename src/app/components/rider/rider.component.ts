@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Rider } from '../models';
+import { Rider } from '../../models';
 
 @Component({
   selector: 'sn-rider',
