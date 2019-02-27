@@ -18,7 +18,7 @@ export class Rider {
     }
 
     public Nationality(): string {
-        return this._nationality;
+        return Nationality[this._nationality];
     }
 
     public Age(): string {
