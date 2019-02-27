@@ -1,12 +1,22 @@
-$fill-brown: #8B4513;
+$fill-red: #8B4513;
+$highlight-red: #3E1A00;
+$line-red: #000000;
+
+$fill-brown: #4d260a;
 $highlight-brown: #3E1A00;
 $line-brown: #000000;
+
 $fill-black: #000000;
 $highlight-black: #3c3c3c;
 $line-black: #000000;
+
 $fill-white: #f5f5f5;
 $highlight-white: #696969;
 $line-white: #ffffff;
+
+$fill-yellow: #e4d128;
+$highlight-yellow: #f7f72c;
+$line-yellow: #ffff00;
 
 $fill-hoof-black: #202020; 
 $fill-eye-brown: #1b0903;
@@ -57,6 +67,52 @@ $fill-eye-brown: #1b0903;
     }
 }
 
+div.svg-brown {
+    #mane-tail-fill {
+        path {
+            fill: $fill-brown
+        }
+    }
+    #mane-tail-line {
+        path {
+            fill: $highlight-brown
+        }
+    }
+    #body-fill {
+        path {
+            fill: $fill-brown
+        }
+    }
+    #body-highlight {
+        path {
+            fill: $highlight-brown
+        }
+    }
+}
+
+div.svg-blackbay {
+    #mane-tail-fill {
+        path {
+            fill: $fill-black
+        }
+    }
+    #mane-tail-line {
+        path {
+            fill: $highlight-black
+        }
+    }
+    #body-fill {
+        path {
+            fill: $fill-black
+        }
+    }
+    #body-highlight {
+        path {
+            fill: $highlight-black
+        }
+    }
+}
+
 div.svg-bay {
     #mane-tail-fill {
         path {
@@ -83,22 +139,45 @@ div.svg-bay {
 div.svg-chestnut {
     #mane-tail-fill {
         path {
-            fill: $fill-brown
+            fill: $fill-red
         }
     }
     #mane-tail-line {
         path {
-            fill: $highlight-brown
+            fill: $highlight-red
         }
     }
     #body-fill {
         path {
-            fill: $fill-brown
+            fill: $fill-red
         }
     }
     #body-highlight {
         path {
-            fill: $highlight-brown
+            fill: $highlight-red
+        }
+    }
+}
+
+div.svg-palomino {
+    #mane-tail-fill {
+        path {
+            fill: $fill-white
+        }
+    }
+    #mane-tail-line {
+        path {
+            fill: $highlight-white
+        }
+    }
+    #body-fill {
+        path {
+            fill: $fill-yellow
+        }
+    }
+    #body-highlight {
+        path {
+            fill: $highlight-yellow
         }
     }
 }
