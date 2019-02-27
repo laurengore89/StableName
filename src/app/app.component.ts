@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Horse, Height } from './models';
-import { Studbook, Colour, Sex } from './enums';
+import { Horse, Height, Rider } from './models';
+import { Studbook, Colour, Sex, Gender, Nationality } from './enums';
 
 @Component({
   selector: 'sn-root',
@@ -10,6 +10,7 @@ import { Studbook, Colour, Sex } from './enums';
 export class AppComponent {
   title = 'StableName';
   horses: Horse[];
+  riders: Rider[];
 
   constructor() {
     this.horses = [];
@@ -24,5 +25,15 @@ export class AppComponent {
     this.horses.push(new Horse('Hawtins Delicato', 'Del', Sex.Gelding, new Height(16, 3), 2008, Colour.Brown, Studbook.HAN));
     this.horses.push(new Horse('Hawtins San Floriana', 'Flo', Sex.Mare, new Height(16, 3), 2012, Colour.Brown, Studbook.HAN));
     this.horses.push(new Horse('Nutbush', 'Gus', Sex.Gelding, new Height(17, 0), 2012, Colour.Bay, Studbook.BWBS));
+    this.horses.push(new Horse('Ekitoff', 'Blackie', Sex.Gelding, new Height(16, 2), 2009, Colour.Black, Studbook.KWPN));
+    this.horses.push(new Horse('Brioso LL', 'Bella', Sex.Mare, new Height(0, 0), 2010, Colour.Chestnut, Studbook.HAN));
+    this.horses.push(new Horse('Goldfinger', 'Goldie', Sex.Gelding, new Height(17, 1), 2010, Colour.Chestnut, Studbook.HAN));
+    this.horses.push(new Horse('U-Genius', 'Douglas', Sex.Stallion, new Height(17, 3), 2011, Colour.Black, Studbook.AES));
+
+    this.riders = [];
+    this.riders.push(new Rider('Carl Hester', Gender.Male, 1967, Nationality.British));
+    this.riders.push(new Rider('Gemma Tattersall', Gender.Female, 1985, Nationality.British));
+    this.riders.push(new Rider('Mary King', Gender.Female, 1961, Nationality.British));
+    this.riders.push(new Rider('Bettina Hoy', Gender.Female, 1962, Nationality.German));
   }
 }

@@ -20,33 +20,39 @@ export class Horse {
         this._studbook = studbook;
     }
 
-    public Name() {
+    public Name(): string {
         return this._regdName + (this._stableName ? ' (' + this._stableName + ')' : '');
     }
 
-    public Studbook() {
+    public Studbook(): string {
         return this._studbook;
     }
 
-    public Height() {
+    public Height(): string {
         if (!this._height.Hands) {
             return '';
         }
         return this._height.Hands + '.' + Math.floor(this._height.Inches) + 'hh' + (this._height.Inches === Math.floor(this._height.Inches) ? '' : ' and ' + (this._height.Inches - Math.floor(this._height.Inches)));
     }
 
-    public Age() {
+    public Age(): string {
         if (!this._foaled) {
-            return 0;
+            return '';
         }
         return Math.floor((new Date().getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
-    public BaseDescriptor() {
-        return this.Colour() + ' ' + Sex[this._sex].toLocaleLowerCase();
+    public BaseDescriptor(): string {
+        let printColour: string = this.Colour();
+        switch (printColour) {
+            case 'blackbay':
+                printColour = 'dark bay';
+                break;
+        }
+        return printColour + ' ' + Sex[this._sex].toLocaleLowerCase();
     }
 
-    public Colour() {
+    public Colour(): string {
         return Colour[this._colour].toLocaleLowerCase();
     }
 }
