@@ -1,5 +1,5 @@
 export enum Sex {
-    Gelding,
-    Mare,
-    Stallion
+    G = 'Gelding',
+    M = 'Mare',
+    S = 'Stallion'
 }

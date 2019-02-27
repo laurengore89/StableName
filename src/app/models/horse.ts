@@ -1,5 +1,6 @@
 import { Studbook, Colour, Sex } from '../enums';
-import { Height } from './';
+import { Height } from './height';
+import { HorseDTO } from './horseDTO';
 
 export class Horse {
     private _regdName: string;
@@ -10,14 +11,16 @@ export class Horse {
     private _foaled: number;
     private _colour: Colour;
 
-    constructor(regdname: string, stablename: string, sex: Sex, height: Height, foaled: number, colour: Colour, studbook: Studbook) {
-        this._regdName = regdname;
-        this._stableName = stablename;
-        this._sex = sex;
-        this._height = height;
-        this._foaled = foaled;
-        this._colour = colour;
-        this._studbook = studbook;
+    constructor(dto: HorseDTO) {
+        console.log(dto);
+        this._regdName = dto.regdName;
+        this._stableName = dto.stableName;
+        this._sex = Sex[dto.sex];
+        this._height = new Height(Math.floor(dto.height), Math.round(10 * (dto.height - Math.floor(dto.height))));
+        this._foaled = dto.foaled;
+        this._colour = Colour[dto.colour];
+        this._studbook = Studbook[dto.studbook];
+        console.log(this);
     }
 
     public Name(): string {
@@ -49,10 +52,10 @@ export class Horse {
                 printColour = 'dark bay';
                 break;
         }
-        return printColour + ' ' + Sex[this._sex].toLocaleLowerCase();
+        return printColour + ' ' + this._sex.toLocaleLowerCase();
     }
 
     public Colour(): string {
-        return Colour[this._colour].toLocaleLowerCase();
+        return this._colour.toLocaleLowerCase();
     }
 }
