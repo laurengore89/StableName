@@ -6,8 +6,8 @@ $fill-brown: #4D260A;
 $highlight-brown: #3E1A00;
 $line-brown: #000000;
 
-$fill-black: #000000;
-$highlight-black: #3C3C3C;
+$fill-black: #303030;
+$highlight-black: rgb(65, 65, 65);
 $line-black: #000000;
 
 $fill-white: #F5F5F5;
@@ -98,7 +98,7 @@ div.svg-blackbay {
     }
     #mane-tail-line {
         path {
-            fill: $highlight-black
+            fill: $line-black
         }
     }
     #body-fill {
@@ -108,7 +108,7 @@ div.svg-blackbay {
     }
     #body-highlight {
         path {
-            fill: $highlight-black
+            fill: $line-black
         }
     }
 }
@@ -121,7 +121,7 @@ div.svg-bay {
     }
     #mane-tail-line {
         path {
-            fill: $highlight-black
+            fill: $line-black
         }
     }
     #body-fill {
@@ -213,7 +213,7 @@ div.svg-black {
     }
     #mane-tail-line {
         path {
-            fill: $highlight-black
+            fill: $line-black
         }
     }
     #body-fill {
@@ -223,7 +223,7 @@ div.svg-black {
     }
     #body-highlight {
         path {
-            fill: $highlight-black
+            fill: $line-black
         }
     }
 }
