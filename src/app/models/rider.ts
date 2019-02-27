@@ -1,4 +1,5 @@
 import { Nationality, Gender } from '../enums';
+import { RiderDTO } from './riderDTO';
 
 export class Rider {
     private _name: string;
@@ -6,11 +7,11 @@ export class Rider {
     private _gender: Gender;
     private _nationality: Nationality;
 
-    constructor(name: string, gender: Gender, born: number, nationality: Nationality) {
-        this._name = name;
-        this._gender = gender;
-        this._born = born;
-        this._nationality = nationality;
+    constructor(dto: RiderDTO) {
+        this._name = dto.name;
+        this._gender = Gender[dto.gender];
+        this._born = dto.born;
+        this._nationality = Nationality[dto.nationality];
     }
 
     public Name(): string {
@@ -29,6 +30,6 @@ export class Rider {
     }
 
     public BaseDescriptor(): string {
-        return Nationality[this._nationality] + ' ' + Gender[this._gender].toLocaleLowerCase() + ' rider';
+        return this._nationality + ' ' + this._gender.toLocaleLowerCase() + ' rider';
     }
 }

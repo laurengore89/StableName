@@ -1,7 +1,7 @@
 export enum Nationality {
-    British,
-    Dutch,
-    German,
-    French,
-    Swiss
+    GB = 'British',
+    NL = 'Dutch',
+    DE = 'German',
+    FR = 'French',
+    CH = 'Swiss'
 }

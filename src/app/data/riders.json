@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Carl Hester",
+        "gender": "M",
+        "born": 1967,
+        "nationality": "GB"
+    },
+    {
+        "name": "Gemma Tattersall",
+        "gender": "F",
+        "born": 1985,
+        "nationality": "GB"
+    },
+    {
+        "name": "Mary King",
+        "gender": "F",
+        "born": 1961,
+        "nationality": "GB"
+    },
+    {
+        "name": "Bettina Hoy",
+        "gender": "F",
+        "born": 1962,
+        "nationality": "DE"
+    }
+]

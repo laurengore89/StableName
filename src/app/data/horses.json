@@ -1,0 +1,137 @@
+[
+    {
+        "regdName": "Quicklook V",
+        "stableName": "Pebbles",
+        "sex": "M",
+        "height": 16.1,
+        "foaled": 2005,
+        "colour": "G",
+        "studbook": "AES"
+    },
+    {
+        "regdName": "Arctic Soul",
+        "stableName": "Spike",
+        "sex": "G",
+        "height": 16.3,
+        "foaled": 2003,
+        "colour": "B",
+        "studbook": "TB"
+    },
+    {
+        "regdName": "Chilli Morning",
+        "stableName": "Chilli",
+        "sex": "S",
+        "height": 17.0,
+        "foaled": 2000,
+        "colour": "Ch",
+        "studbook": "BB"
+    },
+    {
+        "regdName": "Chilli Knight",
+        "stableName": "Alfie",
+        "sex": "G",
+        "height": 16.2,
+        "foaled": 2010,
+        "colour": "Ch",
+        "studbook": "SHBGB"
+    },
+    {
+        "regdName": "Cooley Rorkes Drift",
+        "stableName": "Art",
+        "sex": "S",
+        "height": 0.0,
+        "foaled": 2006,
+        "colour": "B",
+        "studbook": "ISH"
+    },
+    {
+        "regdName": "Nip Tuck",
+        "stableName": "Barney",
+        "sex": "G",
+        "height": 18.0,
+        "foaled": 2004,
+        "colour": "B",
+        "studbook": "KWPN"
+    },
+    {
+        "regdName": "Valegro",
+        "stableName": "Blueberry",
+        "sex": "G",
+        "height": 16.2,
+        "foaled": 2002,
+        "colour": "B",
+        "studbook": "KWPN"
+    },
+    {
+        "regdName": "Uthopia",
+        "stableName": "Uti",
+        "sex": "S",
+        "height": 16.1,
+        "foaled": 2001,
+        "colour": "BlB",
+        "studbook": "KWPN"
+    },
+    {
+        "regdName": "Hawtins Delicato",
+        "stableName": "Del",
+        "sex": "G",
+        "height": 16.3,
+        "foaled": 2008,
+        "colour": "Br",
+        "studbook": "HAN"
+    },
+    {
+        "regdName": "Hawtins San Floriana'",
+        "stableName": "Flo",
+        "sex": "M",
+        "height": 16.3,
+        "foaled": 2012,
+        "colour": "Br",
+        "studbook": "HAN"
+    },
+    {
+        "regdName": "Nutbush",
+        "stableName": "Gus",
+        "sex": "G",
+        "height": 17.0,
+        "foaled": 2012,
+        "colour": "B",
+        "studbook": "BWBS"
+    },
+    {
+        "regdName": "Ekitoff",
+        "stableName": "Blackie",
+        "sex": "G",
+        "height": 16.2,
+        "foaled": 2009,
+        "colour": "Bl",
+        "studbook": "KWPN"
+    },
+    {
+        "regdName": "Brioso LL",
+        "stableName": "Bella",
+        "sex": "M",
+        "height": 0.0,
+        "foaled": 2010,
+        "colour": "Ch",
+        "studbook": "HAN"
+    },
+    {
+        "regdName": "Goldfinger",
+        "stableName": "Goldie",
+        "sex": "G",
+        "height": 17.1,
+        "foaled": 2010,
+        "colour": "Ch",
+        "studbook": "HAN"
+    },
+    {
+        "regdName": "U-Genius",
+        "stableName": "Douglas",
+        "sex": "S",
+        "height": 17.3,
+        "foaled": 2011,
+        "colour": "Bl",
+        "studbook": "AES"
+    }
+]
