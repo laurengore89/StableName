@@ -15,7 +15,7 @@ export class Horse {
         this._regdName = dto.regdName;
         this._stableName = dto.stableName;
         this._sex = Sex[dto.sex];
-        this._height = new Height(Math.floor(dto.height), Math.round(10 * (dto.height - Math.floor(dto.height))));
+        this._height = new Height(dto.height);
         this._foaled = dto.foaled;
         this._colour = Colour[dto.colour];
         this._studbook = Studbook[dto.studbook];
@@ -33,7 +33,7 @@ export class Horse {
         if (!this._height.Hands) {
             return '';
         }
-        return this._height.Hands + '.' + Math.floor(this._height.Inches) + 'hh' + (this._height.Inches === Math.floor(this._height.Inches) ? '' : ' and ' + (this._height.Inches - Math.floor(this._height.Inches)));
+        return this._height.Hands + '.' + this._height.Inches + 'hh';
     }
 
     public Age(): string {
