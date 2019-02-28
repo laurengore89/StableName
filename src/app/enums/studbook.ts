@@ -12,8 +12,6 @@ export enum Studbook {
     AA = 'Anglo Arab',
     TB = 'Thoroughbred',
     FR = 'Selle Francais',
-    MB = 'Mecklenburger',
-    BB = 'Brandenburger',
     O = 'Oldenburg',
     W = 'Westfalian'
 }
