@@ -59,27 +59,56 @@ $fill-eye-brown: rgb(27, 10, 3);
 }
 #nearfore-fill {
     path {
-        fill: $fill-hoof-black
+        fill: $fill-hoof-white
     }
 }
 #offfore-fill {
     path {
-        fill: $fill-hoof-black
+        fill: $fill-hoof-white
     }
 }
 #offhind-fill {
     path {
-        fill: $fill-hoof-black
+        fill: $fill-hoof-white
     }
 }
 #nearhind-fill {
     path {
-        fill: $fill-hoof-black
+        fill: $fill-hoof-white
     }
 }
 #eye-fill {
     path {
         fill: $fill-eye-brown
+    }
+}
+
+div.nearfore-none {
+    #nearfore-fill {
+        path {
+            fill: $fill-hoof-black
+        }
+    }
+}
+div.offfore-none {
+    #offfore-fill {
+        path {
+            fill: $fill-hoof-black
+        }
+    }
+}
+div.offhind-none {
+    #offhind-fill {
+        path {
+            fill: $fill-hoof-black
+        }
+    }
+}
+div.nearhind-none {
+    #nearhind-fill {
+        path {
+            fill: $fill-hoof-black
+        }
     }
 }
 

@@ -1,9 +1,8 @@
-<div class="svg-{{ horse.Colour() }}">
+<div class="svg-{{ horse.Colour() }} nearfore-{{ horse.Nearfore() }} offfore-{{ horse.Offfore() }} offhind-{{ horse.Offhind() }} nearhind-{{ horse.Nearhind() }}">
     <h2>{{ horse.Name() }}</h2>
     <p>
         <span *ngIf="horse.Age()">{{ horse.Age() }} </span><span>{{ horse.BaseDescriptor() }}</span><span *ngIf="horse.Height()">, {{ horse.Height() }}</span><span *ngIf="horse.Studbook()">, {{ horse.Studbook() }}</span>
     </p>
-    <p *ngIf="horse.Legs()">{{ horse.Legs() }}</p>
     <svg style="shape-rendering: crispEdges" viewBox="0 0 1453 888" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g id="mane-tail-fill">
             <path

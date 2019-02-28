@@ -60,6 +60,34 @@ export class Horse {
         return this._colour.toLocaleLowerCase();
     }
 
+    public Nearfore(): string {
+        if (!this._legs.nearfore) {
+            return 'none';
+        }
+        return this._legs.nearfore.toLocaleLowerCase();
+    }
+
+    public Offfore(): string {
+        if (!this._legs.offfore) {
+            return 'none';
+        }
+        return this._legs.offfore.toLocaleLowerCase();
+    }
+
+    public Offhind(): string {
+        if (!this._legs.offhind) {
+            return 'none';
+        }
+        return this._legs.offhind.toLocaleLowerCase();
+    }
+
+    public Nearhind(): string {
+        if (!this._legs.nearhind) {
+            return 'none';
+        }
+        return this._legs.nearhind.toLocaleLowerCase();
+    }
+
     public Legs(): string {
         if (this._legs.nearfore) {
             return this._legs.nearfore + ' ' + this._legs.offfore + ' ' + this._legs.offhind + ' ' + this._legs.nearhind;
