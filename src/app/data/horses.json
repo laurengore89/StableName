@@ -6,7 +6,7 @@
         "height": 16.1,
         "foaled": 2005,
         "colour": "G",
-        "legs": "",
+        "legs": "BBBB",
         "studbook": "AES"
     },
     {
@@ -16,7 +16,7 @@
         "height": 16.3,
         "foaled": 2003,
         "colour": "B",
-        "legs": "",
+        "legs": "BBBB",
         "studbook": "TB"
     },
     {
@@ -26,7 +26,7 @@
         "height": 17.0,
         "foaled": 2000,
         "colour": "Ch",
-        "legs": "",
+        "legs": "CBSS",
         "studbook": "BB"
     },
     {
@@ -36,7 +36,7 @@
         "height": 16.2,
         "foaled": 2010,
         "colour": "Ch",
-        "legs": "",
+        "legs": "CBBC",
         "studbook": "SHBGB"
     },
     {
@@ -46,7 +46,7 @@
         "height": 0.0,
         "foaled": 2006,
         "colour": "B",
-        "legs": "",
+        "legs": "CCCC",
         "studbook": "ISH"
     },
     {
