@@ -1,15 +1,17 @@
 import { Studbook, Colour, Sex } from '../enums';
-import { Height } from './height';
 import { HorseDTO } from './horseDTO';
+import { Height } from './height';
+import { Legs } from './legs';
 
 export class Horse {
     private _regdName: string;
     private _stableName: string;
-    private _studbook: Studbook;
     private _sex: Sex;
     private _height: Height;
     private _foaled: number;
     private _colour: Colour;
+    private _legs: Legs;
+    private _studbook: Studbook;
 
     constructor(dto: HorseDTO) {
         this._regdName = dto.regdName;
@@ -18,6 +20,7 @@ export class Horse {
         this._height = new Height(dto.height);
         this._foaled = dto.foaled;
         this._colour = Colour[dto.colour];
+        this._legs = new Legs(dto.legs);
         this._studbook = Studbook[dto.studbook];
     }
 
@@ -55,5 +58,11 @@ export class Horse {
 
     public Colour(): string {
         return this._colour.toLocaleLowerCase();
+    }
+
+    public Legs(): string {
+        if (this._legs.nearfore) {
+            return this._legs.nearfore + ' ' + this._legs.offfore + ' ' + this._legs.offhind + ' ' + this._legs.nearhind;
+        }
     }
 }
