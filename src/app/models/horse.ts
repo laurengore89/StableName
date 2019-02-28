@@ -61,36 +61,18 @@ export class Horse {
     }
 
     public Nearfore(): string {
-        if (!this._legs.nearfore) {
-            return 'none';
-        }
-        return this._legs.nearfore.toLocaleLowerCase();
+        return this._legs.nearfore ? this._legs.nearfore.toLocaleLowerCase() : 'none';
     }
 
     public Offfore(): string {
-        if (!this._legs.offfore) {
-            return 'none';
-        }
-        return this._legs.offfore.toLocaleLowerCase();
+        return this._legs.offfore ? this._legs.offfore.toLocaleLowerCase() : 'none';
     }
 
     public Offhind(): string {
-        if (!this._legs.offhind) {
-            return 'none';
-        }
-        return this._legs.offhind.toLocaleLowerCase();
+        return this._legs.offhind ? this._legs.offhind.toLocaleLowerCase() : 'none';
     }
 
     public Nearhind(): string {
-        if (!this._legs.nearhind) {
-            return 'none';
-        }
-        return this._legs.nearhind.toLocaleLowerCase();
-    }
-
-    public Legs(): string {
-        if (this._legs.nearfore) {
-            return this._legs.nearfore + ' ' + this._legs.offfore + ' ' + this._legs.offhind + ' ' + this._legs.nearhind;
-        }
+        return this._legs.nearhind ? this._legs.nearhind.toLocaleLowerCase() : 'none';
     }
 }
