@@ -46,10 +46,6 @@ export class Horse {
         return Math.floor((new Date().getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
-    public BaseDescriptor(): string {
-        return this.Colour() + ' ' + this.Sex();
-    }
-
     public Sex(): string {
         return Sex[this._sex].toLocaleLowerCase();
     }
