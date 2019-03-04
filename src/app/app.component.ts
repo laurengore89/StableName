@@ -36,7 +36,8 @@ export class AppComponent {
         let currentEntry: string[] = [];
         lines.forEach((l, i) => {
           currentEntry.push(l);
-          if (re.exec(l) != null) {
+          let matches = re.exec(l);
+          if (matches != null) {
             // [0] is final scored position at that event
             // [1] is rider's FEI ID e.g. '10005015'
             // [2] is rider's name and nationality e.g. 'Michael JUNG (GER)'
@@ -48,7 +49,7 @@ export class AppComponent {
             // dressage score, XC faults, XC time, SJ faults, SJ time, SJ jumpoff faults, SJ jumpoff time, final score / final score + jumpoff score
             // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
             // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
-            scores.push(new Score(currentEntry[1], currentEntry[3], l));
+            scores.push(new Score(currentEntry[1], currentEntry[3], matches));
             currentEntry = [];
           }
         });

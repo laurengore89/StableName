@@ -9,11 +9,9 @@ export class Score {
     private _jumpofffault: number;
     private _jumpofftime: number;
 
-    constructor(rider: string, horse: string, scores: string) {
+    constructor(rider: string, horse: string, matches: RegExpExecArray) {
         this._rider = rider;
         this._horse = horse;
-        const re: RegExp = new RegExp('^\\t?(([\\d\\.]*?)\\s+){9}(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
-        let matches = re.exec(scores);
         this._dressage = Number(matches[1]);
         this._xcfault = Number(matches[2]);
         this._xctime = Number(matches[3]);
