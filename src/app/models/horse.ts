@@ -6,20 +6,20 @@ import { Legs } from './legs';
 export class Horse {
     private _regdName: string;
     private _stableName: string;
-    private _sex: Sex;
+    private _sex: string;
     private _height: Height;
     private _foaled: number;
-    private _colour: Colour;
+    private _colour: string;
     private _legs: Legs;
     private _studbook: string;
 
     constructor(dto: HorseDTO) {
         this._regdName = dto.regdName;
         this._stableName = dto.stableName;
-        this._sex = Sex[dto.sex];
+        this._sex = dto.sex;
         this._height = new Height(dto.height);
         this._foaled = dto.foaled;
-        this._colour = Colour[dto.colour];
+        this._colour = dto.colour;
         this._legs = new Legs(dto.legs);
         this._studbook = dto.studbook;
     }
@@ -53,11 +53,11 @@ export class Horse {
                 printColour = 'dark bay';
                 break;
         }
-        return printColour + ' ' + this._sex.toLocaleLowerCase();
+        return printColour + ' ' + Sex[this._sex].toLocaleLowerCase();
     }
 
     public Colour(): string {
-        return this._colour.toLocaleLowerCase();
+        return Colour[ this._colour].toLocaleLowerCase();
     }
 
     public Nearfore(): string {
