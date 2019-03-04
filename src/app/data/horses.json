@@ -30,7 +30,7 @@
         "foaled": 2000,
         "colour": "Ch",
         "legs": "CBSS",
-        "studbook": "BB"
+        "studbook": "DSP"
     },
     {
         "regdName": "Chilli Knight",
@@ -96,7 +96,7 @@
         "foaled": 2008,
         "colour": "Br",
         "legs": "BBBB",
-        "studbook": "HAN"
+        "studbook": "BHHS"
     },
     {
         "regdName": "Hawtins San Floriana",
@@ -107,6 +107,6 @@
         "foaled": 2012,
         "colour": "Br",
         "legs": "BBBB",
-        "studbook": "HAN"
+        "studbook": "BHHS"
     }
 ]
