@@ -47,17 +47,17 @@ export class Horse {
     }
 
     public BaseDescriptor(): string {
-        let printColour: string = this.Colour();
+        return this.Colour() + ' ' + Sex[this._sex].toLocaleLowerCase();
+    }
+
+    public Colour(): string {
+        let printColour: string = Colour[ this._colour].toLocaleLowerCase();
         switch (printColour) {
             case 'blackbay':
                 printColour = 'dark bay';
                 break;
         }
-        return printColour + ' ' + Sex[this._sex].toLocaleLowerCase();
-    }
-
-    public Colour(): string {
-        return Colour[ this._colour].toLocaleLowerCase();
+        return printColour;
     }
 
     public Nearfore(): string {
