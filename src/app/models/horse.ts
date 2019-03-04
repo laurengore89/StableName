@@ -50,6 +50,10 @@ export class Horse {
         return Sex[this._sex].toLocaleLowerCase();
     }
 
+    public SvgColour(): string {
+        return this.Colour().replace(' ', '');
+    }
+
     public Colour(): string {
         let printColour: string = Colour[ this._colour].toLocaleLowerCase();
         switch (printColour) {

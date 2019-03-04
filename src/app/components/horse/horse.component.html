@@ -1,4 +1,4 @@
-<div class="coat-{{ horse.Colour() }} nearfore-{{ horse.Nearfore() }} offfore-{{ horse.Offfore() }} offhind-{{ horse.Offhind() }} nearhind-{{ horse.Nearhind() }}">
+<div class="coat-{{ horse.SvgColour() }} nearfore-{{ horse.Nearfore() }} offfore-{{ horse.Offfore() }} offhind-{{ horse.Offhind() }} nearhind-{{ horse.Nearhind() }}">
     <h2>{{ horse.Name() }}</h2>
     <p>
         <span *ngIf="horse.Age()">{{ horse.Age() }} </span><span>{{ horse.Colour() }} {{ horse.Sex() }}</span><span *ngIf="horse.Height()">, {{ horse.Height() }}</span><span *ngIf="horse.Studbook()">, {{ horse.Studbook() }}</span>
