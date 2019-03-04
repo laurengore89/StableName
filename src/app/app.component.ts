@@ -24,13 +24,14 @@ export class AppComponent {
     ridersjson.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
 
     this.scores = this.processRawTextToScores('assets/testinput.txt');
+    console.log(this.scores);
   }
 
   private processRawTextToScores(filename: string): Score[] {
     let scores: Score[] = [];
     this.http.get(filename, { responseType: 'text' })
       .subscribe(data => {
-        const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
+        const re: RegExp = new RegExp('^\\t?(([\\d\\.]*?)\\s+){9}(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
         let lines: string[] = data.split(/\r?\n/);
         let currentEntry: string[] = [];
         lines.forEach((l, i) => {
