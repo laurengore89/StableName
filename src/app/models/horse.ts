@@ -11,7 +11,7 @@ export class Horse {
     private _foaled: number;
     private _colour: Colour;
     private _legs: Legs;
-    private _studbook: Studbook;
+    private _studbook: string;
 
     constructor(dto: HorseDTO) {
         this._regdName = dto.regdName;
@@ -21,7 +21,7 @@ export class Horse {
         this._foaled = dto.foaled;
         this._colour = Colour[dto.colour];
         this._legs = new Legs(dto.legs);
-        this._studbook = Studbook[dto.studbook];
+        this._studbook = dto.studbook;
     }
 
     public Name(): string {
@@ -29,7 +29,7 @@ export class Horse {
     }
 
     public Studbook(): string {
-        return this._studbook;
+        return Studbook[this._studbook] + ' (' + this._studbook + ')';
     }
 
     public Height(): string {
