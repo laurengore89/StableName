@@ -72,6 +72,7 @@ export enum Studbook {
     SSW = 'Studbook for Slovenian Warmblood Horses',
     SWB = 'Swedish Warmblood Association',
     TAF = 'Trakehner Avlsforbundet i Danmark',
+    TB = 'Thoroughbred',
     THU = 'Verband der Thüringen Pferdezüchter',
     TRAK = 'Verband der Züchter und Freunde des Ostpreussischen Warmblutpferdes Trakehner Abstammung e.V.',
     VNP = 'Verband Niederösterrichischer Pferdezüchter',
