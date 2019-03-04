@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Horse, HorseDTO, Rider, RiderDTO } from './models';
+import { Horse, HorseDTO, Rider, RiderDTO, Score } from './models';
 import horsesjson from './data/horses.json';
 import ridersjson from './data/riders.json';
 
@@ -14,6 +14,7 @@ export class AppComponent {
   title = 'StableName';
   horses: Horse[];
   riders: Rider[];
+  scores: Score[];
 
   constructor(private http: HttpClient) {
     this.horses = [];
@@ -22,12 +23,24 @@ export class AppComponent {
     this.riders = [];
     ridersjson.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
 
-    this.testfun();
+    this.scores = this.processRawTextToScores('assets/testinput.txt');
   }
-  public testfun(): void {
-    this.http.get('assets/testinput.txt', { responseType: 'text' })
+
+  private processRawTextToScores(filename: string): Score[] {
+    let scores: Score[] = [];
+    this.http.get(filename, { responseType: 'text' })
       .subscribe(data => {
-        console.log(data);
+        const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g'); // this reads the Scores line from a data.fei.org scrape
+        let lines: string[] = data.split(/\r?\n/);
+        let currentEntry: string[] = [];
+        lines.forEach((l, i) => {
+          currentEntry.push(l);
+          if (re.exec(l) != null) {
+            scores.push(new Score(currentEntry[1], currentEntry[3], l));
+            currentEntry = [];
+          }
+        });
       });
+    return scores;
   }
 }
