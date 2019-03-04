@@ -1,12 +1,12 @@
 export class HorseDTO {
     public regdName: string;
-    public stableName: string;
-    public sex: string;
-    public height: number;
-    public foaled: number;
     public colour: string;
-    public legs: string;
-    public studbook: string;
+    public sex: string;
+    public stableName?: string;
+    public height?: number;
+    public foaled?: number;
+    public legs?: string;
+    public studbook?: string;
 
     constructor(regdName: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string) {
         this.regdName = regdName;
