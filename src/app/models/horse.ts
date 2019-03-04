@@ -47,7 +47,11 @@ export class Horse {
     }
 
     public BaseDescriptor(): string {
-        return this.Colour() + ' ' + Sex[this._sex].toLocaleLowerCase();
+        return this.Colour() + ' ' + this.Sex();
+    }
+
+    public Sex(): string {
+        return Sex[this._sex].toLocaleLowerCase();
     }
 
     public Colour(): string {
