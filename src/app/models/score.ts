@@ -20,4 +20,12 @@ export class Score {
         this._jumpofffault = Number(matches[6]);
         this._jumpofftime = Number(matches[7]);
     }
+
+    public Horse() {
+        return this._horse;
+    }
+
+    public Rider() {
+        return this._rider;
+    }
 }

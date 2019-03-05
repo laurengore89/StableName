@@ -5,16 +5,18 @@ import { Legs } from './legs';
 
 export class Horse {
     private _regdName: string;
-    private _stableName: string;
-    private _sex: string;
-    private _height: Height;
-    private _foaled: number;
-    private _colour: string;
-    private _legs: Legs;
-    private _studbook: string;
+    private _fei: string;
+    private _stableName?: string;
+    private _sex?: string;
+    private _height?: Height;
+    private _foaled?: number;
+    private _colour?: string;
+    private _legs?: Legs;
+    private _studbook?: string;
 
     constructor(dto: HorseDTO) {
         this._regdName = dto.regdName;
+        this._fei = dto.fei;
         this._stableName = dto.stableName;
         this._sex = dto.sex;
         this._height = new Height(dto.height);
@@ -29,7 +31,14 @@ export class Horse {
     }
 
     public Studbook(): string {
+        if (!this._studbook) {
+            return '';
+        }
         return Studbook[this._studbook] + ' (' + this._studbook + ')';
+    }
+
+    public Fei(): string {
+        return this._fei;
     }
 
     public Height(): string {
@@ -47,6 +56,9 @@ export class Horse {
     }
 
     public Sex(): string {
+        if (!this._sex) {
+            return '';
+        }
         return Sex[this._sex].toLocaleLowerCase();
     }
 
@@ -55,6 +67,9 @@ export class Horse {
     }
 
     public Colour(): string {
+        if (!this._colour) {
+            return '';
+        }
         let printColour: string = Colour[ this._colour].toLocaleLowerCase();
         switch (printColour) {
             case 'blackbay':
