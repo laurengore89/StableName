@@ -46,11 +46,10 @@ export class Datablock {
                 this.riders = [];
                 ridersjson.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
                 this.scores.forEach(s => {
-                    let foundRider: Rider = this.riders.find(r => r.Fei() === s.Rider());
                     if (this.horses.find(h => h.Fei() === s.Horse()) === undefined) {
-                        this.horses.push(new Horse(new HorseDTO(s.Horse(), '', s.Horse(), '', 0.0, 0, '', '', '')));
+                        this.horses.push(new Horse(new HorseDTO(s.Horse(), s.Horse(), '', '', 0.0, 0, '', '', '')));
                     }
-                    if (foundRider === undefined) {
+                    if (this.riders.find(r => r.Fei() === s.Rider()) === undefined) {
                         this.riders.push(new Rider(new RiderDTO(s.Rider(), s.Rider(), '', 0, '')));
                     }
                 });
