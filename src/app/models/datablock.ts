@@ -47,13 +47,21 @@ export class Datablock {
                 ridersjson.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
                 this.scores.forEach(s => {
                     if (this.horses.find(h => h.Fei() === s.Horse()) === undefined) {
-                        this.horses.push(new Horse(new HorseDTO(s.Horse(), s.Horse(), '', '', 0.0, 0, '', '', '')));
+                        this.horses.push(this.buildHorseFromFei(s.Horse()));
                     }
                     if (this.riders.find(r => r.Fei() === s.Rider()) === undefined) {
-                        this.riders.push(new Rider(new RiderDTO(s.Rider(), s.Rider(), '', 0, '')));
+                        this.riders.push(this.buildRiderFromFei(s.Rider()));
                     }
                 });
             });
         return scores;
+    }
+
+    private buildHorseFromFei(fei: string): Horse {
+        return new Horse(new HorseDTO(fei, fei, '', '', 0.0, 0, '', '', ''));
+    }
+
+    private buildRiderFromFei(fei: string): Rider {
+        return new Rider(new RiderDTO(fei, fei, '', 0, ''));
     }
 }
