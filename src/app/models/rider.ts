@@ -42,6 +42,9 @@ export class Rider {
         if (!this._nationality && !this._gender) {
             return 'rider';
         }
+        if (!this._gender) {
+            return this._nationality + ' ' + 'rider';
+        }
         return this._nationality + ' ' + this._gender.toLocaleLowerCase() + ' rider';
     }
 }
