@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { saveAs } from 'file-saver';
 import { Datablock } from './models/datablock';
 
 @Component({
@@ -14,6 +13,6 @@ export class AppComponent {
   datablock: Datablock;
 
   constructor(private http: HttpClient) {
-    this.datablock = new Datablock(http);
+    this.datablock = new Datablock(http, 'assets/testinput.txt');
   }
 }

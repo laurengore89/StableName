@@ -1,30 +1,60 @@
 import { HttpClient } from '@angular/common/http';
-import { Score, Horse, Rider, HorseDTO, RiderDTO } from '.';
+import { saveAs } from 'file-saver';
+import { Score, Horse, Rider, HorseDTO, RiderDTO, Result } from '.';
 
 import horsesjson from '../data/horses.json';
 import ridersjson from '../data/riders.json';
+
+class FlatScore {
+    public _rider: string;
+    public _horse: string;
+    public _result: Result;
+
+    constructor(s: Score) {
+        this._rider = s.Rider().Fei();
+        this._horse = s.Horse().Fei();
+        this._result = s.Result();
+    }
+}
+
+class FlatBlock {
+    public scores: FlatScore[];
+    public horses: Horse[];
+    public riders: Rider[];
+
+    constructor(db: Datablock) {
+        this.horses = db.horses;
+        this.riders = db.riders;
+        this.scores = [];
+        db.scores.forEach(s => {
+            this.scores.push(new FlatScore(s));
+        });
+    }
+}
 
 export class Datablock {
     public scores: Score[];
     public horses: Horse[];
     public riders: Rider[];
 
-    constructor(private http: HttpClient) {
-        this.scores = this.processRawTextToScores('assets/testinput.txt');
+    constructor(private http: HttpClient, filename: string) {
+        if (filename !== '') {
+            this.processRawTextToScores(filename);
+        }
     }
 
-    private processRawTextToScores(filename: string): Score[] {
-        let scores: Score[] = [];
+    private processRawTextToScores(filename: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
-                const re: RegExp = new RegExp('^\\t?(([\\d\\.]*?)\\s+){9}(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
-                let lines: string[] = data.split(/\r?\n/);
+                this.scores = [];
+                const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
+                const lines: string[] = data.split(/\r?\n/);
                 let currentEntry: string[] = [];
                 lines.forEach((l, i) => {
                     currentEntry.push(l);
-                    let matches = re.exec(l);
+                    const matches = re.exec(l);
                     if (matches != null) {
-                        scores.push(new Score(currentEntry, matches));
+                        this.scores.push(new Score(currentEntry, matches));
                         currentEntry = [];
                     }
                 });
@@ -42,7 +72,8 @@ export class Datablock {
                         this.riders.push(s.Rider());
                     }
                 });
+
+                saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
             });
-        return scores;
     }
 }
