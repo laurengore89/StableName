@@ -1,9 +1,28 @@
 import { Studbook } from '../enums';
-import { Result } from './result';
-import { HorseDTO } from './horseDTO';
-import { Horse } from './horse';
-import { Rider } from './rider';
-import { RiderDTO } from './riderDTO';
+import { Horse, HorseDTO } from './horse';
+import { Rider, RiderDTO } from './rider';
+
+export class Result {
+    public _dressage: number;
+    public _xcfault: number;
+    public _xctime: number;
+    public _sjfault: number;
+    public _sjtime: number;
+    public _jumpofffault: number;
+    public _jumpofftime: number;
+}
+
+export class FlatScore {
+    public _rider: string;
+    public _horse: string;
+    public _result: Result;
+
+    constructor(s: Score) {
+        this._rider = s.Rider().Fei();
+        this._horse = s.Horse().Fei();
+        this._result = s.Result();
+    }
+}
 
 export class Score {
     private _rider: string;
@@ -54,5 +73,9 @@ export class Score {
 
     public Result() {
         return this._result;
+    }
+
+    public FlatScore() {
+        return new FlatScore(this);
     }
 }

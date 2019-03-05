@@ -1,7 +1,56 @@
-import { Studbook, Colour, Sex } from '../enums';
-import { HorseDTO } from './horseDTO';
-import { Height } from './height';
-import { Legs } from './legs';
+import { Studbook, Colour, Legmarking, Sex } from '../enums';
+
+export class Height {
+    public Hands: number;
+    public Inches: number;
+
+    constructor(decimal: number) {
+        this.Hands = Math.floor(decimal);
+        this.Inches = Math.floor(10 * (decimal - Math.floor(decimal)));
+    }
+}
+
+export class Legs {
+    public nearfore: Legmarking;
+    public offfore: Legmarking;
+    public offhind: Legmarking;
+    public nearhind: Legmarking;
+
+    constructor(abbreviated: string) {
+        if (abbreviated.length !== 4) {
+            return;
+        }
+        this.nearfore = Legmarking[abbreviated[0]];
+        this.offfore = Legmarking[abbreviated[1]];
+        this.offhind = Legmarking[abbreviated[2]];
+        this.nearhind = Legmarking[abbreviated[3]];
+    }
+}
+
+
+export class HorseDTO {
+    public regdName: string;
+    public fei: string;
+    public stableName?: string;
+    public colour?: string;
+    public sex?: string;
+    public height?: number;
+    public foaled?: number;
+    public legs?: string;
+    public studbook?: string;
+
+    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string) {
+        this.regdName = regdName;
+        this.fei = fei;
+        this.stableName = stableName;
+        this.colour = colour;
+        this.sex = sex;
+        this.height = height;
+        this.foaled = foaled;
+        this.legs = legs;
+        this.studbook = studbook;
+    }
+}
 
 export class Horse {
     private _regdName: string;

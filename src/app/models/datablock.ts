@@ -1,21 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Score, Horse, Rider, HorseDTO, RiderDTO, Result } from '.';
+import { Score, FlatScore, Horse, Rider, HorseDTO, RiderDTO } from '.';
 
 import horsesjson from '../data/horses.json';
 import ridersjson from '../data/riders.json';
-
-class FlatScore {
-    public _rider: string;
-    public _horse: string;
-    public _result: Result;
-
-    constructor(s: Score) {
-        this._rider = s.Rider().Fei();
-        this._horse = s.Horse().Fei();
-        this._result = s.Result();
-    }
-}
 
 class FlatBlock {
     public scores: FlatScore[];
@@ -27,7 +15,7 @@ class FlatBlock {
         this.riders = db.riders;
         this.scores = [];
         db.scores.forEach(s => {
-            this.scores.push(new FlatScore(s));
+            this.scores.push(s.FlatScore());
         });
     }
 }
