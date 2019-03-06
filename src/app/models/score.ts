@@ -10,6 +10,7 @@ export class Result {
     public _sjtime: number;
     public _jumpofffault: number;
     public _jumpofftime: number;
+    public _outcome: string;
 }
 
 export class FlatScore {
@@ -62,6 +63,7 @@ export class Score {
         this._result._sjtime = Number(matches[5]);
         this._result._jumpofffault = Number(matches[6]);
         this._result._jumpofftime = Number(matches[7]);
+        this._result._outcome = matches[8];
     }
 
     public Horse() {
