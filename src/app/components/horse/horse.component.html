@@ -2,7 +2,7 @@
   <h2>{{ horse.Name() }}</h2>
   <p>
     <span *ngIf="horse.Age()">{{ horse.Age() }} </span><span>{{ horse.Colour() }} {{ horse.Sex() }}</span><span *ngIf="horse.Height()">,
-      {{ horse.Height() }}</span><span *ngIf="horse.Age() || horse.Colour() || horse.Sex() || horse.Height()">, </span><span
+      {{ horse.Height() }}</span><span *ngIf="(horse.Age() || horse.Colour() || horse.Sex() || horse.Height()) && horse.Studbook()">, </span><span
       *ngIf="horse.Studbook()">{{ horse.Studbook() }}</span>
   </p>
   <svg viewBox="0 0 1453 888" version="1.1" xmlns="http://www.w3.org/2000/svg">
