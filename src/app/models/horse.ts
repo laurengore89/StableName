@@ -125,19 +125,7 @@ export class Horse {
         if (!this._colour) {
             return '';
         }
-        let printColour: string = Colour[ this._colour].toLocaleLowerCase();
-        switch (printColour) {
-            case 'blackbay':
-                printColour = 'dark bay';
-                break;
-            case 'redbay':
-                printColour = 'bright bay';
-                break;
-            case 'liverchestnut':
-                printColour = 'liver chestnut';
-                break;
-        }
-        return printColour;
+        return Colour[ this._colour].toLocaleLowerCase().replace('bay', ' bay').replace('chestnut', ' chestnut');
     }
 
     public Nearfore(): string {

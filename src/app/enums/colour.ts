@@ -1,11 +1,11 @@
 export enum Colour {
     G = 'Grey',
     B = 'Bay',
-    BlB = 'BlackBay',
     Bl = 'Black',
     Br = 'Brown',
+    BtB = 'BrightBay',
     Ch = 'Chestnut',
+    DkB = 'DarkBay',
     LCh = 'LiverChestnut',
-    Plm = 'Palomino',
-    RB = 'RedBay'
+    Plm = 'Palomino'
 }
