@@ -48,7 +48,7 @@ export class Datablock {
         this.scores = [];
         datajson.scores.forEach((s: FlatScore) => {
             let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
-            let matchString = s._result._dressage + ' ' + s._result._sjfault + ' ' + s._result._sjtime + ' ' + s._result._xcfault + ' ' + s._result._xctime + ' ' + s._result._jumpofffault + ' ' + s._result._jumpofftime + ' ' + s._result._outcome;
+            let matchString = [s._result._dressage, s._result._sjfault, s._result._sjtime, s._result._xcfault, s._result._xctime, s._result._jumpofffault, s._result._jumpofftime, s._result._outcome].join(' ');
             const re: RegExp = new RegExp(this.rePattern, 'g');
             let matches = re.exec(matchString);
             if (matches == null) {
