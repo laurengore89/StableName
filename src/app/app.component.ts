@@ -12,7 +12,11 @@ export class AppComponent {
   title = 'StableName';
   datablock: Datablock;
 
+  private readonly patternOlympic = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$';
+  private readonly patternBadminton = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d,\\.]*?\\sGBP)?\\s+\\s+(.*?)$';
+
   constructor(private http: HttpClient) {
     this.datablock = new Datablock(http, '', '', '');
+    // this.datablock = new Datablock(http, 'assets/input.txt', '2017_CI_0500_C_S_02_01', '2017 Bramham', this.patternBadminton);
   }
 }

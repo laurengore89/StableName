@@ -38,18 +38,13 @@ export class Score {
     private _competition: string;
     private _result: Result;
 
-    constructor(competition: string, scoreFacts: string[], matches: RegExpExecArray) {
+    constructor(competition: string, scoreFacts: string[], result: Result) {
         // [0] is final scored position at that competition
         // [1] is rider's FEI ID e.g. '10005015'
         // [2] is rider's name and nationality e.g. 'Michael JUNG (GER)'
         // [3] is horse's FEI ID e.g. 'GER40255'
         // [4] is horse's name e.g. 'LA BIOSTHETIQUE - SAM FBW'
         // [5], if it exists, is horse's studbook e.g. 'DSP'
-        // matches is a RegEx dissection of the scores line e.g. '	40.9	0	0	0	0	0	0	 		40.9 / 40.9'
-        // scores line breakdown:
-        // dressage score, XC faults, XC time, SJ faults, SJ time, SJ jumpoff faults, SJ jumpoff time, final score / final score + jumpoff score
-        // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
-        // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
         this._competition = competition;
         this._rider = scoreFacts[1];
         this._ridername = scoreFacts[2].substring(0, scoreFacts[2].indexOf('(') - 1);
@@ -59,15 +54,7 @@ export class Score {
         if (scoreFacts.length > 5 && Studbook[scoreFacts[5]] !== undefined) {
             this._horsestudbook = scoreFacts[5];
         }
-        this._result = new Result();
-        this._result._dressage = Number(matches[1]);
-        this._result._xcfault = Number(matches[2]);
-        this._result._xctime = Number(matches[3]);
-        this._result._sjfault = Number(matches[4]);
-        this._result._sjtime = Number(matches[5]);
-        this._result._jumpofffault = Number(matches[6]);
-        this._result._jumpofftime = Number(matches[7]);
-        this._result._outcome = matches[8];
+        this._result = result;
     }
 
     public Dto() {

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Competition, Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO } from '.';
+import { Competition, Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO, Result } from '.';
 
 import datajson from '../data/datablock.json';
 
@@ -33,13 +33,11 @@ export class Datablock {
     public horses: Horse[];
     public riders: Rider[];
 
-    private readonly rePattern = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$';
-
-    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string) {
+    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionPattern: string) {
         this.buildFromJson();
 
-        if (filename !== '' && competitionFei !== '' && competitionName !== '') {
-            this.processRawTextToScores(filename, competitionFei, competitionName);
+        if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
+            this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
         }
     }
 
@@ -51,28 +49,40 @@ export class Datablock {
         this.scores = [];
         datajson.scores.forEach((s: ScoreDTO) => {
             let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
-            let matchString = [s._result._dressage, s._result._sjfault, s._result._sjtime, s._result._xcfault, s._result._xctime, s._result._jumpofffault, s._result._jumpofftime, s._result._outcome].join(' ');
-            const re: RegExp = new RegExp(this.rePattern, 'g');
-            let matches = re.exec(matchString);
-            if (matches == null) {
-                throw new Error('score ' + scoreFacts[1] + ',' + scoreFacts[3] + ' [' + matchString + '] no matches');
-            }
-            this.scores.push(new Score(s._competition, scoreFacts, matches));
+            this.scores.push(new Score(s._competition, scoreFacts, s._result));
         });
         this.competitions = datajson.competitions;
     }
 
-    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string): void {
+    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
                 const lines: string[] = data.split(/\r?\n/);
                 let currentEntry: string[] = [];
                 lines.forEach((l, i) => {
                     currentEntry.push(l);
-                    const re: RegExp = new RegExp(this.rePattern, 'g');
+                    const re: RegExp = new RegExp(competitionPattern, 'g');
                     const matches = re.exec(l);
+                    // result is the scores line e.g. '	40.9	0	0	0	0	0	0	 		40.9 / 40.9'
+                    // scores line breakdown:
+                    // dressage score, XC faults, XC time, SJ faults, SJ time, SJ jumpoff faults, SJ jumpoff time, final score / final score + jumpoff score
+                    // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
+                    // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
                     if (matches != null) {
-                        this.scores.push(new Score(competitionFei, currentEntry, matches));
+                        let result = new Result();
+                        result._dressage = Number(matches[1]);
+                        result._xcfault = Number(matches[2]);
+                        result._xctime = Number(matches[3]);
+                        result._sjfault = Number(matches[4]);
+                        result._sjtime = Number(matches[5]);
+                        if (matches.length === 10) {
+                            result._jumpofffault = Number(matches[6]);
+                            result._jumpofftime = Number(matches[7]);
+                            result._outcome = matches[8];
+                        } else if (matches.length === 8) {
+                            result._outcome = matches[7];
+                        }
+                        this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
                     }
                 });
