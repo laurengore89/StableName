@@ -130,6 +130,9 @@ export class Horse {
             case 'blackbay':
                 printColour = 'dark bay';
                 break;
+            case 'liverchestnut':
+                printColour = 'liver chestnut';
+                break;
         }
         return printColour;
     }
