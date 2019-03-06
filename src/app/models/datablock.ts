@@ -1,26 +1,26 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Score, FlatScore, Horse, HorseDTO, Rider, RiderDTO } from '.';
+import { Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO } from '.';
 
 import datajson from '../data/datablock.json';
 
-class FlatBlock {
-    public scores: FlatScore[];
+class DatablockDTO {
+    public scores: ScoreDTO[];
     public horses: HorseDTO[];
     public riders: RiderDTO[];
 
     constructor(db: Datablock) {
         this.horses = [];
         db.horses.forEach(h => {
-            this.horses.push(h.Flat());
+            this.horses.push(h.Dto());
         });
         this.riders = [];
         db.riders.forEach(r => {
-            this.riders.push(r.Flat());
+            this.riders.push(r.Dto());
         });
         this.scores = [];
         db.scores.forEach(s => {
-            this.scores.push(s.Flat());
+            this.scores.push(s.Dto());
         });
     }
 }
@@ -46,7 +46,7 @@ export class Datablock {
         this.riders = [];
         datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
         this.scores = [];
-        datajson.scores.forEach((s: FlatScore) => {
+        datajson.scores.forEach((s: ScoreDTO) => {
             let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
             let matchString = [s._result._dressage, s._result._sjfault, s._result._sjtime, s._result._xcfault, s._result._xctime, s._result._jumpofffault, s._result._jumpofftime, s._result._outcome].join(' ');
             const re: RegExp = new RegExp(this.rePattern, 'g');
@@ -83,7 +83,7 @@ export class Datablock {
                     }
                 });
 
-                saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
+                saveAs(new Blob([JSON.stringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
             });
     }
 }

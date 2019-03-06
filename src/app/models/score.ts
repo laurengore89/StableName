@@ -13,7 +13,7 @@ export class Result {
     public _outcome: string;
 }
 
-export class FlatScore {
+export class ScoreDTO {
     public _rider: string;
     public _horse: string;
     public _result: Result;
@@ -33,7 +33,6 @@ export class Score {
     private _horsename: string;
     private _horsestudbook: string;
     private _result: Result;
-
 
     constructor(scoreFacts: string[], matches: RegExpExecArray) {
         // [0] is final scored position at that event
@@ -66,6 +65,10 @@ export class Score {
         this._result._outcome = matches[8];
     }
 
+    public Dto() {
+        return new ScoreDTO(this);
+    }
+
     public Horse() {
         return new Horse(new HorseDTO(this._horsename, this._horse, '', '', 0, 0, '', '', this._horsestudbook));
     }
@@ -76,9 +79,5 @@ export class Score {
 
     public Result() {
         return this._result;
-    }
-
-    public Flat() {
-        return new FlatScore(this);
     }
 }

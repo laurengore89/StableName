@@ -77,7 +77,7 @@ export class Horse {
         this._studbook = dto.studbook;
     }
 
-    public Flat(): HorseDTO {
+    public Dto(): HorseDTO {
         return this._dto;
     }
 

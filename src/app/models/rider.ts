@@ -34,7 +34,7 @@ export class Rider {
         this._nationality = Nationality[dto.nationality];
     }
 
-    public Flat(): RiderDTO {
+    public Dto(): RiderDTO {
         return this._dto;
     }
 
