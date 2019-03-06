@@ -13,6 +13,6 @@ export class AppComponent {
   datablock: Datablock;
 
   constructor(private http: HttpClient) {
-    this.datablock = new Datablock(http, 'assets/testinput.txt');
+    this.datablock = new Datablock(http, '');
   }
 }

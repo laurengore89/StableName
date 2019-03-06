@@ -27,7 +27,6 @@ export class Legs {
     }
 }
 
-
 export class HorseDTO {
     public regdName: string;
     public fei: string;
@@ -62,8 +61,11 @@ export class Horse {
     private _colour?: string;
     private _legs?: Legs;
     private _studbook?: string;
+    private _dto: HorseDTO;
 
     constructor(dto: HorseDTO) {
+        this._dto = dto;
+
         this._regdName = dto.regdName;
         this._fei = dto.fei;
         this._stableName = dto.stableName;
@@ -73,6 +75,10 @@ export class Horse {
         this._colour = dto.colour;
         this._legs = new Legs(dto.legs);
         this._studbook = dto.studbook;
+    }
+
+    public Flat(): HorseDTO {
+        return this._dto;
     }
 
     public Name(): string {

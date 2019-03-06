@@ -33,6 +33,7 @@ export class Score {
     private _horsestudbook: string;
     private _result: Result;
 
+
     constructor(scoreFacts: string[], matches: RegExpExecArray) {
         // [0] is final scored position at that event
         // [1] is rider's FEI ID e.g. '10005015'
@@ -75,7 +76,7 @@ export class Score {
         return this._result;
     }
 
-    public FlatScore() {
+    public Flat() {
         return new FlatScore(this);
     }
 }

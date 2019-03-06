@@ -22,13 +22,20 @@ export class Rider {
     private _born?: number;
     private _gender?: Gender;
     private _nationality?: Nationality;
+    private _dto: RiderDTO;
 
     constructor(dto: RiderDTO) {
+        this._dto = dto;
+
         this._name = dto.name;
         this._fei = dto.fei;
         this._gender = Gender[dto.gender];
         this._born = dto.born;
         this._nationality = Nationality[dto.nationality];
+    }
+
+    public Flat(): RiderDTO {
+        return this._dto;
     }
 
     public Name(): string {

@@ -1,21 +1,26 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Score, FlatScore, Horse, Rider, HorseDTO, RiderDTO } from '.';
+import { Score, FlatScore, Horse, HorseDTO, Rider, RiderDTO } from '.';
 
-import horsesjson from '../data/horses.json';
-import ridersjson from '../data/riders.json';
+import datajson from '../data/datablock.json';
 
 class FlatBlock {
     public scores: FlatScore[];
-    public horses: Horse[];
-    public riders: Rider[];
+    public horses: HorseDTO[];
+    public riders: RiderDTO[];
 
     constructor(db: Datablock) {
-        this.horses = db.horses;
-        this.riders = db.riders;
+        this.horses = [];
+        db.horses.forEach(h => {
+            this.horses.push(h.Flat());
+        });
+        this.riders = [];
+        db.riders.forEach(r => {
+            this.riders.push(r.Flat());
+        });
         this.scores = [];
         db.scores.forEach(s => {
-            this.scores.push(s.FlatScore());
+            this.scores.push(s.Flat());
         });
     }
 }
@@ -25,22 +30,38 @@ export class Datablock {
     public horses: Horse[];
     public riders: Rider[];
 
+    private readonly re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g');
+
     constructor(private http: HttpClient, filename: string) {
+        this.buildFromJson();
+
         if (filename !== '') {
             this.processRawTextToScores(filename);
         }
     }
 
+    private buildFromJson() {
+        this.horses = [];
+        datajson.horses.forEach((h: HorseDTO) => this.horses.push(new Horse(h)));
+        this.riders = [];
+        datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
+        this.scores = [];
+        datajson.scores.forEach((s: FlatScore) => {
+            let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
+            let matchString = s._result._dressage + ' ' + s._result._sjfault + ' ' + s._result._sjtime + ' ' + s._result._xcfault + ' ' + s._result._xctime + ' ' + s._result._jumpofffault + ' ' + s._result._jumpofftime + ' ' + 'PLACEHOLDER';
+            let matches = this.re.exec(matchString);
+            this.scores.push(new Score(scoreFacts, matches));
+        });
+    }
+
     private processRawTextToScores(filename: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
-                this.scores = [];
-                const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g'); // this reads the scores line from a data.fei.org scrape
                 const lines: string[] = data.split(/\r?\n/);
                 let currentEntry: string[] = [];
                 lines.forEach((l, i) => {
                     currentEntry.push(l);
-                    const matches = re.exec(l);
+                    const matches = this.re.exec(l);
                     if (matches != null) {
                         this.scores.push(new Score(currentEntry, matches));
                         currentEntry = [];
@@ -48,10 +69,6 @@ export class Datablock {
                 });
 
                 // see if there are any horses/riders in the scores we don't list yet
-                this.horses = [];
-                horsesjson.forEach((h: HorseDTO) => this.horses.push(new Horse(h)));
-                this.riders = [];
-                ridersjson.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
                 this.scores.forEach(s => {
                     if (this.horses.find(h => h.Fei() === s.Horse().Fei()) === undefined) {
                         this.horses.push(s.Horse());
@@ -61,7 +78,7 @@ export class Datablock {
                     }
                 });
 
-                // saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
+                saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
             });
     }
 }
