@@ -30,8 +30,6 @@ export class Datablock {
     public horses: Horse[];
     public riders: Rider[];
 
-    private readonly re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g');
-
     constructor(private http: HttpClient, filename: string) {
         this.buildFromJson();
 
@@ -49,7 +47,11 @@ export class Datablock {
         datajson.scores.forEach((s: FlatScore) => {
             let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
             let matchString = s._result._dressage + ' ' + s._result._sjfault + ' ' + s._result._sjtime + ' ' + s._result._xcfault + ' ' + s._result._xctime + ' ' + s._result._jumpofffault + ' ' + s._result._jumpofftime + ' ' + 'PLACEHOLDER';
-            let matches = this.re.exec(matchString);
+            const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g');
+            let matches = re.exec(matchString);
+            if (matches == null) {
+                throw new Error('score ' + scoreFacts[1] + ',' + scoreFacts[3] + ' [' + matchString + '] no matches');
+            }
             this.scores.push(new Score(scoreFacts, matches));
         });
     }
@@ -61,7 +63,8 @@ export class Datablock {
                 let currentEntry: string[] = [];
                 lines.forEach((l, i) => {
                     currentEntry.push(l);
-                    const matches = this.re.exec(l);
+                    const re: RegExp = new RegExp('^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$', 'g');
+                    const matches = re.exec(l);
                     if (matches != null) {
                         this.scores.push(new Score(currentEntry, matches));
                         currentEntry = [];
