@@ -1,6 +1,7 @@
 import { Studbook } from '../enums';
 import { Horse, HorseDTO } from './horse';
 import { Rider, RiderDTO } from './rider';
+import { Competition } from './competition';
 
 export class Result {
     public _dressage: number;
@@ -14,11 +15,13 @@ export class Result {
 }
 
 export class ScoreDTO {
+    public _competition: string;
     public _rider: string;
     public _horse: string;
     public _result: Result;
 
     constructor(s: Score) {
+        this._competition = s.Competition().Fei;
         this._rider = s.Rider().Fei();
         this._horse = s.Horse().Fei();
         this._result = s.Result();
@@ -32,10 +35,11 @@ export class Score {
     private _horse: string;
     private _horsename: string;
     private _horsestudbook: string;
+    private _competition: string;
     private _result: Result;
 
-    constructor(scoreFacts: string[], matches: RegExpExecArray) {
-        // [0] is final scored position at that event
+    constructor(competition: string, scoreFacts: string[], matches: RegExpExecArray) {
+        // [0] is final scored position at that competition
         // [1] is rider's FEI ID e.g. '10005015'
         // [2] is rider's name and nationality e.g. 'Michael JUNG (GER)'
         // [3] is horse's FEI ID e.g. 'GER40255'
@@ -46,6 +50,7 @@ export class Score {
         // dressage score, XC faults, XC time, SJ faults, SJ time, SJ jumpoff faults, SJ jumpoff time, final score / final score + jumpoff score
         // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
         // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
+        this._competition = competition;
         this._rider = scoreFacts[1];
         this._ridername = scoreFacts[2].substring(0, scoreFacts[2].indexOf('(') - 1);
         this._ridernation = scoreFacts[2].substring(scoreFacts[2].indexOf('(') + 1, scoreFacts[2].indexOf(')'));
@@ -79,5 +84,9 @@ export class Score {
 
     public Result() {
         return this._result;
+    }
+
+    public Competition() {
+        return new Competition(this._competition, '');
     }
 }

@@ -1,15 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO } from '.';
+import { Competition, Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO } from '.';
 
 import datajson from '../data/datablock.json';
 
 class DatablockDTO {
+    public competitions: Competition[];
     public scores: ScoreDTO[];
     public horses: HorseDTO[];
     public riders: RiderDTO[];
 
     constructor(db: Datablock) {
+        this.competitions = db.competitions;
         this.horses = [];
         db.horses.forEach(h => {
             this.horses.push(h.Dto());
@@ -26,17 +28,18 @@ class DatablockDTO {
 }
 
 export class Datablock {
+    public competitions: Competition[];
     public scores: Score[];
     public horses: Horse[];
     public riders: Rider[];
 
     private readonly rePattern = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$';
 
-    constructor(private http: HttpClient, filename: string) {
+    constructor(private http: HttpClient, filename: string, eventFei: string, eventName: string) {
         this.buildFromJson();
 
-        if (filename !== '') {
-            this.processRawTextToScores(filename);
+        if (filename !== '' && eventFei !== '' && eventName !== '') {
+            this.processRawTextToScores(filename, eventFei, eventName);
         }
     }
 
@@ -54,11 +57,12 @@ export class Datablock {
             if (matches == null) {
                 throw new Error('score ' + scoreFacts[1] + ',' + scoreFacts[3] + ' [' + matchString + '] no matches');
             }
-            this.scores.push(new Score(scoreFacts, matches));
+            this.scores.push(new Score(s._competition, scoreFacts, matches));
         });
+        this.competitions = datajson.competitions;
     }
 
-    private processRawTextToScores(filename: string): void {
+    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
                 const lines: string[] = data.split(/\r?\n/);
@@ -68,12 +72,17 @@ export class Datablock {
                     const re: RegExp = new RegExp(this.rePattern, 'g');
                     const matches = re.exec(l);
                     if (matches != null) {
-                        this.scores.push(new Score(currentEntry, matches));
+                        this.scores.push(new Score(competitionFei, currentEntry, matches));
                         currentEntry = [];
                     }
                 });
 
-                // see if there are any horses/riders in the scores we don't list yet
+                // known competition?
+                if (this.competitions.find(c => c.Fei() === competitionFei) === undefined) {
+                    this.competitions.push(new Competition(competitionFei, competitionName));
+                }
+
+                // see if there are any horses/riders/competitions in the scores we don't list yet
                 this.scores.forEach(s => {
                     if (this.horses.find(h => h.Fei() === s.Horse().Fei()) === undefined) {
                         this.horses.push(s.Horse());
