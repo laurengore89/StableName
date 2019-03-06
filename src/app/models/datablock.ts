@@ -35,11 +35,11 @@ export class Datablock {
 
     private readonly rePattern = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$';
 
-    constructor(private http: HttpClient, filename: string, eventFei: string, eventName: string) {
+    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string) {
         this.buildFromJson();
 
-        if (filename !== '' && eventFei !== '' && eventName !== '') {
-            this.processRawTextToScores(filename, eventFei, eventName);
+        if (filename !== '' && competitionFei !== '' && competitionName !== '') {
+            this.processRawTextToScores(filename, competitionFei, competitionName);
         }
     }
 
@@ -78,7 +78,7 @@ export class Datablock {
                 });
 
                 // known competition?
-                if (this.competitions.find(c => c.Fei() === competitionFei) === undefined) {
+                if (this.competitions.find(c => c.Fei === competitionFei) === undefined) {
                     this.competitions.push(new Competition(competitionFei, competitionName));
                 }
 
