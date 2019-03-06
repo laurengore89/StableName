@@ -61,7 +61,7 @@ export class Datablock {
                     }
                 });
 
-                saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
+                // saveAs(new Blob([JSON.stringify(new FlatBlock(this))], {type: 'application/json'}), 'datablock.json');
             });
     }
 }
