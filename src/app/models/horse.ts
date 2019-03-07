@@ -28,26 +28,26 @@ export class Legs {
 }
 
 export class HorseDTO {
-    public regdName: string;
-    public fei: string;
-    public stableName?: string;
-    public colour?: string;
-    public sex?: string;
-    public height?: number;
-    public foaled?: number;
-    public legs?: string;
-    public studbook?: string;
+    public n: string;
+    public f: string;
+    public s?: string;
+    public c?: string;
+    public x?: string;
+    public h?: number;
+    public d?: number;
+    public l?: string;
+    public b?: string;
 
     constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string) {
-        this.regdName = regdName;
-        this.fei = fei;
-        this.stableName = stableName;
-        this.colour = colour;
-        this.sex = sex;
-        this.height = height;
-        this.foaled = foaled;
-        this.legs = legs;
-        this.studbook = studbook;
+        this.n = regdName;
+        this.f = fei;
+        this.s = stableName;
+        this.c = colour;
+        this.x = sex;
+        this.h = height;
+        this.d = foaled;
+        this.l = legs;
+        this.b = studbook;
     }
 }
 
@@ -66,15 +66,15 @@ export class Horse {
     constructor(dto: HorseDTO) {
         this._dto = dto;
 
-        this._regdName = dto.regdName;
-        this._fei = dto.fei;
-        this._stableName = dto.stableName;
-        this._sex = dto.sex;
-        this._height = new Height(dto.height);
-        this._foaled = dto.foaled;
-        this._colour = dto.colour;
-        this._legs = new Legs(dto.legs);
-        this._studbook = dto.studbook;
+        this._regdName = dto.n;
+        this._fei = dto.f;
+        this._stableName = dto.s;
+        this._sex = dto.x;
+        this._height = new Height(dto.h);
+        this._foaled = dto.d;
+        this._colour = dto.c;
+        this._legs = new Legs(dto.l);
+        this._studbook = dto.b;
     }
 
     get Dto(): HorseDTO {

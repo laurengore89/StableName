@@ -1,18 +1,18 @@
 import { Nationality, Gender } from '../enums';
 
 export class RiderDTO {
-    public name: string;
-    public fei: string;
-    public born?: number;
-    public gender?: string;
-    public nationality?: string;
+    public n: string;
+    public f: string;
+    public b?: number;
+    public g?: string;
+    public t?: string;
 
     constructor(name: string, fei: string, gender: string, born: number, nationality: string) {
-        this.name = name;
-        this.fei = fei;
-        this.gender = gender;
-        this.born = born;
-        this.nationality = nationality;
+        this.n = name;
+        this.f = fei;
+        this.g = gender;
+        this.b = born;
+        this.t = nationality;
     }
 }
 
@@ -27,11 +27,11 @@ export class Rider {
     constructor(dto: RiderDTO) {
         this._dto = dto;
 
-        this._name = dto.name;
-        this._fei = dto.fei;
-        this._gender = Gender[dto.gender];
-        this._born = dto.born;
-        this._nationality = Nationality[dto.nationality];
+        this._name = dto.n;
+        this._fei = dto.f;
+        this._gender = Gender[dto.g];
+        this._born = dto.b;
+        this._nationality = Nationality[dto.t];
     }
 
     get Dto(): RiderDTO {
