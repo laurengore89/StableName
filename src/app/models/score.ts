@@ -4,6 +4,7 @@ import { Rider, RiderDTO } from './rider';
 import { Competition } from './competition';
 
 export class Result {
+    public _position: string;
     public _dressage: number;
     public _xcfault: number;
     public _xctime: number;
@@ -55,6 +56,7 @@ export class Score {
             this._horsestudbook = scoreFacts[5];
         }
         this._result = result;
+        this._result._position = scoreFacts[0].trimRight();
     }
 
     public Dto() {

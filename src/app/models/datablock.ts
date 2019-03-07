@@ -48,7 +48,7 @@ export class Datablock {
         datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
         this.scores = [];
         datajson.scores.forEach((s: ScoreDTO) => {
-            let scoreFacts: string[] = ['', s._rider, '', s._horse, '', ''];
+            let scoreFacts: string[] = [s._result._position, s._rider, '', s._horse, '', ''];
             this.scores.push(new Score(s._competition, scoreFacts, s._result));
         });
         this.competitions = datajson.competitions;
