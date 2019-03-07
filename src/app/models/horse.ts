@@ -28,15 +28,15 @@ export class Legs {
 }
 
 export class HorseDTO {
-    public n: string;
-    public f: string;
-    public s?: string;
-    public c?: string;
-    public x?: string;
-    public h?: number;
-    public d?: number;
-    public l?: string;
-    public b?: string;
+    public n: string; // name, registered
+    public f: string; // FEI ID
+    public s?: string; // name, stable
+    public c?: string; // colour, per Colour enum
+    public x?: string; // sex, per Sex enum
+    public h?: number; // height, expressed 16.2
+    public d?: number; // year of birth
+    public l?: string; // leg markings, as NEAR FORE - OFF FORE - OFF HIND - NEAR HIND
+    public b?: string; // studbook, per Studbook enum
 
     constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string) {
         this.n = regdName;

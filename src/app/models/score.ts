@@ -17,10 +17,10 @@ export class Result {
 }
 
 export class ScoreDTO {
-    public c: string;
-    public r: string;
-    public h: string;
-    public t: Result;
+    public c: string; // competition
+    public r: string; // rider
+    public h: string; // horse
+    public t: Result; // result
 
     constructor(s: Score) {
         this.c = s.Competition.Fei;

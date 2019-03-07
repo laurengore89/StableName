@@ -1,11 +1,11 @@
 import { Nationality, Gender } from '../enums';
 
 export class RiderDTO {
-    public n: string;
-    public f: string;
-    public b?: number;
-    public g?: string;
-    public t?: string;
+    public n: string; // full name
+    public f: string; // FEI ID
+    public b?: number; // year of birth
+    public g?: string; // gender, per Gender enum
+    public t?: string; // nationality, per Nationality enum
 
     constructor(name: string, fei: string, gender: string, born: number, nationality: string) {
         this.n = name;
