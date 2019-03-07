@@ -275,12 +275,12 @@
       {
         "regdName": "Faerie Dianimo",
         "fei": "103FO49",
-        "stableName": "",
-        "colour": "",
-        "sex": "",
-        "height": 0,
-        "foaled": 0,
-        "legs": "",
+        "stableName": "Maggie May",
+        "colour": "G",
+        "sex": "M",
+        "height": 16.0,
+        "foaled": 2005,
+        "legs": "BBBB",
         "studbook": "SHBGB"
       },
       {
@@ -622,12 +622,12 @@
       {
         "regdName": "Ringwood Sky Boy",
         "fei": "103AU29",
-        "stableName": "",
-        "colour": "",
-        "sex": "",
-        "height": 0,
-        "foaled": 0,
-        "legs": "",
+        "stableName": "Oz",
+        "colour": "B",
+        "sex": "G",
+        "height": 16.3,
+        "foaled": 2003,
+        "legs": "BBBC",
         "studbook": "ISH"
       },
       {
@@ -1254,7 +1254,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "Crambamboli+",
+        "regdName": "Crambamboli",
         "fei": "104HK00",
         "stableName": "",
         "colour": "",
@@ -1435,12 +1435,13 @@
       {
         "regdName": "Classic Moet",
         "fei": "102XO30",
-        "stableName": "",
-        "colour": "",
-        "sex": "",
-        "height": 0,
-        "foaled": 0,
-        "legs": ""
+        "stableName": "Molly",
+        "colour": "Bl",
+        "sex": "M",
+        "height": 16.1,
+        "foaled": 2003,
+        "legs": "BBBB",
+        "studbook": "SHBGB"
       },
       {
         "regdName": "Willingapark Cooley",
@@ -1465,7 +1466,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "BALLAGHMOR CLASS",
+        "regdName": "Ballaghmor Class",
         "fei": "104BY62",
         "stableName": "",
         "colour": "",
@@ -1476,7 +1477,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "KILTUBRID RHAPSODY",
+        "regdName": "Kiltubrid Rhapsody",
         "fei": "104JO84",
         "stableName": "",
         "colour": "",
@@ -1487,7 +1488,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "TOLEDO DE KERSER",
+        "regdName": "Toledo De Kerser",
         "fei": "104IR52",
         "stableName": "",
         "colour": "",
@@ -1498,7 +1499,7 @@
         "studbook": "SF"
       },
       {
-        "regdName": "MR CHUNKY",
+        "regdName": "Toledo De Kerser",
         "fei": "103JQ79",
         "stableName": "",
         "colour": "",
@@ -1509,7 +1510,7 @@
         "studbook": "SHBGB"
       },
       {
-        "regdName": "IVAR GOODEN",
+        "regdName": "Ivar Gooden",
         "fei": "103YO84",
         "stableName": "",
         "colour": "",
@@ -1520,7 +1521,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "SPORTSFIELD OTHELLO",
+        "regdName": "Sportsfield Othello",
         "fei": "IRL40376",
         "stableName": "",
         "colour": "",
@@ -1531,7 +1532,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "AWAY CRUISING",
+        "regdName": "Away Cruising",
         "fei": "103YG59",
         "stableName": "",
         "colour": "",
@@ -1542,7 +1543,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "SMART TIME",
+        "regdName": "Smart Time",
         "fei": "103AL00",
         "stableName": "",
         "colour": "",
@@ -1553,7 +1554,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "REVE DU ROUET",
+        "regdName": "Reve Du Rouet",
         "fei": "103BD71",
         "stableName": "",
         "colour": "",
@@ -1564,7 +1565,7 @@
         "studbook": "OLDBG"
       },
       {
-        "regdName": "COOLYS LUXURY",
+        "regdName": "Coolys Luxury",
         "fei": "102WD33",
         "stableName": "",
         "colour": "",
@@ -1575,7 +1576,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "COOPERS LAW",
+        "regdName": "Coopers Law",
         "fei": "103AC32",
         "stableName": "",
         "colour": "",
@@ -1586,7 +1587,7 @@
         "studbook": "SHBGB"
       },
       {
-        "regdName": "WII LIMBO",
+        "regdName": "Wii Limbo",
         "fei": "102ZS21",
         "stableName": "",
         "colour": "",
@@ -1597,7 +1598,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "PAMERO 4",
+        "regdName": "Pamero 4",
         "fei": "104AR56",
         "stableName": "",
         "colour": "",
@@ -1608,7 +1609,7 @@
         "studbook": "HANN"
       },
       {
-        "regdName": "FOXWOOD HIGH",
+        "regdName": "Foxwood High",
         "fei": "103AY66",
         "stableName": "",
         "colour": "",
@@ -1619,7 +1620,7 @@
         "studbook": "CSHA"
       },
       {
-        "regdName": "NOVEMBER NIGHT",
+        "regdName": "November Night",
         "fei": "103SA74",
         "stableName": "",
         "colour": "",
@@ -1630,7 +1631,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "CULT REWIND",
+        "regdName": "Cult Rewind",
         "fei": "102ZV68",
         "stableName": "",
         "colour": "",
@@ -1641,7 +1642,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "STRIKE SMARTLY",
+        "regdName": "Strike Smartly",
         "fei": "103ZL95",
         "stableName": "",
         "colour": "",
@@ -1652,7 +1653,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "ABSOLUT OPPOSITION",
+        "regdName": "Absolut Opposition",
         "fei": "103PU37",
         "stableName": "Miley",
         "colour": "",
@@ -1662,7 +1663,7 @@
         "legs": ""
       },
       {
-        "regdName": "JUNCO CP",
+        "regdName": "Junco CP",
         "fei": "102YM91",
         "stableName": "",
         "colour": "",
@@ -1672,7 +1673,7 @@
         "legs": ""
       },
       {
-        "regdName": "HOLLYFIELD",
+        "regdName": "Hollyfield",
         "fei": "103ZW00",
         "stableName": "",
         "colour": "",
@@ -1683,7 +1684,7 @@
         "studbook": "SWB"
       },
       {
-        "regdName": "BRADELEY LAW",
+        "regdName": "Bradeley Law",
         "fei": "103AV31",
         "stableName": "",
         "colour": "",
@@ -1694,7 +1695,7 @@
         "studbook": "SHBGB"
       },
       {
-        "regdName": "ZAGREB",
+        "regdName": "Zagreb",
         "fei": "103AT53",
         "stableName": "",
         "colour": "",
@@ -1705,7 +1706,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "DASSETT COOL TOUCH",
+        "regdName": "Dassett Cool Touch",
         "fei": "103TI46",
         "stableName": "",
         "colour": "",
@@ -1716,7 +1717,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "QATAR DU PUECH ROUGET",
+        "regdName": "Qatar Du Puech Rouget",
         "fei": "102ZZ69",
         "stableName": "",
         "colour": "",
@@ -1727,7 +1728,7 @@
         "studbook": "AA"
       },
       {
-        "regdName": "MITRAS EMINEM",
+        "regdName": "Mitras Eminem",
         "fei": "SWE40366",
         "stableName": "",
         "colour": "",
@@ -1737,7 +1738,7 @@
         "legs": ""
       },
       {
-        "regdName": "STAR NOUVEAU",
+        "regdName": "Star Nouveau",
         "fei": "103OY94",
         "stableName": "",
         "colour": "",
@@ -1747,7 +1748,7 @@
         "legs": ""
       },
       {
-        "regdName": "MY ROYAL TOUCH",
+        "regdName": "My Royal Touch",
         "fei": "102WZ67",
         "stableName": "",
         "colour": "",
@@ -1758,7 +1759,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "FERNHILL NOW OR NEVER",
+        "regdName": "Fernhill Now Or Never",
         "fei": "102MO97",
         "stableName": "",
         "colour": "",
@@ -1768,7 +1769,7 @@
         "legs": ""
       },
       {
-        "regdName": "COLLIEN P 2",
+        "regdName": "Collien P2",
         "fei": "103VD33",
         "stableName": "",
         "colour": "",
@@ -1779,7 +1780,7 @@
         "studbook": "OLDBG"
       },
       {
-        "regdName": "TRIPLE CHANCE",
+        "regdName": "Triple Chance",
         "fei": "104AW01",
         "stableName": "",
         "colour": "",
@@ -1790,7 +1791,7 @@
         "studbook": "SHBGB"
       },
       {
-        "regdName": "BAYANO",
+        "regdName": "Bayano",
         "fei": "103SV76",
         "stableName": "",
         "colour": "",
@@ -1801,7 +1802,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "BRENDONHILL DOUBLET",
+        "regdName": "Brendonhill Doublet",
         "fei": "GBR42394",
         "stableName": "",
         "colour": "",
@@ -1811,7 +1812,7 @@
         "legs": ""
       },
       {
-        "regdName": "COSSAN LAD",
+        "regdName": "Cossan Lad",
         "fei": "102PE73",
         "stableName": "",
         "colour": "",
@@ -1822,7 +1823,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "CHARLES RR",
+        "regdName": "Charles RR",
         "fei": "104BU18",
         "stableName": "",
         "colour": "",
@@ -1833,7 +1834,7 @@
         "studbook": "AES"
       },
       {
-        "regdName": "KAISER HDB 41 75",
+        "regdName": "Kaiser HDB 41 75",
         "fei": "104LB78",
         "stableName": "",
         "colour": "",
@@ -1844,7 +1845,7 @@
         "studbook": "AA"
       },
       {
-        "regdName": "BRONZE FLIGHT",
+        "regdName": "Bronze Flight",
         "fei": "GBR14257",
         "stableName": "",
         "colour": "",
@@ -1855,7 +1856,7 @@
         "studbook": "AES"
       },
       {
-        "regdName": "WALTHAM FIDDLERS FIND",
+        "regdName": "Waltham Fiddlers Find",
         "fei": "102YJ43",
         "stableName": "",
         "colour": "",
@@ -1877,7 +1878,7 @@
         "studbook": "CDE"
       },
       {
-        "regdName": "DROMGURRIHY BLUE",
+        "regdName": "Dromgurrihy Blue",
         "fei": "IRL40697",
         "stableName": "",
         "colour": "",
@@ -1888,7 +1889,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "P.S. ARIANNA",
+        "regdName": "P.S. Arianna",
         "fei": "103AV46",
         "stableName": "",
         "colour": "",
@@ -1898,7 +1899,7 @@
         "legs": ""
       },
       {
-        "regdName": "OREGON DE LA VIGNE",
+        "regdName": "Oregon De La Vigne",
         "fei": "102RX70",
         "stableName": "",
         "colour": "",
@@ -1909,7 +1910,7 @@
         "studbook": "SF"
       },
       {
-        "regdName": "SPRING PANORAMA",
+        "regdName": "Spring Panorama",
         "fei": "103JR38",
         "stableName": "",
         "colour": "",
@@ -1920,7 +1921,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "KILLOSSERY JUPITER RISING",
+        "regdName": "Killossery Jupiter Rising",
         "fei": "103HP87",
         "stableName": "",
         "colour": "",
@@ -1931,7 +1932,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "CHARLTON DOWN RIVERDANCE",
+        "regdName": "Charlton Down Riverdance",
         "fei": "103RB61",
         "stableName": "",
         "colour": "",
@@ -1942,7 +1943,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "FERNHILL PIMMS",
+        "regdName": "Fernhill Pimms",
         "fei": "102VN16",
         "stableName": "",
         "colour": "",
@@ -1953,7 +1954,7 @@
         "studbook": "AES"
       },
       {
-        "regdName": "CHINA DOLL",
+        "regdName": "China Doll",
         "fei": "103ZB01",
         "stableName": "",
         "colour": "",
@@ -1964,7 +1965,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "OBOS O'REILLY",
+        "regdName": "OBOS O'Reilly",
         "fei": "102WB34",
         "stableName": "",
         "colour": "",
@@ -1975,7 +1976,7 @@
         "studbook": "ISH"
       },
       {
-        "regdName": "ZOCARLA BLH",
+        "regdName": "Zocarla BLH",
         "fei": "103RW07",
         "stableName": "",
         "colour": "",
@@ -1986,7 +1987,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "XAM",
+        "regdName": "Xam",
         "fei": "103JL84",
         "stableName": "",
         "colour": "",
@@ -1997,7 +1998,7 @@
         "studbook": "SHBGB"
       },
       {
-        "regdName": "REDPATH RANSOM",
+        "regdName": "Redpath Ransom",
         "fei": "103JA88",
         "stableName": "",
         "colour": "",
@@ -2008,7 +2009,7 @@
         "studbook": "AES"
       },
       {
-        "regdName": "BILLY BEWARE",
+        "regdName": "Billy Beware",
         "fei": "103AV60",
         "stableName": "",
         "colour": "",
@@ -2018,7 +2019,7 @@
         "legs": ""
       },
       {
-        "regdName": "SILVIA",
+        "regdName": "Silvia",
         "fei": "102RZ88",
         "stableName": "",
         "colour": "",
@@ -2028,7 +2029,7 @@
         "legs": ""
       },
       {
-        "regdName": "PERFECT STRANGER",
+        "regdName": "Perfect Stranger",
         "fei": "103JJ57",
         "stableName": "",
         "colour": "",
@@ -2039,7 +2040,7 @@
         "studbook": "KWPN"
       },
       {
-        "regdName": "MR POTTS",
+        "regdName": "Mr Potts",
         "fei": "GBR43133",
         "stableName": "",
         "colour": "",
@@ -2049,14 +2050,14 @@
         "legs": ""
       },
       {
-        "regdName": "XAVIER FAER",
+        "regdName": "Xavier Faer",
         "fei": "103QJ38",
-        "stableName": "",
-        "colour": "",
-        "sex": "",
-        "height": 0,
-        "foaled": 0,
-        "legs": "",
+        "stableName": "Hugo",
+        "colour": "B",
+        "sex": "G",
+        "height": 16.2,
+        "foaled": 2006,
+        "legs": "BBCF",
         "studbook": "SHBGB"
       },
       {
