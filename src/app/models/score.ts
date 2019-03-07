@@ -2,6 +2,7 @@ import { Studbook } from '../enums';
 import { Horse, HorseDTO } from './horse';
 import { Rider, RiderDTO } from './rider';
 import { Competition } from './competition';
+import { ToTitleCase } from '../shared/utils';
 
 export class Result {
     public _position: string;
@@ -22,10 +23,10 @@ export class ScoreDTO {
     public _result: Result;
 
     constructor(s: Score) {
-        this._competition = s.Competition().Fei;
-        this._rider = s.Rider().Fei();
-        this._horse = s.Horse().Fei();
-        this._result = s.Result();
+        this._competition = s.Competition.Fei;
+        this._rider = s.Rider.Fei;
+        this._horse = s.Horse.Fei;
+        this._result = s.Result;
     }
 }
 
@@ -59,23 +60,23 @@ export class Score {
         this._result._position = scoreFacts[0].trim();
     }
 
-    public Dto() {
+    get Dto() {
         return new ScoreDTO(this);
     }
 
-    public Horse() {
-        return new Horse(new HorseDTO(this._horsename, this._horse, '', '', 0, 0, '', '', this._horsestudbook));
+    get Horse() {
+        return new Horse(new HorseDTO(ToTitleCase(this._horsename), this._horse, '', '', 0, 0, '', '', this._horsestudbook));
     }
 
-    public Rider() {
-        return new Rider(new RiderDTO(this._ridername, this._rider, '', 0, this._ridernation));
+    get Rider() {
+        return new Rider(new RiderDTO(ToTitleCase(this._ridername), this._rider, '', 0, this._ridernation));
     }
 
-    public Result() {
+    get Result() {
         return this._result;
     }
 
-    public Competition() {
+    get Competition() {
         return new Competition(this._competition, '');
     }
 }

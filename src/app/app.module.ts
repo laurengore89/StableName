@@ -19,4 +19,6 @@ import { RiderComponent } from './components/rider/rider.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+ }

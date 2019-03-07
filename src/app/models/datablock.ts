@@ -14,15 +14,15 @@ class DatablockDTO {
         this.competitions = db.competitions;
         this.horses = [];
         db.horses.forEach(h => {
-            this.horses.push(h.Dto());
+            this.horses.push(h.Dto);
         });
         this.riders = [];
         db.riders.forEach(r => {
-            this.riders.push(r.Dto());
+            this.riders.push(r.Dto);
         });
         this.scores = [];
         db.scores.forEach(s => {
-            this.scores.push(s.Dto());
+            this.scores.push(s.Dto);
         });
     }
 }
@@ -72,7 +72,7 @@ export class Datablock {
                         // check we're not duplicating existing scores
                         let rider = currentEntry[1];
                         let horse = currentEntry[3];
-                        if (this.scores.find(s => s.Horse().Fei() === horse && s.Rider().Fei() === rider && s.Competition().Fei === competitionFei) !== undefined) {
+                        if (this.scores.find(s => s.Horse.Fei === horse && s.Rider.Fei === rider && s.Competition.Fei === competitionFei) !== undefined) {
                             return;
                         }
 
@@ -101,11 +101,11 @@ export class Datablock {
 
                 // see if there are any horses/riders/competitions in the scores we don't list yet
                 this.scores.forEach(s => {
-                    if (this.horses.find(h => h.Fei() === s.Horse().Fei()) === undefined) {
-                        this.horses.push(s.Horse());
+                    if (this.horses.find(h => h.Fei === s.Horse.Fei) === undefined) {
+                        this.horses.push(s.Horse);
                     }
-                    if (this.riders.find(r => r.Fei() === s.Rider().Fei()) === undefined) {
-                        this.riders.push(s.Rider());
+                    if (this.riders.find(r => r.Fei === s.Rider.Fei) === undefined) {
+                        this.riders.push(s.Rider);
                     }
                 });
 

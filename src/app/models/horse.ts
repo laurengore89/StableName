@@ -77,70 +77,70 @@ export class Horse {
         this._studbook = dto.studbook;
     }
 
-    public Dto(): HorseDTO {
+    get Dto(): HorseDTO {
         return this._dto;
     }
 
-    public Name(): string {
+    get Name(): string {
         return this._regdName + (this._stableName ? ' (' + this._stableName + ')' : '');
     }
 
-    public Studbook(): string {
+    get Studbook(): string {
         if (!this._studbook) {
             return '';
         }
         return Studbook[this._studbook] + ' (' + this._studbook + ')';
     }
 
-    public Fei(): string {
+    get Fei(): string {
         return this._fei;
     }
 
-    public Height(): string {
+    get Height(): string {
         if (!this._height.Hands) {
             return '';
         }
         return this._height.Hands + '.' + this._height.Inches + 'hh';
     }
 
-    public Age(): string {
+    get Age(): string {
         if (!this._foaled) {
             return '';
         }
         return Math.floor((new Date().getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
-    public Sex(): string {
+    get Sex(): string {
         if (!this._sex) {
             return '';
         }
         return Sex[this._sex].toLocaleLowerCase();
     }
 
-    public SvgColour(): string {
-        return this.Colour().replace(' ', '');
+    get SvgColour(): string {
+        return this.Colour.replace(' ', '');
     }
 
-    public Colour(): string {
+    get Colour(): string {
         if (!this._colour) {
             return '';
         }
         return Colour[ this._colour].toLocaleLowerCase().replace('bay', ' bay').replace('chestnut', ' chestnut');
     }
 
-    public Nearfore(): string {
+    get Nearfore(): string {
         return this._legs.nearfore ? this._legs.nearfore.toLocaleLowerCase() : 'none';
     }
 
-    public Offfore(): string {
+    get Offfore(): string {
         return this._legs.offfore ? this._legs.offfore.toLocaleLowerCase() : 'none';
     }
 
-    public Offhind(): string {
+    get Offhind(): string {
         return this._legs.offhind ? this._legs.offhind.toLocaleLowerCase() : 'none';
     }
 
-    public Nearhind(): string {
+    get Nearhind(): string {
         return this._legs.nearhind ? this._legs.nearhind.toLocaleLowerCase() : 'none';
     }
 }

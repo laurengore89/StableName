@@ -34,33 +34,33 @@ export class Rider {
         this._nationality = Nationality[dto.nationality];
     }
 
-    public Dto(): RiderDTO {
+    get Dto(): RiderDTO {
         return this._dto;
     }
 
-    public Name(): string {
+    get Name(): string {
         return this._name;
     }
 
-    public Fei(): string {
+    get Fei(): string {
         return this._fei;
     }
 
-    public Nationality(): string {
+    get Nationality(): string {
         if (!this._nationality) {
             return '';
         }
         return Nationality[this._nationality];
     }
 
-    public Age(): string {
+    get Age(): string {
         if (!this._born) {
             return '';
         }
         return Math.floor((new Date().getTime() - new Date(this._born, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
-    public BaseDescriptor(): string {
+    get BaseDescriptor(): string {
         if (!this._nationality && !this._gender) {
             return 'rider';
         }
