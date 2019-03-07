@@ -5,28 +5,28 @@ import { Competition } from './competition';
 import { ToTitleCase } from '../shared/utils';
 
 export class Result {
-    public _position: string;
-    public _dressage: number;
-    public _xcfault: number;
-    public _xctime: number;
-    public _sjfault: number;
-    public _sjtime: number;
-    public _jumpofffault: number;
-    public _jumpofftime: number;
-    public _outcome: string;
+    public p: string; // final position on scoreboard, or EL / RET / WD
+    public a: number; // dressage score
+    public b: number; // cross-country obstacle faults
+    public c: number; // cross-country time faults
+    public d: number; // showjumping obstacle faults
+    public e: number; // showjumping time faults
+    public f: number; // jump-off, if any, obstacle faults
+    public g: number; // jump-off, if any, time faults
+    public o: string; // final score, or nature of EL / RET / WD incident
 }
 
 export class ScoreDTO {
-    public _competition: string;
-    public _rider: string;
-    public _horse: string;
-    public _result: Result;
+    public c: string;
+    public r: string;
+    public h: string;
+    public t: Result;
 
     constructor(s: Score) {
-        this._competition = s.Competition.Fei;
-        this._rider = s.Rider.Fei;
-        this._horse = s.Horse.Fei;
-        this._result = s.Result;
+        this.c = s.Competition.Fei;
+        this.r = s.Rider.Fei;
+        this.h = s.Horse.Fei;
+        this.t = s.Result;
     }
 }
 
@@ -57,7 +57,7 @@ export class Score {
             this._horsestudbook = scoreFacts[5];
         }
         this._result = result;
-        this._result._position = scoreFacts[0].trim();
+        this._result.p = scoreFacts[0].trim();
     }
 
     get Dto() {

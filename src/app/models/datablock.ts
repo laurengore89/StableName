@@ -48,8 +48,8 @@ export class Datablock {
         datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
         this.scores = [];
         datajson.scores.forEach((s: ScoreDTO) => {
-            let scoreFacts: string[] = [s._result._position, s._rider, '', s._horse, '', ''];
-            this.scores.push(new Score(s._competition, scoreFacts, s._result));
+            let scoreFacts: string[] = [s.t.p, s.r, '', s.h, '', ''];
+            this.scores.push(new Score(s.c, scoreFacts, s.t));
         });
         this.competitions = datajson.competitions;
     }
@@ -77,17 +77,17 @@ export class Datablock {
                         }
 
                         let result = new Result();
-                        result._dressage = Number(matches[1]);
-                        result._xcfault = Number(matches[2]);
-                        result._xctime = Number(matches[3]);
-                        result._sjfault = Number(matches[4]);
-                        result._sjtime = Number(matches[5]);
+                        result.a = Number(matches[1]);
+                        result.b = Number(matches[2]);
+                        result.c = Number(matches[3]);
+                        result.d = Number(matches[4]);
+                        result.e = Number(matches[5]);
                         if (matches.length === 10) {
-                            result._jumpofffault = Number(matches[6]);
-                            result._jumpofftime = Number(matches[7]);
-                            result._outcome = matches[8];
+                            result.f = Number(matches[6]);
+                            result.g = Number(matches[7]);
+                            result.o = matches[8];
                         } else if (matches.length === 8) {
-                            result._outcome = matches[7];
+                            result.o = matches[7];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
