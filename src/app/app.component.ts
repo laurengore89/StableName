@@ -17,6 +17,6 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {
     this.datablock = new Datablock(http, '', '', '', '');
-    //this.datablock = new Datablock(http, 'assets/input.txt', '2017_CI_0513_C_S_01_01', '2017 Badminton', this.patternBadminton);
+    //this.datablock = new Datablock(http, 'assets/input.txt', '2016_CI_0052_C_S_01_01', '2016 Badminton', this.patternBadminton);
   }
 }
