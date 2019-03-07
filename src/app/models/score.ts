@@ -59,7 +59,7 @@ export class Score {
         this._result = result;
         this._result.p = scoreFacts[0].trim();
     }
-
+//test
     get Dto() {
         return new ScoreDTO(this);
     }
