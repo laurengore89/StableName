@@ -16,7 +16,7 @@ export class AppComponent {
   private readonly patternBadminton = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d,\\.]*?\\sGBP)?\\s+\\s+(.*?)$';
 
   constructor(private http: HttpClient) {
-    //this.datablock = new Datablock(http, '', '', '', '');
-    this.datablock = new Datablock(http, 'assets/input.txt', '2017_CI_0513_C_S_01_01', '2017 Badminton', this.patternBadminton);
+    this.datablock = new Datablock(http, '', '', '', '');
+    //this.datablock = new Datablock(http, 'assets/input.txt', '2017_CI_0513_C_S_01_01', '2017 Badminton', this.patternBadminton);
   }
 }

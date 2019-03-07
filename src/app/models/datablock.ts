@@ -69,6 +69,13 @@ export class Datablock {
                     // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
                     // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
                     if (matches != null) {
+                        // check we're not duplicating existing scores
+                        let rider = currentEntry[1];
+                        let horse = currentEntry[3];
+                        if (this.scores.find(s => s.Horse().Fei() === horse && s.Rider().Fei() === rider && s.Competition().Fei === competitionFei) !== undefined) {
+                            return;
+                        }
+
                         let result = new Result();
                         result._dressage = Number(matches[1]);
                         result._xcfault = Number(matches[2]);
