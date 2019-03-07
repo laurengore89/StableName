@@ -56,7 +56,7 @@ export class Score {
             this._horsestudbook = scoreFacts[5];
         }
         this._result = result;
-        this._result._position = scoreFacts[0].trimRight();
+        this._result._position = scoreFacts[0].trim();
     }
 
     public Dto() {
