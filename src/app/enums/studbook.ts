@@ -10,7 +10,7 @@ export enum Studbook {
     AWÖ = 'Austrian Warmblood',
     AWR = 'American Warmblood',
     AWS = 'American Warmblood',
-    'BAD-WÜ' = 'Baden-Württemberg',
+    'BAD-WÜ' = 'Württemberger',
     BAVAR = 'Bavarian',
     BH = 'Brazilian',
     BHHS = 'Hanoverian',
