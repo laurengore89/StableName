@@ -14,9 +14,10 @@ export class AppComponent {
 
   private readonly patternOlympic = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+(.*?)$';
   private readonly patternBadminton = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d,\\.]*?\\sGBP)?\\s+\\s+(.*?)$';
+  private readonly patternGrandPrixDressage = '^\\s*[\\d\\.]*?\\s[GBP]*\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+([\\d\\.]*?)$';
 
   constructor(private http: HttpClient) {
     this.datablock = new Datablock(http, '', '', '', '');
-    //this.datablock = new Datablock(http, 'assets/input.txt', '2016_CI_0052_C_S_01_01', '2016 Badminton', this.patternBadminton);
+    //this.datablock = new Datablock(http, 'assets/input.txt', '2018_CI_0015_D_S_03_01', '2018 Hickstead', this.patternGrandPrixDressage);
   }
 }

@@ -77,17 +77,25 @@ export class Datablock {
                         }
 
                         let result = new Result();
-                        result.a = Number(matches[1]);
-                        result.b = Number(matches[2]);
-                        result.c = Number(matches[3]);
-                        result.d = Number(matches[4]);
-                        result.e = Number(matches[5]);
                         if (matches.length === 10) {
+                            result.a = Number(matches[1]);
+                            result.b = Number(matches[2]);
+                            result.c = Number(matches[3]);
+                            result.d = Number(matches[4]);
+                            result.e = Number(matches[5]);
                             result.f = Number(matches[6]);
                             result.g = Number(matches[7]);
                             result.o = matches[8];
                         } else if (matches.length === 8) {
+                            result.a = Number(matches[1]);
+                            result.b = Number(matches[2]);
+                            result.c = Number(matches[3]);
+                            result.d = Number(matches[4]);
+                            result.e = Number(matches[5]);
                             result.o = matches[7];
+                        } else if (matches.length === 2) {
+                            result.a = Number(matches[1]);
+                            result.o = matches[1];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
