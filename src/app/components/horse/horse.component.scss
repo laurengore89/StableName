@@ -20,7 +20,7 @@ $line-yellow: #FFFF00;
 
 $fill-hoof-black: #202020; 
 $fill-hoof-white: #f1e8d9; 
-$fill-eye-brown: rgb(27, 10, 3);
+$fill-eye-brown: #1b0a03;
 
 #signature {
     path {
@@ -427,6 +427,35 @@ div.coat-brown {
     #offfore-high-highlight, #offfore-sock-highlight, #offfore-fetlock-highlight, #offfore-coronet-highlight,
     #offhind-high-highlight, #offhind-sock-highlight, #offhind-fetlock-highlight, #offhind-coronet-highlight,
     #nearhind-high-highlight, #nearhind-sock-highlight, #nearhind-fetlock-highlight, #nearhind-coronet-highlight {
+        path {
+            fill: $line-black
+        }
+    }
+}
+
+div.coat-sealbrown {
+    #mane-tail-fill, #body-fill {
+        path {
+            fill: $fill-black
+        }
+    }
+    #mane-tail-line, #body-highlight {
+        path {
+            fill: $line-black
+        }
+    }
+    #nearfore-leg-fill, #nearfore-high-fill, #nearfore-sock-fill, #nearfore-fetlock-fill, #nearfore-coronet-fill,
+    #offfore-leg-fill, #offfore-high-fill, #offfore-sock-fill, #offfore-fetlock-fill, #offfore-coronet-fill,
+    #offhind-leg-fill, #offhind-high-fill, #offhind-sock-fill, #offhind-fetlock-fill, #offhind-coronet-fill,
+    #nearhind-leg-fill, #nearhind-high-fill, #nearhind-sock-fill, #nearhind-fetlock-fill, #nearhind-coronet-fill {
+        path {
+            fill: $fill-black
+        }
+    }
+    #nearfore-leg-highlight, #nearfore-high-highlight, #nearfore-sock-highlight, #nearfore-fetlock-highlight, #nearfore-coronet-highlight,
+    #offfore-leg-highlight, #offfore-high-highlight, #offfore-sock-highlight, #offfore-fetlock-highlight, #offfore-coronet-highlight,
+    #offhind-leg-highlight, #offhind-high-highlight, #offhind-sock-highlight, #offhind-fetlock-highlight, #offhind-coronet-highlight,
+    #nearhind-leg-highlight, #nearhind-high-highlight, #nearhind-sock-highlight, #nearhind-fetlock-highlight, #nearhind-coronet-highlight {
         path {
             fill: $line-black
         }

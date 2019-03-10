@@ -125,7 +125,7 @@ export class Horse {
         if (!this._colour) {
             return '';
         }
-        return Colour[ this._colour].toLocaleLowerCase().replace('bay', ' bay').replace('chestnut', ' chestnut');
+        return Colour[ this._colour].toLocaleLowerCase().replace('bay', ' bay').replace('chestnut', ' chestnut').replace('brown', ' brown').trim();
     }
 
     get Nearfore(): string {

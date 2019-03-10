@@ -3,6 +3,7 @@ export enum Colour {
     B = 'Bay',
     Bl = 'Black',
     Br = 'Brown',
+    SBr = 'SealBrown',
     BtB = 'BrightBay',
     Ch = 'Chestnut',
     DkB = 'DarkBay',
