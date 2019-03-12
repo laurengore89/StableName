@@ -1,6 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
-import { Competition, Score, ScoreDTO, Horse, HorseDTO, Rider, RiderDTO, Result } from '.';
+
+import { Competition } from './competition.js';
+import { ScoreDTO, Score, Result } from './score.js';
+import { HorseDTO, Horse } from './horse.js';
+import { RiderDTO, Rider } from './rider.js';
 
 import datajson from '../data/datablock.json';
 

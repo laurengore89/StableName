@@ -4,9 +4,5 @@
   </h1>
   <hr />
 <span *ngFor="let horse of datablock.horses">
-  <sn-horse [horse] = "horse"></sn-horse>
-</span>
-<hr />
-<span *ngFor="let rider of datablock.riders">
-<sn-rider [rider] = "rider"></sn-rider>
+  <sn-horse [horse] = "horse" [datablock] = "datablock"></sn-horse>
 </span>
