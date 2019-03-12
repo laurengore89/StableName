@@ -1,5 +1,5 @@
 <div class="coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
-  <h2><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a></h2>
+  <h3><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a></h3>
   <span *ngFor="let rider of riders">|{{ rider.Name }}|</span>
   <p>
     <span *ngIf="horse.Age">{{ horse.Age }} </span><span>{{ horse.Colour }} {{ horse.Sex }}</span><span *ngIf="horse.Height">,
@@ -331,5 +331,4 @@
       <path d=" M 753.35 731.57 L 753.85 731.01 C 754.90 731.34 755.97 731.69 757.05 732.04 C 747.86 744.73 737.48 756.49 727.56 768.60 C 724.71 772.07 722.36 776.23 718.13 778.22 C 720.46 772.30 725.17 767.87 728.83 762.81 C 736.98 752.38 745.30 742.08 753.35 731.57 Z" />
     </g>
   </svg>
-  <hr />
 </div>

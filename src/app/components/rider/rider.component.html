@@ -3,5 +3,8 @@
   <p>
       <span *ngIf="rider.Age">{{ rider.Age }} </span><span>{{ rider.BaseDescriptor }}</span>
   </p>
+  <span *ngFor="let horse of horses">
+    <sn-horse [horse] = "horse"></sn-horse>
+  </span>
   <hr />
 </div>
