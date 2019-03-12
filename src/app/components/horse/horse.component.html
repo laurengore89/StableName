@@ -1,6 +1,6 @@
 <div class="coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
   <h2><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a></h2>
-  <span *ngFor="let rider of riders">{{ rider.Name }}</span>
+  <span *ngFor="let rider of riders">|{{ rider.Name }}|</span>
   <p>
     <span *ngIf="horse.Age">{{ horse.Age }} </span><span>{{ horse.Colour }} {{ horse.Sex }}</span><span *ngIf="horse.Height">,
       {{ horse.Height }}</span><span *ngIf="(horse.Age || horse.Colour || horse.Sex || horse.Height) && horse.Studbook">, </span><span
