@@ -7,6 +7,7 @@ import { HorseDTO, Horse } from './horse.js';
 import { RiderDTO, Rider } from './rider.js';
 
 import datajson from '../data/datablock.json';
+import { RegexPattern } from '../enums/index.js';
 
 class DatablockDTO {
     public competitions: Competition[];
@@ -81,7 +82,7 @@ export class Datablock {
                         }
 
                         let result = new Result();
-                        if (matches.length === 10) {
+                        if (competitionPattern === RegexPattern.Badminton) {
                             result.a = Number(matches[1]);
                             result.b = Number(matches[2]);
                             result.c = Number(matches[3]);
@@ -90,14 +91,14 @@ export class Datablock {
                             result.f = Number(matches[6]);
                             result.g = Number(matches[7]);
                             result.o = matches[8];
-                        } else if (matches.length === 8) {
+                        } else if (competitionPattern === RegexPattern.Olympic) {
                             result.a = Number(matches[1]);
                             result.b = Number(matches[2]);
                             result.c = Number(matches[3]);
                             result.d = Number(matches[4]);
                             result.e = Number(matches[5]);
                             result.o = matches[7];
-                        } else if (matches.length === 2) {
+                        } else if (competitionPattern === RegexPattern.GrandPrixDressage) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
                         }
