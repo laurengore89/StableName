@@ -101,6 +101,8 @@ export class Datablock {
                         } else if (competitionPattern === RegexPattern.Dressage) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
+                        } else if (competitionPattern === RegexPattern.Jumping) {
+                            result.o = matches[2];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
