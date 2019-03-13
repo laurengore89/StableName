@@ -65,7 +65,7 @@ export class Datablock {
                     currentEntry.push(l);
                     const re: RegExp = new RegExp(competitionPattern, 'g');
                     const matches = re.exec(l);
-                    
+
                     if (matches != null) {
                         // check we're not duplicating existing scores
                         let rider = currentEntry[1];
