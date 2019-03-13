@@ -101,6 +101,9 @@ export class Datablock {
                         } else if (competitionPattern === RegexPattern.GrandPrixDressage) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
+                        } else if (competitionPattern === RegexPattern.OlympicGP) {
+                            result.a = Number(matches[8]);
+                            result.o = matches[8];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
