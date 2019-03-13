@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
 
-import { Competition } from './competition.js';
-import { ScoreDTO, Score, Result } from './score.js';
-import { HorseDTO, Horse } from './horse.js';
-import { RiderDTO, Rider } from './rider.js';
+import { Competition } from './competition';
+import { ScoreDTO, Score, Result } from './score';
+import { HorseDTO, Horse } from './horse';
+import { RiderDTO, Rider } from './rider';
+import { RegexPattern } from '../enums';
 
 import datajson from '../data/datablock.json';
-import { RegexPattern } from '../enums/index.js';
 
 class DatablockDTO {
     public competitions: Competition[];
