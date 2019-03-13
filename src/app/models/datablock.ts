@@ -52,10 +52,7 @@ export class Datablock {
         this.riders = [];
         datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
         this.scores = [];
-        datajson.scores.forEach((s: ScoreDTO) => {
-            let scoreFacts: string[] = [s.t.p, s.r, '', s.h, '', ''];
-            this.scores.push(new Score(s.c, scoreFacts, s.t));
-        });
+        datajson.scores.forEach((s: ScoreDTO) => this.scores.push(new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t)));
         this.competitions = datajson.competitions;
     }
 
