@@ -105,6 +105,12 @@ export class Datablock {
                                 result.f = Number(splits[2]);
                                 result.g = Number(splits[3]);
                             }
+                            if (numberOfResults === 3) {
+                                result.d = Number(splits[0]);
+                                result.e = 0;
+                                result.f = Number(splits[1]);
+                                result.g = Number(splits[2]);
+                            }
                             if (numberOfResults === 2) {
                                 result.d = Number(splits[0]);
                                 result.e = Number(splits[1]);
