@@ -101,9 +101,12 @@ export class Datablock {
                         } else if (competitionPattern === RegexPattern.GrandPrixDressage) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
-                        } else if (competitionPattern === RegexPattern.OlympicGP) {
+                        } else if (competitionPattern === RegexPattern.OlympicGP2016) {
                             result.a = Number(matches[8]);
                             result.o = matches[8];
+                        } else if (competitionPattern === RegexPattern.OlympicGP2008) {
+                            result.a = Number(matches[6]);
+                            result.o = matches[6];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
