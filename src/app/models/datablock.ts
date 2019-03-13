@@ -74,7 +74,8 @@ export class Datablock {
                         // check we're not duplicating existing scores
                         let rider = currentEntry[1];
                         let horse = currentEntry[3];
-                        if (this.scores.find(s => s.Horse.Fei === horse && s.Rider.Fei === rider && s.Competition.Fei === competitionFei) !== undefined) {
+                        let oldScore = this.scores.find(s => s.Horse.Fei === horse && s.Rider.Fei === rider && s.Competition.Fei === competitionFei);
+                        if (oldScore !== undefined && oldScore.Result !== null && oldScore.Result !== undefined && oldScore.Result.p !== 'PEND') {
                             return;
                         }
 
