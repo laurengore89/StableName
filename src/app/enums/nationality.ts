@@ -105,7 +105,7 @@ export enum Nationality {
     PHI = 'Filipino',
     PLE = 'Palestinian',
     POL = 'Polish',
-    POR = 'Portugese',
+    POR = 'Portuguese',
     PRK = 'North Korean',
     PUR = 'Puerto Rican',
     QAT = 'Qatari',
