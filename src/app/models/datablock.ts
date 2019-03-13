@@ -82,7 +82,7 @@ export class Datablock {
                         }
 
                         let result = new Result();
-                        if (competitionPattern === RegexPattern.Badminton) {
+                        if (competitionPattern === RegexPattern.EventingOlympicJO) {
                             result.a = Number(matches[1]);
                             result.b = Number(matches[2]);
                             result.c = Number(matches[3]);
@@ -91,20 +91,20 @@ export class Datablock {
                             result.f = Number(matches[6]);
                             result.g = Number(matches[7]);
                             result.o = matches[8];
-                        } else if (competitionPattern === RegexPattern.Olympic) {
+                        } else if (competitionPattern === RegexPattern.Eventing) {
                             result.a = Number(matches[1]);
                             result.b = Number(matches[2]);
                             result.c = Number(matches[3]);
                             result.d = Number(matches[4]);
                             result.e = Number(matches[5]);
                             result.o = matches[7];
-                        } else if (competitionPattern === RegexPattern.GrandPrixDressage) {
+                        } else if (competitionPattern === RegexPattern.Dressage5) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
-                        } else if (competitionPattern === RegexPattern.OlympicGP2016) {
+                        } else if (competitionPattern === RegexPattern.DressageOlympic7) {
                             result.a = Number(matches[8]);
                             result.o = matches[8];
-                        } else if (competitionPattern === RegexPattern.OlympicGP2008) {
+                        } else if (competitionPattern === RegexPattern.DressageOlympic5) {
                             result.a = Number(matches[6]);
                             result.o = matches[6];
                         }
