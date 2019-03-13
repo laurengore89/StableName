@@ -103,6 +103,18 @@ export class Datablock {
                             result.o = matches[1];
                         } else if (competitionPattern === RegexPattern.Jumping) {
                             result.o = matches[2];
+                            let splits = result.o.split('/');
+                            let numberOfResults = splits.length;
+                            if (numberOfResults === 4) {
+                                result.d = Number(splits[0]);
+                                result.e = Number(splits[1]);
+                                result.f = Number(splits[2]);
+                                result.g = Number(splits[3]);
+                            }
+                            if (numberOfResults === 2) {
+                                result.d = Number(splits[0]);
+                                result.e = Number(splits[1]);
+                            }
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];
