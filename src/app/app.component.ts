@@ -14,7 +14,7 @@ export class AppComponent {
   datablock: Datablock;
 
   constructor(private http: HttpClient) {
-    //this.datablock = new Datablock(http, '', '', '', '');
-    this.datablock = new Datablock(http, 'assets/input.txt', '2016_OG_0001_D_S_01_01', '2016 Rio Olympic Dressage Grand Prix', RegexPattern.OlympicGP);
+    this.datablock = new Datablock(http, '', '', '', '');
+    //this.datablock = new Datablock(http, 'assets/input.txt', '2016_OG_0001_D_S_01_01', '2016 Rio Olympic Dressage Grand Prix', RegexPattern.OlympicGP);
   }
 }
