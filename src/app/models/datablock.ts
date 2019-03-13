@@ -65,11 +65,7 @@ export class Datablock {
                     currentEntry.push(l);
                     const re: RegExp = new RegExp(competitionPattern, 'g');
                     const matches = re.exec(l);
-                    // result is the scores line e.g. '	40.9	0	0	0	0	0	0	 		40.9 / 40.9'
-                    // scores line breakdown:
-                    // dressage score, XC faults, XC time, SJ faults, SJ time, SJ jumpoff faults, SJ jumpoff time, final score / final score + jumpoff score
-                    // final score entry can be replaced by a letter code e.g. 'XC-R' if the horse did not complete
-                    // see https://inside.fei.org/system/files/Eventing%20results%20description%202018_0.pdf for full specification
+                    
                     if (matches != null) {
                         // check we're not duplicating existing scores
                         let rider = currentEntry[1];
