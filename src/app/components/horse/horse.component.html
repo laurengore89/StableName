@@ -1,5 +1,5 @@
 <div style="text-align: center;" class="coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
-  <h3><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a></h3>
+  <h3><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a>&nbsp;<a href="https://data.fei.org/Horse/Performance.aspx?horsefeiid={{ horse.Fei }}">[data]</a></h3>
   <span *ngFor="let rider of riders">|{{ rider.Name }}|</span>
   <p>
     <span *ngIf="horse.Age">{{ horse.Age }} </span><span>{{ horse.Colour }} {{ horse.Sex }}</span><span *ngIf="horse.Height">,
