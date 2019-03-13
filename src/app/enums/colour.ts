@@ -8,5 +8,6 @@ export enum Colour {
     Ch = 'Chestnut',
     DkB = 'DarkBay',
     LCh = 'LiverChestnut',
-    Plm = 'Palomino'
+    Plm = 'Palomino',
+    Pb = 'Piebald'
 }
