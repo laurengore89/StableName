@@ -98,15 +98,9 @@ export class Datablock {
                             result.d = Number(matches[4]);
                             result.e = Number(matches[5]);
                             result.o = matches[7];
-                        } else if (competitionPattern === RegexPattern.Dressage5) {
+                        } else if (competitionPattern === RegexPattern.Dressage) {
                             result.a = Number(matches[1]);
                             result.o = matches[1];
-                        } else if (competitionPattern === RegexPattern.DressageOlympic7) {
-                            result.a = Number(matches[8]);
-                            result.o = matches[8];
-                        } else if (competitionPattern === RegexPattern.DressageOlympic5) {
-                            result.a = Number(matches[6]);
-                            result.o = matches[6];
                         }
                         this.scores.push(new Score(competitionFei, currentEntry, result));
                         currentEntry = [];

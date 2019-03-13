@@ -7,15 +7,8 @@ export enum RegexPattern {
     // dressage | XC | SJ | prize money | final total
     Eventing = '^\\t?([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d\\.]*?)\\s+([\\d,\\.]*?\\s[A-Z]{3})?\\s+\\s+(.*?)$',
 
-    //  85.100	84.500	86.900	86.800	85.300	82.900	84.000		85.071
-    // 7 letter judges | final average
-    DressageOlympic7 = '^\\s?\\t?([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\s\\s(.*?)$',
-
-    //  75.625	76.667	75.000	77.083	77.708		76.417
+    // 77.900	78.200	77.100	76.300	77.800		77.460
     // 5 letter judges | final average
-    DressageOlympic5 = '^\\s?\\t?([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\t([\\d\\.]*?)\\s\\s(.*?)$',
-
-    // 2,700 EUR	77.900	78.200	77.100	76.300	77.800		77.460
-    // prize money | 5 letter judges | final average
-    Dressage5 = '^\\s*[\\d,]*?\\s[A-Z]{3}\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+([\\d\\.]*?)$'
+    // does not include start of line, so accommodates extra judges or prize money
+    Dressage = '\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+[\\d\\.]*?\\s+([\\d\\.]*?)$'
 }
