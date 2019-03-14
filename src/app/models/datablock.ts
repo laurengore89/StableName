@@ -55,6 +55,10 @@ export class Datablock {
             });
             r.horses.sort((a, b) => { if (a.Name > b.Name) { return 1; } if (a.Name < b.Name) { return -1; } return 0; });
         });
+
+        this.riders.forEach(r => {
+            r.scores = this.scores.filter(s => s.Rider.Fei === r.Fei);
+        });
     }
 
     private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {

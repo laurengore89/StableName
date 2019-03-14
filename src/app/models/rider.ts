@@ -26,6 +26,7 @@ export class Rider {
     private _dto: RiderDTO;
 
     public horses: Horse[];
+    public scores: Score[];
 
     constructor(dto: RiderDTO) {
         this._dto = dto;
