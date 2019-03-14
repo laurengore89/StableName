@@ -13,20 +13,40 @@
         "Name": "2016 Badminton"
       },
       {
-        "Fei": "2018_CI_0015_D_S_03_01",
-        "Name": "2018 Hickstead Dressage Grand Prix"
-      },
-      {
         "Fei": "2015_CI_0097_C_S_01_01",
         "Name": "2015 Badminton"
       },
       {
-        "Fei": "2016_OG_0001_D_S_01_01",
-        "Name": "2016 Rio Olympic Dressage Grand Prix"
+        "Fei": "2018_CI_0134_C_S_01_01",
+        "Name": "2018 Burghley"
       },
       {
-        "Fei": "2017_CI_0288_D_S_01_01",
-        "Name": "2017 Hickstead GP"
+        "Fei": "2017_CI_0045_C_S_01_01",
+        "Name": "2017 Burghley"
+      },
+      {
+        "Fei": "2016_CI_0089_C_S_01_01",
+        "Name": "2016 Burghley"
+      },
+      {
+        "Fei": "2015_CI_0141_C_S_01_01",
+        "Name": "2015 Burghley"
+      },
+      {
+        "Fei": "2018_CI_0083_C_S_02_01",
+        "Name": "2018 Luhmühlen"
+      },
+      {
+        "Fei": "2017_CI_0143_C_S_02_01",
+        "Name": "2017 Luhmühlen"
+      },
+      {
+        "Fei": "2016_CI_0059_C_S_01_01",
+        "Name": "2016 Luhmühlen"
+      },
+      {
+        "Fei": "2015_CI_0047_C_S_01_01",
+        "Name": "2015 Luhmühlen"
       },
       {
         "Fei": "2016_OG_0001_S_S_01_03",
@@ -41,36 +61,16 @@
         "Name": "2015 Cannes Longines Global Champions Tour Jumping Grand Prix"
       },
       {
-        "Fei": "2015_CI_0141_C_S_01_01",
-        "Name": "2015 Burghley"
+        "Fei": "2018_CI_0015_D_S_03_01",
+        "Name": "2018 Hickstead Dressage Grand Prix"
       },
       {
-        "Fei": "2016_CI_0089_C_S_01_01",
-        "Name": "2016 Burghley"
+        "Fei": "2017_CI_0288_D_S_01_01",
+        "Name": "2017 Hickstead Dressage Grand Prix"
       },
       {
-        "Fei": "2017_CI_0045_C_S_01_01",
-        "Name": "2017 Burghley"
-      },
-      {
-        "Fei": "2018_CI_0134_C_S_01_01",
-        "Name": "2018 Burghley"
-      },
-      {
-        "Fei": "2016_CI_0059_C_S_01_01",
-        "Name": "2016 Luhmühlen"
-      },
-      {
-        "Fei": "2018_CI_0083_C_S_02_01",
-        "Name": "2018 Luhmühlen"
-      },
-      {
-        "Fei": "2017_CI_0143_C_S_02_01",
-        "Name": "2017 Luhmühlen"
-      },
-      {
-        "Fei": "2015_CI_0047_C_S_01_01",
-        "Name": "2015 Luhmühlen"
+        "Fei": "2016_OG_0001_D_S_01_01",
+        "Name": "2016 Rio Olympic Dressage Grand Prix"
       }
     ],
     "horses": [
