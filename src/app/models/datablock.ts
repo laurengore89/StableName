@@ -45,17 +45,6 @@ export class Datablock {
         this.horses = datajson.horses.map((h: HorseDTO) => new Horse(h));
         this.riders = datajson.riders.map((r: RiderDTO) => new Rider(r));
         this.competitions = datajson.competitions;
-
-        this.riders.forEach((r: Rider) => {
-            let riderHorses = this.scores.filter(s => s.Rider.Fei === r.Fei).map(s => s.Horse.Fei);
-            let uniqueHorses: string[] = [];
-            riderHorses.forEach(horse => {
-                if (uniqueHorses.filter(hr => hr === horse).length === 0) {
-                    uniqueHorses.push(horse);
-                }
-            });
-            r.HorseCount = uniqueHorses.length;
-        });
     }
 
     private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {
