@@ -14,10 +14,11 @@ export class RiderComponent implements OnInit {
   ngOnInit(): void {
     this.horses = [];
     this.datablock.scores.filter(s => s.Rider.Fei === this.rider.Fei).map(s => s.Horse.Fei).forEach(f => {
-      if (this.horses.find(h => h.Fei === f) === undefined) {
+      if (!this.horses.some(h => h.Fei === f)) {
         this.horses.push(this.datablock.horses.find(h => h.Fei === f));
       }
     });
+    this.horses.sort((a, b) => { if (a.Fei > b.Fei) { return 1; } if (a.Fei < b.Fei) { return -1; } return 0; });
   }
 }
 
