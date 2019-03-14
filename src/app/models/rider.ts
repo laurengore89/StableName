@@ -1,5 +1,6 @@
 import { Nationality, Gender } from '../enums';
 import { Horse } from './horse';
+import { Score } from './score';
 
 export class RiderDTO {
     public n: string; // full name
