@@ -141,7 +141,8 @@ export class Datablock {
                     }
                 });
 
-                saveAs(new Blob([JSON.stringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
+                let jsonStringify = require('json-pretty');
+                saveAs(new Blob([jsonStringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
             });
     }
 }
