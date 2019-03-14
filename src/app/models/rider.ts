@@ -1,4 +1,5 @@
 import { Nationality, Gender } from '../enums';
+import { Horse } from './horse';
 
 export class RiderDTO {
     public n: string; // full name
@@ -23,6 +24,8 @@ export class Rider {
     private _gender?: Gender;
     private _nationality?: Nationality;
     private _dto: RiderDTO;
+
+    public horses: Horse[];
 
     constructor(dto: RiderDTO) {
         this._dto = dto;

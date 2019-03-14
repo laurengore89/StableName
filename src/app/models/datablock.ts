@@ -45,6 +45,16 @@ export class Datablock {
         this.horses = datajson.horses.map((h: HorseDTO) => new Horse(h));
         this.riders = datajson.riders.map((r: RiderDTO) => new Rider(r));
         this.competitions = datajson.competitions;
+
+        this.riders.forEach(r => {
+            r.horses = [];
+            this.scores.filter(s => s.Rider.Fei === r.Fei).map(s => s.Horse.Fei).forEach(f => {
+              if (!r.horses.some(h => h.Fei === f)) {
+                r.horses.push(this.horses.find(h => h.Fei === f));
+              }
+            });
+            r.horses.sort((a, b) => { if (a.Name > b.Name) { return 1; } if (a.Name < b.Name) { return -1; } return 0; });
+        });
     }
 
     private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {

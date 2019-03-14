@@ -1,6 +1,6 @@
 <div style="text-align: left">
   <h2 style="display: inline"><a href="https://www.fei.org/athlete/{{ rider.Fei }}/">{{ rider.Name }}</a>&nbsp;<a href="https://data.fei.org/Person/Performance.aspx?personfeiid={{ rider.Fei }}">[data]</a></h2>, <span *ngIf="rider.Age">{{ rider.Age }} </span><span>{{ rider.BaseDescriptor }}</span>
-  <span *ngFor="let horse of horses">
+  <span *ngFor="let horse of rider.horses">
     <sn-horse [horse] = "horse"></sn-horse>
   </span>
   <hr />
