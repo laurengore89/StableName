@@ -1,5 +1,5 @@
 <div class="row horse coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
-  <div class="col-sm-6">
+  <div class="col-sm-6 horse-image">
     <svg style="max-width: 480px;" viewBox="0 0 1453 888" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g id="mane-tail-fill">
         <path
@@ -513,7 +513,7 @@
       </g>
     </svg>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-6 horse-desc">
     <h3><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a>&nbsp;<a
         href="https://data.fei.org/Horse/Performance.aspx?horsefeiid={{ horse.Fei }}">[data]</a></h3>
     <p>
