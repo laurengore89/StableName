@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "variables.scss";
 
 body, div {
-    background-color: #0a4d48;
-    color: #6da2a2;
+    background-color: $background-body;
+    color: $default-text;
 }
 
 a, a:visited, a:hover, a:active {
-    color: #ffffff;
+    color: $default-links;
 }
 
 h1 {

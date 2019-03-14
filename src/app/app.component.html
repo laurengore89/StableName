@@ -3,9 +3,9 @@
     {{ title }}
   </h1>
   <hr />
-<span *ngFor="let rider of ridersShow">
+<ng-container *ngFor="let rider of ridersShow">
   <!-- <sn-rider *ngIf="rider.Fei == '10004203'" [rider] = "rider"></sn-rider> -->
   <sn-rider [rider] = "rider"></sn-rider>
-</span>
+</ng-container>
 <hr />
 </div>

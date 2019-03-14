@@ -1,11 +1,11 @@
-<div class="row">
+<div class="row rider">
   <div class="col-sm-12">
     <h2 style="display: inline"><a href="https://www.fei.org/athlete/{{ rider.Fei }}/">{{ rider.Name }}</a>&nbsp;<a
-        href="https://data.fei.org/Person/Performance.aspx?personfeiid={{ rider.Fei }}">[data]</a></h2>, <span
-      *ngIf="rider.Age">{{ rider.Age }} </span><span>{{ rider.BaseDescriptor }}</span>
-    <span *ngFor="let horse of rider.horses">
+        href="https://data.fei.org/Person/Performance.aspx?personfeiid={{ rider.Fei }}">[data]</a></h2>, <ng-container
+      *ngIf="rider.Age">{{ rider.Age }} </ng-container><ng-container>{{ rider.BaseDescriptor }}</ng-container>
+    <ng-container *ngFor="let horse of rider.horses">
       <sn-horse [horse]="horse"></sn-horse>
-    </span>
+    </ng-container>
   </div>
 </div>
-<hr />
+<div class="row spacer"></div>
