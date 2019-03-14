@@ -18,7 +18,7 @@ export class RiderComponent implements OnInit {
         this.horses.push(this.datablock.horses.find(h => h.Fei === f));
       }
     });
-    this.horses.sort((a, b) => { if (a.Fei > b.Fei) { return 1; } if (a.Fei < b.Fei) { return -1; } return 0; });
+    this.horses.sort((a, b) => { if (a.Name > b.Name) { return 1; } if (a.Name < b.Name) { return -1; } return 0; });
   }
 }
 
