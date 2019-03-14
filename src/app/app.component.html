@@ -3,7 +3,7 @@
     {{ title }}
   </h1>
   <hr />
-<span *ngFor="let rider of datablock.riders">
+<span *ngFor="let rider of ridersShow">
   <!-- <sn-rider *ngIf="rider.Fei == '10004203'" [rider] = "rider" [datablock] = "datablock"></sn-rider> -->
   <sn-rider [rider] = "rider" [datablock] = "datablock"></sn-rider>
 </span>

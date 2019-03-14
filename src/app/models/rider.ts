@@ -24,6 +24,8 @@ export class Rider {
     private _nationality?: Nationality;
     private _dto: RiderDTO;
 
+    public HorseCount: number;
+
     constructor(dto: RiderDTO) {
         this._dto = dto;
 

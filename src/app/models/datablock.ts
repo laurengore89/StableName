@@ -18,17 +18,11 @@ class DatablockDTO {
     constructor(db: Datablock) {
         this.competitions = db.competitions;
         this.horses = [];
-        db.horses.forEach(h => {
-            this.horses.push(h.Dto);
-        });
+        db.horses.forEach(h => this.horses.push(h.Dto));
         this.riders = [];
-        db.riders.forEach(r => {
-            this.riders.push(r.Dto);
-        });
+        db.riders.forEach(r => this.riders.push(r.Dto));
         this.scores = [];
-        db.scores.forEach(s => {
-            this.scores.push(s.Dto);
-        });
+        db.scores.forEach(s => this.scores.push(s.Dto));
     }
 }
 
@@ -47,13 +41,21 @@ export class Datablock {
     }
 
     private buildFromJson() {
-        this.horses = [];
-        datajson.horses.forEach((h: HorseDTO) => this.horses.push(new Horse(h)));
-        this.riders = [];
-        datajson.riders.forEach((r: RiderDTO) => this.riders.push(new Rider(r)));
-        this.scores = [];
-        datajson.scores.forEach((s: ScoreDTO) => this.scores.push(new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t)));
+        this.scores = datajson.scores.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t));
+        this.horses = datajson.horses.map((h: HorseDTO) => new Horse(h));
+        this.riders = datajson.riders.map((r: RiderDTO) => new Rider(r));
         this.competitions = datajson.competitions;
+
+        this.riders.forEach((r: Rider) => {
+            let riderHorses = this.scores.filter(s => s.Rider.Fei === r.Fei).map(s => s.Horse.Fei);
+            let uniqueHorses: string[] = [];
+            riderHorses.forEach(horse => {
+                if (uniqueHorses.filter(hr => hr === horse).length === 0) {
+                    uniqueHorses.push(horse);
+                }
+            });
+            r.HorseCount = uniqueHorses.length;
+        });
     }
 
     private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {
