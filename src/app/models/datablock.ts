@@ -32,11 +32,11 @@ export class Datablock {
     public horses: Horse[];
     public riders: Rider[];
 
-    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionPattern: string) {
+    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionYear: number, competitionPattern: string) {
         this.buildFromJson();
 
-        if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
-            this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
+        if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionYear > 0 && competitionPattern !== '') {
+            this.processRawTextToScores(filename, competitionFei, competitionName, competitionYear, competitionPattern);
         }
     }
 
@@ -61,7 +61,7 @@ export class Datablock {
         });
     }
 
-    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionPattern: string): void {
+    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionYear: number, competitionPattern: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
                 const lines: string[] = data.split(/\r?\n/);
@@ -128,7 +128,7 @@ export class Datablock {
 
                 // known competition?
                 if (this.competitions.find(c => c.Fei === competitionFei) === undefined) {
-                    this.competitions.push(new Competition(competitionFei, competitionName));
+                    this.competitions.push(new Competition(competitionFei, competitionName, competitionYear));
                 }
 
                 // see if there are any horses/riders/competitions in the scores we don't list yet

@@ -77,6 +77,6 @@ export class Score {
     }
 
     get Competition() {
-        return new Competition(this._competition, '');
+        return new Competition(this._competition, '', 0);
     }
 }

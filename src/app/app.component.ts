@@ -15,11 +15,11 @@ export class AppComponent {
   ridersShow: Rider[];
 
   constructor(private http: HttpClient) {
-    this.datablock = new Datablock(http, '', '', '', '');
+    this.datablock = new Datablock(http, '', '', '', 0, '');
     this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei)).sort((a, b) => { if (a.Fei > b.Fei) { return 1; } if (a.Fei < b.Fei) { return -1; } return 0; });
   }
 
   // constructor(private http: HttpClient) {
-  //   this.datablock = new Datablock(http, 'assets/input.txt', '2015_CI_0047_C_S_01_01', '2015 Luhmühlen', RegexPattern.Eventing);
+  //   this.datablock = new Datablock(http, 'assets/input.txt', '2015_CI_0426_C_S_02_01', 'Pau', 2015, RegexPattern.Eventing);
   // }
 }
