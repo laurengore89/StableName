@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
 
-import { Competition } from './competition';
+import { Competition, CompetitionDTO } from './competition';
 import { ScoreDTO, Score, Result } from './score';
 import { HorseDTO, Horse } from './horse';
 import { RiderDTO, Rider } from './rider';
@@ -10,13 +10,14 @@ import { RegexPattern } from '../enums';
 import datajson from '../data/datablock.json';
 
 class DatablockDTO {
-    public competitions: Competition[];
+    public competitions: CompetitionDTO[];
     public scores: ScoreDTO[];
     public horses: HorseDTO[];
     public riders: RiderDTO[];
 
     constructor(db: Datablock) {
-        this.competitions = db.competitions;
+        this.competitions = [];
+        db.competitions.forEach(c => this.competitions.push(c.Dto));
         this.horses = [];
         db.horses.forEach(h => this.horses.push(h.Dto));
         this.riders = [];
@@ -44,7 +45,7 @@ export class Datablock {
         this.scores = datajson.scores.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t));
         this.horses = datajson.horses.map((h: HorseDTO) => new Horse(h));
         this.riders = datajson.riders.map((r: RiderDTO) => new Rider(r));
-        this.competitions = datajson.competitions;
+        this.competitions = datajson.competitions.map((c: CompetitionDTO) => new Competition(c));
 
         this.riders.forEach(r => {
             r.scores = this.scores.filter(s => s.Rider.Fei === r.Fei);
@@ -128,7 +129,7 @@ export class Datablock {
 
                 // known competition?
                 if (this.competitions.find(c => c.Fei === competitionFei) === undefined) {
-                    this.competitions.push(new Competition(competitionFei, competitionName, competitionYear));
+                    this.competitions.push(this.scores[0].Competition);
                 }
 
                 // see if there are any horses/riders/competitions in the scores we don't list yet

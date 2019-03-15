@@ -1,7 +1,7 @@
 import { Studbook } from '../enums';
 import { Horse, HorseDTO } from './horse';
 import { Rider, RiderDTO } from './rider';
-import { Competition } from './competition';
+import { Competition, CompetitionDTO } from './competition';
 import { ToTitleCase } from '../shared/utils';
 
 export class Result {
@@ -77,6 +77,6 @@ export class Score {
     }
 
     get Competition() {
-        return new Competition(this._competition, '', 0);
+        return new Competition(new CompetitionDTO(this._competition, '', 0, null, null));
     }
 }
