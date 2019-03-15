@@ -10,20 +10,20 @@ import { RegexPattern } from '../enums';
 import datajson from '../data/datablock.json';
 
 class DatablockDTO {
-    public competitions: CompetitionDTO[];
-    public scores: ScoreDTO[];
-    public horses: HorseDTO[];
-    public riders: RiderDTO[];
+    public c: CompetitionDTO[];
+    public s: ScoreDTO[];
+    public h: HorseDTO[];
+    public r: RiderDTO[];
 
     constructor(db: Datablock) {
-        this.competitions = [];
-        db.competitions.forEach(c => this.competitions.push(c.Dto));
-        this.horses = [];
-        db.horses.forEach(h => this.horses.push(h.Dto));
-        this.riders = [];
-        db.riders.forEach(r => this.riders.push(r.Dto));
-        this.scores = [];
-        db.scores.forEach(s => this.scores.push(s.Dto));
+        this.c = [];
+        db.competitions.forEach(co => this.c.push(co.Dto));
+        this.h = [];
+        db.horses.forEach(hr => this.h.push(hr.Dto));
+        this.r = [];
+        db.riders.forEach(ri => this.r.push(ri.Dto));
+        this.s = [];
+        db.scores.forEach(sc => this.s.push(sc.Dto));
     }
 }
 
@@ -42,10 +42,10 @@ export class Datablock {
     }
 
     private buildFromJson() {
-        this.scores = datajson.scores.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t));
-        this.horses = datajson.horses.map((h: HorseDTO) => new Horse(h));
-        this.riders = datajson.riders.map((r: RiderDTO) => new Rider(r));
-        this.competitions = datajson.competitions.map((c: CompetitionDTO) => new Competition(c));
+        this.scores = datajson.s.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t));
+        this.horses = datajson.h.map((h: HorseDTO) => new Horse(h));
+        this.riders = datajson.r.map((r: RiderDTO) => new Rider(r));
+        this.competitions = datajson.c.map((c: CompetitionDTO) => new Competition(c));
 
         this.riders.forEach(r => {
             r.scores = this.scores.filter(s => s.Rider.Fei === r.Fei);
