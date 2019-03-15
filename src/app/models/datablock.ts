@@ -33,11 +33,11 @@ export class Datablock {
     public horses: Horse[];
     public riders: Rider[];
 
-    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionYear: number, competitionPattern: string) {
+    constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionPattern: string) {
         this.buildFromJson();
 
-        if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionYear > 0 && competitionPattern !== '') {
-            this.processRawTextToScores(filename, competitionFei, competitionName, competitionYear, competitionPattern);
+        if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
+            this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
         }
     }
 
@@ -62,7 +62,7 @@ export class Datablock {
         });
     }
 
-    private processRawTextToScores(filename: string, competitionFei: string, competitionEventSeries: string, competitionYear: number, competitionPattern: string): void {
+    private processRawTextToScores(filename: string, competitionFei: string, competitionEventSeries: string, competitionPattern: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
                 const lines: string[] = data.split(/\r?\n/);
@@ -129,7 +129,7 @@ export class Datablock {
 
                 // known competition?
                 if (this.competitions.find(c => c.Fei === competitionFei) === undefined) {
-                    this.competitions.push(new Competition(new CompetitionDTO(competitionFei, competitionEventSeries, competitionYear)));
+                    this.competitions.push(new Competition(new CompetitionDTO(competitionFei, competitionEventSeries)));
                 }
 
                 // see if there are any horses/riders/competitions in the scores we don't list yet

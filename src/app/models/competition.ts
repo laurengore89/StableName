@@ -7,10 +7,10 @@ export class CompetitionDTO {
     public j?: string;
     public d?: string;
 
-    constructor(fei: string, eventseries: string, year: number) {
+    constructor(fei: string, eventseries: string) {
         this.f = fei;
         this.e = eventseries;
-        this.y = year;
+        this.y = Number(fei.substring(0, 4));
     }
 }
 
