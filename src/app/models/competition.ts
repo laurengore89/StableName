@@ -7,12 +7,10 @@ export class CompetitionDTO {
     public j?: string;
     public d?: string;
 
-    constructor(fei: string, eventseries: string, year: number, dressage: string, jumping: string) {
+    constructor(fei: string, eventseries: string, year: number) {
         this.f = fei;
         this.e = eventseries;
         this.y = year;
-        this.d = dressage;
-        this.j = jumping;
     }
 }
 

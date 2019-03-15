@@ -20,6 +20,6 @@ export class AppComponent {
   }
 
   // constructor(private http: HttpClient) {
-  //   this.datablock = new Datablock(http, 'assets/input.txt', '2015_CI_0426_C_S_02_01', 'Pau', 2015, RegexPattern.Eventing);
+  //   this.datablock = new Datablock(http, 'assets/input.txt', '2015_CI_1108_C_S_01_01', 'A', 2015, RegexPattern.Eventing);
   // }
 }

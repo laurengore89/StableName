@@ -62,7 +62,7 @@ export class Datablock {
         });
     }
 
-    private processRawTextToScores(filename: string, competitionFei: string, competitionName: string, competitionYear: number, competitionPattern: string): void {
+    private processRawTextToScores(filename: string, competitionFei: string, competitionEventSeries: string, competitionYear: number, competitionPattern: string): void {
         this.http.get(filename, { responseType: 'text' })
             .subscribe(data => {
                 const lines: string[] = data.split(/\r?\n/);
@@ -129,7 +129,7 @@ export class Datablock {
 
                 // known competition?
                 if (this.competitions.find(c => c.Fei === competitionFei) === undefined) {
-                    this.competitions.push(this.scores[0].Competition);
+                    this.competitions.push(new Competition(new CompetitionDTO(competitionFei, competitionEventSeries, competitionYear)));
                 }
 
                 // see if there are any horses/riders/competitions in the scores we don't list yet

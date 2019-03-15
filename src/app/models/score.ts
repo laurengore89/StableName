@@ -77,6 +77,6 @@ export class Score {
     }
 
     get Competition() {
-        return new Competition(new CompetitionDTO(this._competition, '', 0, null, null));
+        return new Competition(new CompetitionDTO(this._competition, '', 0));
     }
 }
