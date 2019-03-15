@@ -6,7 +6,7 @@
     </div>
     <div class="col-sm-12">
     <ng-container *ngFor="let horse of rider.horses">
-      <sn-horse [horse]="horse"></sn-horse>
+      <sn-horse [horse]="horse" [ridername]="rider.Name"></sn-horse>
     </ng-container>
   </div>
 </div>
