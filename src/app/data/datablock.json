@@ -9526,12 +9526,12 @@
     {
       "n": "Vermiculus",
       "f": "104BH81",
-      "s": "",
-      "c": "",
-      "x": "",
-      "h": 0,
-      "d": 0,
-      "l": ""
+      "s": "Bug",
+      "c": "BrB",
+      "x": "G",
+      "h": 16.0,
+      "d": 2007,
+      "l": "BBBB"
     },
     {
       "n": "Tsetserleg",
@@ -10393,7 +10393,7 @@
       "l": ""
     },
     {
-      "n": "Ballynoe Castle Rm",
+      "n": "Ballynoe Castle RM",
       "f": "USA40729",
       "s": "",
       "c": "",
