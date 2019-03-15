@@ -58,7 +58,7 @@ export class Datablock {
                 r.horses.push(this.horses.find(h => h.Fei === f));
               }
             });
-            r.horses.sort((a, b) => { if (a.Name > b.Name) { return 1; } if (a.Name < b.Name) { return -1; } return 0; });
+            r.horses.sort((a, b) => { if (a.Name.toLocaleLowerCase() > b.Name.toLocaleLowerCase()) { return 1; } if (a.Name.toLocaleLowerCase() < b.Name.toLocaleLowerCase()) { return -1; } return 0; });
         });
     }
 
