@@ -3,16 +3,16 @@
 @import "horse-svg.scss";
 
 div.horse {
-    div {
-        background-color: $background-inner;
+  div {
+    background-color: $background-panels;
+    padding: 10px;
+
+    &.horse-image {
+      border-radius: 10px 0 0 10px;
     }
-}
 
-div.horse-image {
-    border-radius: 10px 0 0 10px;
-    padding-bottom: 10px;
-}
-
-div.horse-desc {
-    border-radius: 0 10px 10px 0;
+    &.horse-desc {
+      border-radius: 0 10px 10px 0;
+    }
+  }
 }
