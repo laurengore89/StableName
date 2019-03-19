@@ -74,14 +74,21 @@ export class Datablock {
 
                     if (matches != null) {
                         // check we're not duplicating existing scores
+                        let result = new Result();
+                        let updatePendingScore = false;
                         let rider = currentEntry[1];
                         let horse = currentEntry[3];
                         let oldScore = this.scores.find(s => s.Horse.Fei === horse && s.Rider.Fei === rider && s.Competition.Fei === competitionFei);
-                        if (oldScore !== undefined && oldScore.Result !== null && oldScore.Result !== undefined && oldScore.Result.p !== 'PEND') {
-                            return;
+                        if (oldScore !== undefined && oldScore.Result !== null && oldScore.Result !== undefined) {
+                            if (oldScore.Result.p !== 'PEND')  {
+                                console.log('Duplicate non-pending score for rider ' + rider + ' horse ' + horse + '! Result position ' + oldScore.Result.p);
+                                return;
+                            }
+                            console.log('Updating pending score for rider ' + rider + ' horse ' + horse + '...');
+                            result = oldScore.Result;
+                            updatePendingScore = true;
                         }
 
-                        let result = new Result();
                         if (competitionPattern === RegexPattern.EventingOlympicJO) {
                             result.a = Number(matches[1]);
                             result.b = Number(matches[2]);
@@ -122,7 +129,9 @@ export class Datablock {
                                 result.e = Number(splits[1]);
                             }
                         }
-                        this.scores.push(new Score(competitionFei, currentEntry, result));
+                        if (!updatePendingScore) {
+                            this.scores.push(new Score(competitionFei, currentEntry, result));
+                        }
                         currentEntry = [];
                     }
                 });
