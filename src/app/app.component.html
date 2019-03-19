@@ -3,7 +3,7 @@
     {{ title }}
   </h1>
   <hr />
-<ng-container *ngFor="let rider of ridersShow">
+<ng-container *ngFor="let rider of ridersShow.slice(0,25)">
   <!-- <sn-rider *ngIf="rider.Fei == '10004203'" [rider] = "rider"></sn-rider> -->
   <sn-rider [rider] = "rider"></sn-rider>
 </ng-container>
