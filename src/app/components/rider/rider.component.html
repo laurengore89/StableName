@@ -4,7 +4,7 @@
       *ngIf="rider.Age">{{ rider.Age }} </ng-container>{{ rider.BaseDescriptor }} {{ rider.Fei }}
     </div>
     <div class="col-sm-12">
-    <ng-container *ngFor="let horse of rider.horses">
+    <ng-container *ngFor="let horse of horsesShow">
       <sn-horse [horse]="horse" [ridername]="rider.Name"></sn-horse>
     </ng-container>
   </div>
