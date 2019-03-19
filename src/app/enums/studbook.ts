@@ -24,6 +24,7 @@ export enum Studbook {
     CDE = 'Spanish Sport Horse',
     CH = 'Swiss Sport Horse',
     'Cheval Suisse' = 'Cheval Suisse',
+    CNN = 'Connemara Sport Horse',
     CSHA = 'Canadian Sport Horse',
     CWHBA = 'Canadian Warmblood',
     CZEWB = 'Czech Warmblood',

@@ -69,7 +69,7 @@ export class Score {
     }
 
     get Rider() {
-        return new Rider(new RiderDTO(ToTitleCase(this._ridername), this._rider, '', 0, this._ridernation));
+        return new Rider(new RiderDTO(ToTitleCase(this._ridername), '', this._rider, '', 0, this._ridernation));
     }
 
     get Result() {

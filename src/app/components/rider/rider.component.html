@@ -1,6 +1,6 @@
 <div class="row rider">
   <div class="col-sm-12 rider-desc">
-    <h2 class="rider-name"><a href="https://www.fei.org/athlete/{{ rider.Fei }}/">{{ rider.Name }}</a></h2>, <ng-container
+    <h2 class="rider-name"><a href="https://www.fei.org/athlete/{{ rider.Fei }}/">{{ rider.Name }}</a></h2> <ng-container *ngIf="rider.OtherName"> ({{ rider.OtherName }})</ng-container>, <ng-container
       *ngIf="rider.Age">{{ rider.Age }} </ng-container>{{ rider.BaseDescriptor }} {{ rider.Fei }}
     </div>
     <div class="col-sm-12">

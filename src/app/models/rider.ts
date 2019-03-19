@@ -3,14 +3,16 @@ import { Horse } from './horse';
 import { Score } from './score';
 
 export class RiderDTO {
-    public n: string; // full name
+    public n: string; // competition name
     public f: string; // FEI ID
+    public m?: string; // other names
     public b?: number; // year of birth
     public g?: string; // gender, per Gender enum
     public t?: string; // nationality, per Nationality enum
 
-    constructor(name: string, fei: string, gender: string, born: number, nationality: string) {
+    constructor(name: string, othername: string, fei: string, gender: string, born: number, nationality: string) {
         this.n = name;
+        this.m = othername;
         this.f = fei;
         this.g = gender;
         this.b = born;
@@ -20,6 +22,7 @@ export class RiderDTO {
 
 export class Rider {
     private _name: string;
+    private _othername: string;
     private _fei: string;
     private _born?: number;
     private _gender?: Gender;
@@ -33,6 +36,7 @@ export class Rider {
         this._dto = dto;
 
         this._name = dto.n;
+        this._othername = dto.m;
         this._fei = dto.f;
         this._gender = Gender[dto.g];
         this._born = dto.b;
@@ -45,6 +49,10 @@ export class Rider {
 
     get Name(): string {
         return this._name;
+    }
+
+    get OtherName(): string {
+        return this._othername;
     }
 
     get Fei(): string {
