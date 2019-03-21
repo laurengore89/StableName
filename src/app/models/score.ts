@@ -5,7 +5,7 @@ import { Competition, CompetitionDTO } from './competition';
 import { ToTitleCase } from '../shared/utils';
 
 export class Result {
-    public p: string; // final position on scoreboard, or EL / RET / WD
+    public p: string; // final position on scoreboard, or EL / RET / WD / DSQ
     public a?: number; // dressage score
     public b?: number; // cross-country obstacle faults
     public c?: number; // cross-country time faults
@@ -13,7 +13,7 @@ export class Result {
     public e?: number; // showjumping time faults
     public f?: number; // jump-off, if any, obstacle faults
     public g?: number; // jump-off, if any, time faults
-    public o: string; // final score, or nature of EL / RET / WD incident
+    public o: string; // final score, or nature of EL / RET / WD / DSQ incident
 }
 
 export class ScoreDTO {
