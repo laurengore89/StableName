@@ -14,13 +14,13 @@ export class AppComponent {
   datablock: Datablock;
   ridersShow: Rider[];
 
-  // constructor(private http: HttpClient) {
-  //   this.datablock = new Datablock(http, '', '', '', '');
-  //   this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei)).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; }).slice(0, 25);
-  //   // this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei && s.Competition.Fei === '2019_BADMINTON')).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; });
-  // }
-
   constructor(private http: HttpClient) {
-    this.datablock = new Datablock(http, 'assets/input.txt', '2010_CI_0556_C_S_01_01', 'A', RegexPattern.Eventing);
+    this.datablock = new Datablock(http, '', '', '', '');
+    this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei)).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; }).slice(0, 25);
+    // this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei && s.Competition.Fei === '2019_BADMINTON')).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; });
   }
+
+  // constructor(private http: HttpClient) {
+  //   this.datablock = new Datablock(http, 'assets/input.txt', '2010_CI_0276_C_S_01_01', 'Lx', RegexPattern.Eventing);
+  // }
 }
