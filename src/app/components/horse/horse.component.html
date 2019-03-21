@@ -515,9 +515,7 @@
     </svg>
   </div>
   <div class="col-sm-6 horse-desc">
-    <h3 [class.deceased]="horse.Deceased"><a
-        href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a>&nbsp;<a
-        (click)="openDataPages()">[data]</a></h3>
+    <h3 [class.deceased]="horse.Deceased"><a (click)="openNotes()">{{ horse.Name }}</a>&nbsp;<a *ngIf="horse.Sex === ''" (click)="openDataPages()">[data]</a></h3>
     <p [class.deceased]="horse.Deceased">
       <ng-container *ngIf="horse.Age">{{ horse.Age }} </ng-container>
       <ng-container>{{ horse.Colour }} {{ horse.Sex }}</ng-container>
@@ -527,6 +525,9 @@
       <ng-container *ngIf="horse.Studbook">{{ horse.Studbook }}</ng-container>
       <ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>
       {{ horse.Fei }}
+    </p>
+    <p *ngIf="horse.Notes !== ''">
+      {{ horse.Notes }}
     </p>
   </div>
 </div>

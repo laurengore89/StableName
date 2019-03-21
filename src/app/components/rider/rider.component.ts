@@ -12,7 +12,7 @@ export class RiderComponent implements OnInit {
 
   ngOnInit() {
     this.horsesShow = this.rider.horses;
-    // this.horsesShow = this.rider.horses.filter(h => this.rider.scores.some(s => s.Horse.Fei === h.Fei && s.Competition.Fei === '2019_BADMINTON'));
+    // this.horsesShow = this.rider.horses.filter(h => h.Name === 'My Last One');
   }
 }
 

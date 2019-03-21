@@ -1,5 +1,7 @@
 import { Studbook, Colour, Legmarking, Sex } from '../enums';
 
+import notesjson from '../data/notes.json';
+
 export class Height {
     public Hands: number;
     public Inches: number;
@@ -138,6 +140,14 @@ export class Horse {
             return '';
         }
         return Colour[ this._colour].toLocaleLowerCase().replace('bay', ' bay').replace('chestnut', ' chestnut').replace('brown', ' brown').trim();
+    }
+
+    get Notes(): string {
+        let note = notesjson.horses.filter(nt => nt.fei === this.Fei);
+        if (note[0] !== undefined) {
+            return note[0].note;
+        }
+        return '';
     }
 
     get Nearfore(): string {
