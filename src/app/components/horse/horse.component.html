@@ -526,7 +526,8 @@
       <ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>
       {{ horse.Fei }}
     </p>
-    <p *ngIf="horse.Notes !== ''" innerHTML="{{ horse.Notes }}">      
+    <p *ngIf="showNotes && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      
     </p>
+    <p *ngIf="!showNotes && horse.Notes !== ''" (click)="showNotes = true">...</p>
   </div>
 </div>
