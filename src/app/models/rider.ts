@@ -2,6 +2,8 @@ import { Nationality, Gender } from '../enums';
 import { Horse } from './horse';
 import { Score } from './score';
 
+import notesjson from '../data/notes.json';
+
 export class RiderDTO {
     public n: string; // competition name
     public f: string; // FEI ID
@@ -57,6 +59,14 @@ export class Rider {
 
     get Fei(): string {
         return this._fei;
+    }
+
+    get Notes(): string {
+        let note = notesjson.riders.filter(nt => nt.fei === this.Fei);
+        if (note[0] !== undefined) {
+            return note[0].note;
+        }
+        return '';
     }
 
     get Nationality(): string {
