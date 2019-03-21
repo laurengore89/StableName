@@ -1,4 +1,5 @@
-<div class="row horse coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
+<div
+  class="row horse coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}">
   <div class="col-sm-6 horse-image">
     <svg style="max-width: 480px;" viewBox="0 0 1453 888" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g id="mane-tail-fill">
@@ -514,10 +515,18 @@
     </svg>
   </div>
   <div class="col-sm-6 horse-desc">
-    <h3><a href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a>&nbsp;<a (click)="openDataPages()">[data]</a></h3>
-    <p>
-      <ng-container *ngIf="horse.Age">{{ horse.Age }} </ng-container><ng-container>{{ horse.Colour }} {{ horse.Sex }}</ng-container><ng-container *ngIf="horse.Height">,
-        {{ horse.Height }}</ng-container><ng-container *ngIf="(horse.Age || horse.Colour || horse.Sex || horse.Height) && horse.Studbook">, </ng-container><ng-container *ngIf="horse.Studbook">{{ horse.Studbook }}</ng-container><ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>{{ horse.Fei }}
+    <h3 [class.deceased]="horse.Deceased"><a
+        href="https://www.fei.org/horse/{{ horse.Fei }}/">{{ horse.Name }}</a>&nbsp;<a
+        (click)="openDataPages()">[data]</a></h3>
+    <p [class.deceased]="horse.Deceased">
+      <ng-container *ngIf="horse.Age">{{ horse.Age }} </ng-container>
+      <ng-container>{{ horse.Colour }} {{ horse.Sex }}</ng-container>
+      <ng-container *ngIf="horse.Height">,
+        {{ horse.Height }}</ng-container>
+      <ng-container *ngIf="(horse.Age || horse.Colour || horse.Sex || horse.Height) && horse.Studbook">, </ng-container>
+      <ng-container *ngIf="horse.Studbook">{{ horse.Studbook }}</ng-container>
+      <ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>
+      {{ horse.Fei }}
     </p>
   </div>
 </div>

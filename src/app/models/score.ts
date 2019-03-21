@@ -65,7 +65,7 @@ export class Score {
     }
 
     get Horse() {
-        return new Horse(new HorseDTO(ToTitleCase(this._horsename), this._horse, '', '', 0, 0, '', '', this._horsestudbook));
+        return new Horse(new HorseDTO(ToTitleCase(this._horsename), this._horse, '', '', 0, 0, '', '', this._horsestudbook, 0));
     }
 
     get Rider() {

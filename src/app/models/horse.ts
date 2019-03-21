@@ -37,8 +37,9 @@ export class HorseDTO {
     public d?: number; // year of birth
     public l?: string; // leg markings, as NEAR FORE - OFF FORE - OFF HIND - NEAR HIND
     public b?: string; // studbook, per Studbook enum
+    public z?: number; // deceased
 
-    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string) {
+    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string, deceased: number) {
         this.n = regdName;
         this.f = fei;
         this.s = stableName;
@@ -48,6 +49,7 @@ export class HorseDTO {
         this.d = foaled;
         this.l = legs;
         this.b = studbook;
+        this.z = deceased;
     }
 }
 
@@ -61,6 +63,7 @@ export class Horse {
     private _colour?: string;
     private _legs?: Legs;
     private _studbook?: string;
+    private _deceased?: number;
     private _dto: HorseDTO;
 
     constructor(dto: HorseDTO) {
@@ -75,6 +78,7 @@ export class Horse {
         this._colour = dto.c;
         this._legs = new Legs(dto.l);
         this._studbook = dto.b;
+        this._deceased = dto.z;
     }
 
     get Dto(): HorseDTO {
@@ -83,6 +87,10 @@ export class Horse {
 
     get Name(): string {
         return this._regdName + (this._stableName ? ' (' + this._stableName + ')' : '');
+    }
+
+    get Deceased(): boolean {
+        return this._deceased > 0;
     }
 
     get Studbook(): string {
@@ -107,7 +115,11 @@ export class Horse {
         if (!this._foaled) {
             return '';
         }
-        return Math.floor((new Date().getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
+        let dateTo = new Date();
+        if (this._deceased) {
+            dateTo = new Date(this._deceased, 1, 1);
+        }
+        return Math.floor((dateTo.getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
     }
 
     get Sex(): string {
