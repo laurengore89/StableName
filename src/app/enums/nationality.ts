@@ -128,7 +128,7 @@ export enum Nationality {
     THA = 'Thai',
     TKM = 'Turkmenistani',
     TPE = 'Chinese Taipei',
-    TRI = 'Trinidad/Tobago',
+    TRI = 'Trinidadian/Tobagan',
     TUN = 'Tunisian',
     TUR = 'Turkish',
     UAE = 'United Arab Emirates',
