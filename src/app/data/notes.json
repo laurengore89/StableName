@@ -2,5 +2,29 @@
 "horses": [{
     "fei": "103BD72",
     "note": "According to Sarah Bullimore, 'evil' at 5 but merely 'sharp' at 9."
+},
+{
+    "fei": "GBR42931",
+    "note": "Cause of death: complications after colic surgery."
+},
+{
+    "fei": "GBR13938",
+    "note": "Cause of death: unknown, during retirement."
+},
+{
+    "fei": "NZL40327",
+    "note": "Cause of death: cancer."
+},
+{
+    "fei": "103GK27",
+    "note": "Cause of death: broken pastern at Pau 2017."
+},
+{
+    "fei": "103JA88",
+    "note": "Cause of death: destroyed suspensory ligament at Badminton 2018."
+},
+{
+    "fei": "GBR40385",
+    "note": "Cause of death: neurological issue."
 }]
 }

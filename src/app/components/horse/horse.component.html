@@ -526,8 +526,7 @@
       <ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>
       {{ horse.Fei }}
     </p>
-    <p *ngIf="horse.Notes !== ''">
-      {{ horse.Notes }}
+    <p *ngIf="horse.Notes !== ''" innerHTML="{{ horse.Notes }}">      
     </p>
   </div>
 </div>
