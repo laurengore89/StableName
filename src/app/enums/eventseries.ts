@@ -3,7 +3,7 @@ export enum EventSeries {
     By = 'Burghley',
     P = 'Pau',
     Lx = 'Lexington',
-    Ln = 'Luhmühlen',
+    Lh = 'Luhmühlen',
     A = 'Adelaide',
     W = 'World Equestrian Games',
     O = 'Olympics'
