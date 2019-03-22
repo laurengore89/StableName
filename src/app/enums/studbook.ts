@@ -6,6 +6,7 @@ export enum Studbook {
     AHHA = 'Holsteiner',
     AHS = 'Hanoverian',
     ANAA = 'Anglo-Arab',
+    APCRC = 'Portuguese Sport Horse',
     AWHA = 'Australian Warmblood',
     AWÖ = 'Austrian Warmblood',
     AWR = 'American Warmblood',

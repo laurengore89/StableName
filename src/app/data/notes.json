@@ -34,7 +34,99 @@
         },
         {
             "fei": "GBR13384",
-            "note": "Homebred by owner, Fleetwater Opposition TRAK x TB mare. 'The ugliest foal you've ever seen' with an enormous head and mismatched front feet.<br />Cause of death: seizure."
+            "note": "By the Trakehner stallion Fleetwater Opposition out of a Thoroughbred. 'The ugliest foal you've ever seen' with an enormous head and mismatched front feet.<br />Cause of death: seizure."
+        },
+        {
+            "fei": "IRL40145",
+            "note": "Cause of death: broken fetlock at Belton 2016."
+        },
+        {
+            "fei": "GBR09616",
+            "note": "A crowd favourite, though he be but little, he is fierce."
+        },
+        {
+            "fei": "103FH43",
+            "note": "By a Thoroughbred out of a Clydesdale, allegedly. Biggest feet in eventing, the V8 Supercob."
+        },
+        {
+            "fei": "GBR41548",
+            "note": "Cause of death: acute encephalitis."
+        },
+        {
+            "fei": "AUS01737",
+            "note": "Bought off the track for $850. Survived a barn fire in 2011, three months before Burghley. Boyd Martin calls him the Legend."
+        },
+        {
+            "fei": "103CM88",
+            "note": "Named Oscar because he's a grouch at home.<br />Cause of death: heart attack."
+        },
+        {
+            "fei": "102TP05",
+            "note": "Breeding is Thoroughbred x Oldenburg."
+        },
+        {
+            "fei": "USA41877",
+            "note": "Off-track Thoroughbred, born in Kentucky.<br />Cause of death: presumed aneurysm."
+        },
+        {
+            "fei": "USA08508",
+            "note": "Off-track Thoroughbred from Maryland."
+        },
+        {
+            "fei": "USA08891",
+            "note": "Throws a few happy crow-hops after a good showjumping round.<br />Cause of death: unknown, during retirement."
+        },
+        {
+            "fei": "USA08886",
+            "note": "Off-track Thoroughbred from New Zealand.<br />Cause of death: aortic aneurysm."
+        },
+        {
+            "fei": "GBR11979",
+            "note": "Homebred out of Louise Harwood's Pony Club mare. Full brother to Partly Pickled and uncle to Mr Potts."
+        },
+        {
+            "fei": "GBR12996",
+            "note": "Homebred out of Louise Harwood's Pony Club mare. Full brother to Bit of a Barney and uncle to Mr Potts."
+        },
+        {
+            "fei": "GBR43133",
+            "note": "Homebred grandson of Louise Harwood's Pony Club mare. Nephew to Bit of a Barney and Partly Pickled."
+        },
+        {
+            "fei": "GBR13580",
+            "note": "Cause of death: injury in Young Rider class at Weston."
+        },
+        {
+            "fei": "GBR42225",
+            "note": "Same mother as Opposition Buzz."
+        },
+        {
+            "fei": "NZL01332",
+            "note": "Full brother to Nereo."
+        },
+        {
+            "fei": "GBR13000",
+            "note": "Named after Manuel from Fawlty Towers. AKA 'Spinhead', spins in circles when excited. Once sent home from a hunt for being disruptive."
+        },
+        {
+            "fei": "GBR40604",
+            "note": "Cause of death: euthanised, unknown cause."
+        },
+        {
+            "fei": "NZL40625",
+            "note": "Bred by Tim Price's parents."
+        },
+        {
+            "fei": "NZL40625",
+            "note": "Bought cheap by Tim Price because he bolted. Tim would drop the reins and pat him until he stopped. Dislikes being alone."
+        },
+        {
+            "fei": "103NY71",
+            "note": "Previous name Loroto He's a Star."
+        },
+        {
+            "fei": "103BD71",
+            "note": "Frightened of crowds."
         }
     ],
     "riders": [
@@ -43,8 +135,24 @@
             "note": "Used to be a dairy farmer."
         },
         {
+            "fei": "10000193",
+            "note": "His middle name is Clifton. Most serious fall was from Cillnabradden Evo at Gatcombe August 2015. Neck vertebra trauma requiring surgery."
+        },
+        {
             "fei": "10005138",
             "note": "His father was a milkman."
+        },
+        {
+            "fei": "10005184",
+            "note": "The Red Thunder from Down Under."
+        },
+        {
+            "fei": "10016118",
+            "note": "Doesn't like wearing shoes."
+        },
+        {
+            "fei": "10000230",
+            "note": "Most serious fall was from Reinstated at Le Lion d'Angers October 2015. Head trauma, two weeks in ICU."
         }
     ]
 }
