@@ -66,11 +66,11 @@
         },
         {
             "fei": "USA41877",
-            "note": "Off-track Thoroughbred, born in Kentucky.<br />Cause of death: presumed aneurysm."
+            "note": "Ex-racer, born in Kentucky.<br />Cause of death: presumed aneurysm."
         },
         {
             "fei": "USA08508",
-            "note": "Off-track Thoroughbred from Maryland."
+            "note": "Ex-racer from Maryland."
         },
         {
             "fei": "USA08891",
@@ -78,7 +78,7 @@
         },
         {
             "fei": "USA08886",
-            "note": "Off-track Thoroughbred from New Zealand.<br />Cause of death: aortic aneurysm."
+            "note": "Ex-racer from New Zealand.<br />Cause of death: aortic aneurysm."
         },
         {
             "fei": "GBR11979",
@@ -135,6 +135,26 @@
         {
             "fei": "103RJ16",
             "note": "Described by Tina Cook as a racing reject."
+        },
+        {
+            "fei": "103RB61",
+            "note": "Bought from a hunting yard at 4, 'nothing special .. moved like a sewing machine'. Has heavy feather in the off season."
+        },
+        {
+            "fei": "AUS41225",
+            "note": "Ex-racer. Has an 'over-excited, almost neurotic' dual personality that Elisa Wallace calls 'The Dragon'."
+        },
+        {
+            "fei": "103KN79",
+            "note": "Named for his close-set eyes."
+        },
+        {
+            "fei": "103AV31",
+            "note": "Dumped his rider at Badminton 2016 and jumped three fences upstream towards the stables."
+        },
+        {
+            "fei": "IRL40632",
+            "note": "Michael Owen credits this horse with getting him through the death of his teenage sister in a car crash."
         }
     ],
     "riders": [
@@ -152,7 +172,7 @@
         },
         {
             "fei": "10005184",
-            "note": "The Red Thunder from Down Under."
+            "note": "Personal colour is bright red; aka the Red Thunder from Down Under."
         },
         {
             "fei": "10016118",
@@ -169,6 +189,62 @@
         {
             "fei": "10000226",
             "note": "Most serious fall was from Billy the Red at Burnham Markets March 2018. Dislocated shoulder."
+        },
+        {
+            "fei": "10000224",
+            "note": "Runs the Billy stud with husband William. First winner of the Rolex Grand Slam in 2003. Writes children's books."
+        },
+        {
+            "fei": "10000224",
+            "note": "Missed most of the season in 2017 due to a lingering neck injury. Teammate Shane Rose took his rides."
+        },
+        {
+            "fei": "10000154",
+            "note": "Writes a blog at BillLevett.com. Good singing voice, has done panto. Used to drive cattle in Australia."
+        },
+        {
+            "fei": "10004203",
+            "note": "Personal colour is lilac."
+        },
+        {
+            "fei": "10013306",
+            "note": "Personal colour is baby pink."
+        },
+        {
+            "fei": "10009695",
+            "note": "First job was as an apprentice bank clerk."
+        },
+        {
+            "fei": "10020430",
+            "note": "Farrier and ex semi-pro rugby player."
+        },
+        {
+            "fei": "10004727",
+            "note": "No relation."
+        },
+        {
+            "fei": "10071867",
+            "note": "Daughter of Mary King."
+        },
+        {
+            "fei": "10005309",
+            "note": "Lost left ring finger to a freak accident in his horsebox at Bramham 2017. Has modified his rein grip to cope."
+        },
+        {
+            "fei": "10005247",
+            "note": "Nickname bestowed by an older sister, after Piglet from Winnie the Pooh."
+        },
+        {
+            "fei": "10013696",
+            "note": "Most serious fall was from Tis A Beauty at Tweseldown July 2013. Rotational fall, collapsed lung, six days in ICU."
+        },
+        {
+            "fei": "10005018",
+            "note": "No, not that one."
+        },
+        {
+            "fei": "10007318",
+            "note": "Given name means 'Blackbird'. Has a master's degree in Dutch & fiscal law."
         }
     ]
 }
