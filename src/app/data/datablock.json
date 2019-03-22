@@ -3164,7 +3164,8 @@
       "x": "G",
       "h": 16.2,
       "d": 2005,
-      "l": "BBBB"
+      "l": "BBBB",
+      "b": "TB"
     },
     {
       "n": "Allercombe Ellie",
@@ -7595,7 +7596,8 @@
       "h": 16,
       "d": 2005,
       "l": "BBBB",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "z": 2017
     },
     {
       "n": "Steady Eddie",
@@ -18050,7 +18052,7 @@
     },
     {
       "n": "Tina Cook",
-      "m": "Kristina Cook, Kristina Gifford",
+      "m": "Kristina Gifford",
       "f": "10000226",
       "g": "F",
       "b": 1970,

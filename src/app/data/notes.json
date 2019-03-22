@@ -127,12 +127,20 @@
         {
             "fei": "103BD71",
             "note": "Frightened of crowds."
+        },
+        {
+            "fei": "103IC70",
+            "note": "Cause of death: complications after injury at Burghley 2017."
+        },
+        {
+            "fei": "103RJ16",
+            "note": "Described by Tina Cook as a racing reject."
         }
     ],
     "riders": [
         {
             "fei": "10000553",
-            "note": "Used to be a dairy farmer."
+            "note": "Used to be a dairy farmer. Andrew Nicholson says he could go cross-country on a cow. Wanted to be a jockey but he's 6'2\". Had a sex scandal (male lover, cocaine, hotel) in 2000, married longterm to a woman."
         },
         {
             "fei": "10000193",
@@ -140,7 +148,7 @@
         },
         {
             "fei": "10005138",
-            "note": "His father was a milkman."
+            "note": "His father was a milkman when he wasn't riding."
         },
         {
             "fei": "10005184",
@@ -151,8 +159,16 @@
             "note": "Doesn't like wearing shoes."
         },
         {
+            "fei": "10003843",
+            "note": "Known for stylish appearance and high speed across country. Polishes his boots when nervous."
+        },
+        {
             "fei": "10000230",
-            "note": "Most serious fall was from Reinstated at Le Lion d'Angers October 2015. Head trauma, two weeks in ICU."
+            "note": "Full name is William Speed Lane Fox-Pitt. Went to Eton, and the 'Pitt' is the same line as the former PM. Usually the tallest in the field at 6'5\". Most serious fall was from Reinstated at Le Lion d'Angers October 2015. Head trauma, two weeks in ICU."
+        },
+        {
+            "fei": "10000226",
+            "note": "Most serious fall was from Billy the Red at Burnham Markets March 2018. Dislocated shoulder."
         }
     ]
 }
