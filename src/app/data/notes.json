@@ -1,6 +1,10 @@
 {
     "horses": [
         {
+            "fei": "104XO37",
+            "note": "Intended ride of the deceased George Crawford, going to Badminton 2019 under Emily Parker in his memory. A big horse, 'makes Harelaw Wizard look small'."
+        },
+        {
             "fei": "103BD72",
             "note": "According to Sarah Bullimore, 'evil' at 5 but merely 'sharp' at 9."
         },
@@ -170,7 +174,7 @@
         },
         {
             "fei": "104CJ51",
-            "note": "Not really built for collection, but does his best. Can be cheeky, David Britnell hacks him with a neck strap because he spins."
+            "note": "Failed showjumper. Can be cheeky, David Britnell hacks him with a neck strap because he spins to try to throw his rider."
         }
     ],
     "riders": [
@@ -312,7 +316,7 @@
         },
         {
             "fei": "10100935",
-            "note": "Loves cleaning tack. Didn't ride til he was 13. Hobbies are cross-country running, downhill mountain biking, and taking cars to bits."
+            "note": "Loves cleaning tack. Didn't ride til he was 13. Hobbies are cross-country running, downhill mountain biking, and taking cars to bits. Badminton first-timer blogger for H&H in 2019."
         },
         {
             "fei": "10099026",
