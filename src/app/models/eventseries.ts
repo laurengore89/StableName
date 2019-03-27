@@ -4,14 +4,12 @@ export class EventSeriesDTO {
     public i: string;
     public n: string;
     public l?: string;
-    public v?: string;
     public m?: number;
 
-    constructor(id: string, name: string, location: string, level: string, month: number) {
+    constructor(id: string, name: string, location: string, month: number) {
         this.i = id;
         this.n = name;
         this.l = location;
-        this.v = level;
         this.m = month;
     }
 }
@@ -31,7 +29,7 @@ export class EventSeries {
         this._id = dto.i;
         this._name = dto.n;
         this._location = dto.l;
-        this._level = dto.v;
+        this._level = dto.i.substr(0, 2);
         this._month = dto.m;
     }
 
