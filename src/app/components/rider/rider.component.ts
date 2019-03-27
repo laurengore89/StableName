@@ -11,9 +11,7 @@ export class RiderComponent implements OnInit {
   horsesShow: Horse[];
 
   ngOnInit() {
-    // this.horsesShow = this.rider.horses;
-    // this.horsesShow = this.rider.horses.filter(h => h.Name === 'My Last One');
-    this.horsesShow = this.rider.horses.filter(h => this.rider.scores.filter(s => s.Competition.Fei === '2019_BADMINTON').some(s => s.Horse.Fei === h.Fei));
+    this.horsesShow = this.rider.horses.sort((a, b) => { if (this.rider.scores.filter(s => s.Horse.Fei === a.Fei).length > this.rider.scores.filter(s => s.Horse.Fei === b.Fei).length) { return -1; } else if (this.rider.scores.filter(s => s.Horse.Fei === b.Fei).length > this.rider.scores.filter(s => s.Horse.Fei === a.Fei).length) { return 1; } return 0; });
   }
 }
 

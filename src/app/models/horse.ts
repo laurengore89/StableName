@@ -1,4 +1,5 @@
 import { Studbook, Colour, Legmarking, Sex } from '../enums';
+import { Score } from './score';
 
 import notesjson from '../data/notes.json';
 
@@ -67,6 +68,8 @@ export class Horse {
     private _studbook?: string;
     private _deceased?: number;
     private _dto: HorseDTO;
+    
+    public scores: Score[];
 
     constructor(dto: HorseDTO) {
         this._dto = dto;

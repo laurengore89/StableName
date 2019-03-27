@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Horse } from '../../models';
+import { Component, Input, OnInit } from '@angular/core';
+import { Horse, Score } from '../../models';
 
 @Component({
   selector: 'sn-horse',
@@ -7,9 +7,15 @@ import { Horse } from '../../models';
   styleUrls: ['./horse.component.scss']
 })
 
-export class HorseComponent {
+export class HorseComponent implements OnInit {
   @Input() horse: Horse;
   @Input() ridername: string;
+  @Input() riderFei: string;
+  public scoresShow: Score[];
+
+  ngOnInit() {
+    this.scoresShow = this.horse.scores.filter(s => s.Rider.Fei === this.riderFei && s.Result.p !== 'PEND');
+  }
 
   openDataPages(): void {
     window.open('https://data.fei.org/Horse/Performance.aspx?horsefeiid=' + this.horse.Fei);

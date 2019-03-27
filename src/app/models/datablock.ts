@@ -53,6 +53,9 @@ export class Datablock {
         this.competitions = datajson.c.map((c: CompetitionDTO) => new Competition(c));
         this.eventseries = datajson.e.map((e: EventSeriesDTO) => new EventSeries(e));
 
+        this.horses.forEach(h => {
+            h.scores = this.scores.filter(s => s.Horse.Fei === h.Fei);
+        });
         this.riders.forEach(r => {
             r.scores = this.scores.filter(s => s.Rider.Fei === r.Fei);
         });
