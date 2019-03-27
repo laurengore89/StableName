@@ -1,11 +1,7 @@
-import { EventSeries } from '../enums';
-
 export class CompetitionDTO {
     public f: string;
     public e: string;
     public y: number;
-    public j?: string;
-    public d?: string;
 
     constructor(fei: string, eventseries: string) {
         this.f = fei;
@@ -18,8 +14,6 @@ export class Competition {
     private _fei: string;
     private _eventseries: string;
     private _year: number;
-    private _jumping?: string;
-    private _dressage?: string;
     private _dto: CompetitionDTO;
 
     constructor(dto: CompetitionDTO) {
@@ -28,8 +22,6 @@ export class Competition {
         this._fei = dto.f;
         this._eventseries = dto.e;
         this._year = dto.y;
-        this._jumping = dto.j;
-        this._dressage = dto.d;
     }
 
     get Dto(): CompetitionDTO {
@@ -40,8 +32,8 @@ export class Competition {
         return this._fei;
     }
 
-    get Name(): string {
-        return EventSeries[this._eventseries] + ' ' + this._year;
+    get EventSeries(): string {
+        return this._eventseries;
     }
 
     get Year(): number {

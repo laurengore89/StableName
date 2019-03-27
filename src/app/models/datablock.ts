@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
 
 import { Competition, CompetitionDTO } from './competition';
+import { EventSeries } from './eventseries';
 import { ScoreDTO, Score, Result } from './score';
 import { HorseDTO, Horse } from './horse';
 import { RiderDTO, Rider } from './rider';
@@ -11,6 +12,7 @@ import datajson from '../data/datablock.json';
 
 class DatablockDTO {
     public c: CompetitionDTO[];
+    public e: EventSeries[];
     public s: ScoreDTO[];
     public h: HorseDTO[];
     public r: RiderDTO[];
@@ -18,6 +20,7 @@ class DatablockDTO {
     constructor(db: Datablock) {
         this.c = [];
         db.competitions.forEach(co => this.c.push(co.Dto));
+        this.e = db.eventseries;
         this.h = [];
         db.horses.forEach(hr => this.h.push(hr.Dto));
         this.r = [];
@@ -29,6 +32,7 @@ class DatablockDTO {
 
 export class Datablock {
     public competitions: Competition[];
+    public eventseries: EventSeries[];
     public scores: Score[];
     public horses: Horse[];
     public riders: Rider[];
@@ -46,6 +50,7 @@ export class Datablock {
         this.horses = datajson.h.map((h: HorseDTO) => new Horse(h));
         this.riders = datajson.r.map((r: RiderDTO) => new Rider(r));
         this.competitions = datajson.c.map((c: CompetitionDTO) => new Competition(c));
+        this.eventseries = datajson.e;
 
         this.riders.forEach(r => {
             r.scores = this.scores.filter(s => s.Rider.Fei === r.Fei);

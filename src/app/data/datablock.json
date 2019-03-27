@@ -1,4 +1,26 @@
 {
+  "e": [
+        {"i": "A", "n": "Adelaide", "l": "AUS"},
+        {"i": "Bc", "n": "Barroca", "l": "POR"},
+        {"i": "Bh", "n": "Blenheim", "l": "Oxfordshire"},
+        {"i": "BkA", "n": "Ballindenisk April", "l": "IRE"},
+        {"i": "BkS", "n": "Ballindenisk September", "l": "IRE"},
+        {"i": "Bl", "n": "Blair Castle", "l": "Perthshire"},
+        {"i": "Bm", "n": "Bramham", "l": "Yorkshire"},
+        {"i": "Bn", "n": "Badminton", "l": "Gloucestershire"},
+        {"i": "Bo", "n": "Boekelo", "l": "NED"},
+        {"i": "By", "n": "Burghley", "l": "Cambridgeshire"},
+        {"i": "C", "n": "Cappoquin", "l": "IRE"},
+        {"i": "Lh", "n": "Luhmühlen", "l": "GER"},
+        {"i": "Lx", "n": "Lexington", "l": "USA"},
+        {"i": "M", "n": "Millstreet", "l": "IRE"},
+        {"i": "O", "n": "Olympics"},
+        {"i": "P", "n": "Pau", "l": "FRA"},
+        {"i": "Sm", "n": "Saumur", "l": "FRA"},
+        {"i": "Sz", "n": "Strzegom", "l": "POL"},
+        {"i": "T", "n": "Tattersalls", "l": "IRE"},
+        {"i": "W", "n": "World Equestrian Games"}
+    ],
   "c": [
     {
       "f": "2018_CI_0408_C_S_01_01",
