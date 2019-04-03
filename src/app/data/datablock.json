@@ -1089,7 +1089,7 @@
     {
       "n": "Veronica",
       "f": "103EK67",
-      "s": "The Troll",
+      "s": "",
       "c": "DkB",
       "x": "M",
       "h": 16.1,
@@ -1834,6 +1834,16 @@
       "n": "Soladoun",
       "f": "104BF55",
       "s": "",
+      "c": "",
+      "x": "",
+      "h": 0,
+      "d": 0,
+      "l": ""
+    },
+    {
+      "n": "Quantum Solace",
+      "f": "103DF42",
+      "s": "Nacho",
       "c": "",
       "x": "",
       "h": 0,
@@ -7494,7 +7504,7 @@
     {
       "n": "fischerRocana FST",
       "f": "103DJ13",
-      "s": "",
+      "s": "Roxy",
       "c": "SBr",
       "x": "M",
       "h": 0,
@@ -10079,7 +10089,8 @@
       "x": "G",
       "h": 16,
       "d": 2007,
-      "l": "BBBB"
+      "l": "BBBB",
+      "b": "AA"
     },
     {
       "n": "Tsetserleg",
@@ -13491,13 +13502,14 @@
     {
       "n": "Exponential",
       "f": "CAN40171",
-      "s": "",
-      "c": "",
-      "x": "",
+      "s": "Tucker",
+      "c": "SBr",
+      "x": "G",
       "h": 0,
-      "d": 0,
-      "l": "",
-      "z": 0
+      "d": 1997,
+      "l": "BBBB",
+      "z": 0,
+      "b": "TB"
     },
     {
       "n": "Cadoc Z",
@@ -16615,7 +16627,7 @@
       "z": 0
     },
     {
-      "n": "Killian O'connor",
+      "n": "Killian O'Connor",
       "f": "USA11294",
       "s": "",
       "c": "",
@@ -16788,13 +16800,14 @@
     {
       "n": "Exploring",
       "f": "CAN02372",
-      "s": "",
-      "c": "",
-      "x": "",
+      "s": "Digby",
+      "c": "B",
+      "x": "G",
       "h": 0,
-      "d": 0,
-      "l": "",
-      "z": 0
+      "d": 1997,
+      "l": "BBBB",
+      "z": 2014,
+      "b": "TB"
     },
     {
       "n": "Manny",
@@ -20778,13 +20791,14 @@
     {
       "n": "Bogue Sound",
       "f": "104JS64",
-      "s": "",
-      "c": "",
-      "x": "",
-      "h": 0,
-      "d": 0,
-      "l": "",
-      "z": 0
+      "s": "Bogue",
+      "c": "Ch",
+      "x": "G",
+      "h": 16.2,
+      "d": 2007,
+      "l": "BBBB",
+      "z": 0,
+      "b": "TB"
     },
     {
       "n": "Lancaster",
@@ -21266,9 +21280,10 @@
     },
     {
       "n": "Jessica Phoenix",
+      "m": "Jessie, Wonder Woman, Jessica Ferguson",
       "f": "10004498",
       "g": "F",
-      "b": 0,
+      "b": 1983,
       "t": "CAN"
     },
     {
@@ -21352,7 +21367,7 @@
       "n": "Lauren Kieffer",
       "f": "10016272",
       "g": "F",
-      "b": 0,
+      "b": 1987,
       "t": "USA"
     },
     {
@@ -21508,7 +21523,7 @@
       "m": "Georgina French",
       "f": "10005247",
       "g": "F",
-      "b": 0,
+      "b": 1980,
       "t": "GBR"
     },
     {
@@ -22077,10 +22092,11 @@
       "t": "IRL"
     },
     {
-      "n": "William Coleman",
+      "n": "Will Coleman",
+      "m": "William Coleman III",
       "f": "10005693",
       "g": "M",
-      "b": 0,
+      "b": 1983,
       "t": "USA"
     },
     {
@@ -22415,6 +22431,7 @@
     },
     {
       "n": "Buck Davidson",
+      "m": "Bruce O. Davidson Jr.",
       "f": "10000238",
       "g": "M",
       "b": 1976,
@@ -24501,9 +24518,10 @@
     },
     {
       "n": "Lillian Heard",
+      "m": "LJH",
       "f": "10009662",
       "g": "F",
-      "b": 0,
+      "b": 1986,
       "t": "USA"
     },
     {
@@ -25403,7 +25421,7 @@
       "n": "Caroline Martin",
       "f": "10059212",
       "g": "F",
-      "b": 0,
+      "b": 1994,
       "t": "USA"
     },
     {
@@ -25442,7 +25460,7 @@
       "t": "USA"
     },
     {
-      "n": "Ellen Doughty-hume",
+      "n": "Ellen Doughty-Hume",
       "f": "10067218",
       "g": "F",
       "b": 0,
@@ -25787,15 +25805,15 @@
       "t": "USA"
     },
     {
-      "n": "Wendy Schaeffer-macdonald",
+      "n": "Wendy Schaeffer-Macdonald",
       "m": "",
       "f": "10005684",
       "g": "",
       "b": 0,
-      "t": "Wendy SCHAEFFER-MACDONALD ("
+      "t": "AUS"
     },
     {
-      "n": "Captain Geoff Curran",
+      "n": "Geoff Curran",
       "m": "",
       "f": "10007203",
       "g": "",
@@ -25827,7 +25845,7 @@
       "t": "AUS"
     },
     {
-      "n": "Carolyne Ryan - Bell",
+      "n": "Carolyne Ryan-Bell",
       "m": "",
       "f": "10003799",
       "g": "",
@@ -26000,7 +26018,7 @@
       "f": "10003464",
       "g": "",
       "b": 0,
-      "t": "Stanislas DE ZUCHOWICZ CNE ("
+      "t": "FRA"
     },
     {
       "n": "Benjamin Massie",
@@ -26099,7 +26117,7 @@
       "t": "CAN"
     },
     {
-      "n": "Karen O'connor",
+      "n": "Karen O'Connor",
       "m": "",
       "f": "10000216",
       "g": "",
@@ -27899,7 +27917,7 @@
       "t": "GBR"
     },
     {
-      "n": "Kate Rocher - Smith",
+      "n": "Kate Rocher-Smith",
       "m": "",
       "f": "10011317",
       "g": "",

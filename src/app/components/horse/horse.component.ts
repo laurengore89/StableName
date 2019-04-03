@@ -14,7 +14,8 @@ export class HorseComponent implements OnInit {
   public scoresShow: Score[];
 
   ngOnInit() {
-    this.scoresShow = this.horse.scores.filter(s => s.Rider.Fei === this.riderFei && s.Result.p !== 'PEND');
+    this.scoresShow = [];
+    // this.scoresShow = this.horse.scores.filter(s => s.Rider.Fei === this.riderFei && s.Result.p !== 'PEND');
   }
 
   openDataPages(): void {

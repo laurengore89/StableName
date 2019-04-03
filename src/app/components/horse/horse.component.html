@@ -526,7 +526,7 @@
       <ng-container *ngIf="horse.Age || horse.Height || horse.Colour || horse.Sex || horse.Studbook">, </ng-container>
       {{ horse.Fei }}
     </p>
-    <p>
+    <p *ngIf="scoresShow.length > 0">
       Scores:<br /><ng-container *ngFor="let score of scoresShow">{{score.Competition.EventSeries}} {{score.Competition.Fei}}: {{ score.Result.p }}<br /></ng-container>
     </p>
     <p *ngIf="showNotes && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      

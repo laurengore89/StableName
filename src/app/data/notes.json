@@ -73,6 +73,10 @@
             "note": "Ex-racer, born in Kentucky.<br />Cause of death: presumed aneurysm."
         },
         {
+            "fei": "CAN02372",
+            "note": "Brought Jessica Phoenix up through the levels. Cause of death: presumed aneurysm."
+        },
+        {
             "fei": "USA08508",
             "note": "Ex-racer from Maryland."
         },
@@ -129,6 +133,10 @@
             "note": "Previous name Loroto He's a Star."
         },
         {
+            "fei": "103UF27",
+            "note": "'Nuts, out of control and generally we hated riding him'. Very strong and gets worse if you put a heavy bit on him."
+        },
+        {
             "fei": "103BD71",
             "note": "Frightened of crowds."
         },
@@ -175,6 +183,30 @@
         {
             "fei": "104CJ51",
             "note": "Failed showjumper. Can be cheeky, David Britnell hacks him with a neck strap because he spins to try to throw his rider."
+        },
+        {
+            "fei": "USA40729",
+            "note": "Named after basketball player Reggie Miller. Sometimes coughs due to throat surgery, so isn't bridled until the last minute before dressage. His groom rode him down the aisle at her wedding."
+        },
+        {
+            "fei": "103AX61",
+            "note": "Named after basketball player Kobe Bryant."
+        },
+        {
+            "fei": "103VL87",
+            "note": "Name is a portmanteau of his sire and damsire, Caresino and Levernois."
+        },
+        {
+            "fei": "103EK67",
+            "note": "'She kicks and she bites and she pins her ears'. AKA The Troll, AKA Piranhica. Trainer jokes that she kills babies; a baby doll is now kept in her stall and sometimes ends up in the water bucket."
+        },
+        {
+            "fei": "103VL87",
+            "note": "Name is a portmanteau of his sire and damsire, Caresino and Levernois."
+        },
+        {
+            "fei": "CAN40171",
+            "note": "Race name was War Buckaroo."
         }
     ],
     "riders": [
@@ -189,6 +221,10 @@
         {
             "fei": "10005138",
             "note": "His father was a milkman when he wasn't riding."
+        },
+        {
+            "fei": "10000216",
+            "note": "Most serious fall was from Veronica at Morven Park October 2012. Landed on her head, multiple broken vertebrae but no paralysis, career ended."
         },
         {
             "fei": "10005184",
@@ -276,7 +312,7 @@
         },
         {
             "fei": "10005434",
-            "note": "Trained under Bruce Davidson (Buck Davidson's father). Admired his horse Eagle Lion and had signed posters of him."
+            "note": "Trained under Bruce Davidson Sr. Admired his horse Eagle Lion and had signed posters of him."
         },
         {
             "fei": "10005095",
@@ -329,6 +365,38 @@
         {
             "fei": "10032818",
             "note": "Born in Cumbria of Scottish heritage."
+        },
+        {
+            "fei": "10000238",
+            "note": "Born in Florida. Most serious fall was while schooling a horse in February 2012. Broken collarbone."
+        },
+        {
+            "fei": "10003737",
+            "note": "Married to a Grand Prix dressage rider. Co-hosts on the Eventing Radio Show."
+        },
+        {
+            "fei": "10007367",
+            "note": "Founded EquiRatings with Diarm Byrne. Co-hosts on the EquiRatings Eventing Podcast."
+        },
+        {
+            "fei": "10059212",
+            "note": "Trained by Buck Davidson. Collects shoes. Very tall, six foot. Not related to Boyd."
+        },
+        {
+            "fei": "10016272",
+            "note": "The daughter of a 'non-horsey' dirt bike racer, got riding lessons for her sixth birthday. Trained by Karen and David O'Connor."
+        },
+        {
+            "fei": "10004498",
+            "note": "Thoroughbred fan. Married to a cattle farmer. Rode Western as a child. Most serious fall was from Exultation in May 2015. Rotational, broken ribs and liver surgery, three days in ICU."
+        },
+        {
+            "fei": "10009662",
+            "note": "Double major in Literature and Foreign Affairs, Middle East expert. Trained by Boyd Martin."
+        },
+        {
+            "fei": "10005693",
+            "note": "Won a round-trip flight to Europe in the 2017 US national 3* championship and used it to take OBOS O'Reilly to Badminton 2018 (RET XC). Trained by Karen and David O'Connor."
         }
     ]
 }
