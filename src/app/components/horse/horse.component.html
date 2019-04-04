@@ -529,8 +529,8 @@
     <p *ngIf="scoresShow.length > 0">
       Scores:<br /><ng-container *ngFor="let score of scoresShow">{{score.Competition.EventSeries}} {{score.Competition.Fei}}: {{ score.Result.p }}<br /></ng-container>
     </p>
-    <p *ngIf="showNotes && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      
+    <p *ngIf="true && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      
     </p>
-    <p *ngIf="!showNotes && horse.Notes !== ''" (click)="showNotes = true">...</p>
+    <!-- <p *ngIf="!showNotes && horse.Notes !== ''" (click)="showNotes = true">...</p> -->
   </div>
 </div>

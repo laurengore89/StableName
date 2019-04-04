@@ -33,8 +33,56 @@
             "note": "Cause of death: neurological issue."
         },
         {
+            "fei": "103ZX32",
+            "note": "Trained to race but never actually went."
+        },
+        {
+            "fei": "103OZ21",
+            "note": "'Tiny but with a massive stride'. Snaffle-mouthed and uses a rubber bit in dressage."
+        },
+        {
+            "fei": "103MU19",
+            "note": "Racing name Shykee's Thunder."
+        },
+        {
+            "fei": "USA40557",
+            "note": "Racing name Tsu Tsu Ro."
+        },
+        {
+            "fei": "103JM00",
+            "note": "Racing name My Gifted Indyanna. Unraced because her farm was sold up by owner Alex Trebek. Nearly died after foaling Laguna Seca."
+        },
+        {
+            "fei": "103IT07",
+            "note": "Racing name Big Jet. Raced hard, sometimes consecutive days, on bad tracks in the outback. Scouted by Boyd Martin after his race retirement."
+        },
+        {
+            "fei": "102TA03",
+            "note": "Small, unimpressive, 'permanent hay belly'."
+        },
+        {
+            "fei": "104IC01",
+            "note": "Racing name Chivas Royale."
+        },
+        {
+            "fei": "102XZ12",
+            "note": "Racing name Heir Pegasus. Bought by Kevin McNab for $300, very lame and badly behaved. His sire has a reputation for 'difficult' horses."
+        },
+        {
+            "fei": "102WR16",
+            "note": "Racing name Smart Gorky. Known as the Deer. Injury-prone in turnout and has to be hand-grazed. Hates hacking, bolts home."
+        },
+        {
             "fei": "GBR42539",
             "note": "Cause of death: unknown, during retirement."
+        },
+        {
+            "fei": "103EW14",
+            "note": "Racing name Captain Frank."
+        },
+        {
+            "fei": "103LI18",
+            "note": "Trakehner/TB breeding. Barn diva."
         },
         {
             "fei": "GBR13384",
@@ -81,6 +129,42 @@
             "note": "Ex-racer from Maryland."
         },
         {
+            "fei": "USA42564",
+            "note": "Ex-racer. Thinks he's people. Downhill and not much of a front end when starting out, Emily Beshear calls him 'spaghetti legs'."
+        },
+        {
+            "fei": "103OA10",
+            "note": "Adorable long ears. Has a non-competing horse friend called PJ, who he refuses to be without at home. A happy, calm hacker."
+        },
+        {
+            "fei": "103YT30",
+            "note": "Has struggled with stamina cross-country, but now has a new fitness regime."
+        },
+        {
+            "fei": "103MX97",
+            "note": "Hallie Coon bought her having only seen a video."
+        },
+        {
+            "fei": "104UA93",
+            "note": "Was Jonelle's ride til 2017 pregnancy, Tim got to keep her afterwards."
+        },
+        {
+            "fei": "IRL40376",
+            "note": "Can be aggressive in his stable, so wears an Equilume mask with blue LEDs, a technique invented to alter perceived day length in broodmares."
+        },
+        {
+            "fei": "103ZD39",
+            "note": "Everyone's favourite little golden pony. Has his own Facebook page. Unknown heritage but probably has Connemara."
+        },
+        {
+            "fei": "104AR56",
+            "note": "Lives mostly outside. Has a Shetland pony friend called Sooty who keeps him calm."
+        },
+        {
+            "fei": "102ZO70",
+            "note": "Bought as a foal, Rachel Robinson turned down Andrew Nicholson when he offered to buy him from her. Has one-sided facial paralysis after a freak accident in his lorry as a two-year-old."
+        },
+        {
             "fei": "USA08891",
             "note": "Throws a few happy crow-hops after a good showjumping round.<br />Cause of death: unknown, during retirement."
         },
@@ -111,6 +195,14 @@
         {
             "fei": "NZL01332",
             "note": "Full brother to Nereo."
+        },
+        {
+            "fei": "104VM42",
+            "note": "Born on the 4th of July."
+        },
+        {
+            "fei": "103JQ40",
+            "note": "When his showjumping wasn't much good, was broken to drive."
         },
         {
             "fei": "GBR13000",
@@ -154,7 +246,7 @@
         },
         {
             "fei": "AUS41225",
-            "note": "Ex-racer. Has an 'over-excited, almost neurotic' dual personality that Elisa Wallace calls 'The Dragon'."
+            "note": "Racing name Kalinga Demo. Has an 'over-excited, almost neurotic' dual personality that Elisa Wallace calls 'The Dragon'."
         },
         {
             "fei": "104AN52",
@@ -235,6 +327,10 @@
             "note": "Doesn't like wearing shoes."
         },
         {
+            "fei": "10004052",
+            "note": "Also races cars and presents on TV. Most serious fall was from HHS Cooley at Burgham July 2016. Broken neck, horse broke a leg and had to be euthanised."
+        },
+        {
             "fei": "10003843",
             "note": "Known for stylish appearance and high speed across country. Polishes his boots when nervous."
         },
@@ -245,6 +341,14 @@
         {
             "fei": "10000226",
             "note": "Most serious fall was from Billy the Red at Burnham Markets March 2018. Dislocated shoulder."
+        },
+        {
+            "fei": "10011916",
+            "note": "Accounts manager for a telecoms company."
+        },
+        {
+            "fei": "10031395",
+            "note": "Chartered surveyor, runs her own business."
         },
         {
             "fei": "10000224",
@@ -275,16 +379,40 @@
             "note": "First job was as an apprentice bank clerk."
         },
         {
+            "fei": "10000220",
+            "note": "Terrifyingly good dressage."
+        },
+        {
             "fei": "10020430",
             "note": "Farrier and ex semi-pro rugby player."
+        },
+        {
+            "fei": "10000231",
+            "note": "Breeds exotic birds in his spare time."
+        },
+        {
+            "fei": "10005367",
+            "note": "Most serious fall was at Ocala January 2009. Multiple facial fractures, repaired with 3 metal plates and 25 screws."
+        },
+        {
+            "fei": "10005408",
+            "note": "16 years as a stockbroker before she went pro."
         },
         {
             "fei": "10004727",
             "note": "No relation."
         },
         {
+            "fei": "10011120",
+            "note": "Wears socks with owls on, in order to make wise decisions across country."
+        },
+        {
             "fei": "10071867",
             "note": "Daughter of Mary King."
+        },
+        {
+            "fei": "10004300",
+            "note": "Wanted to be a gymnast til she broke her ankle. 'Grew up in a divorced family' and worked at McDonalds from age 15. Likes American football, supports Philadelphia. Trained by Buck Davidson."
         },
         {
             "fei": "10005309",
@@ -317,6 +445,10 @@
         {
             "fei": "10005095",
             "note": "Has run three Tough Mudders."
+        },
+        {
+            "fei": "10016208",
+            "note": "Crowdfunded her trip to Badminton 2017."
         },
         {
             "fei": "10003896",
@@ -396,7 +528,7 @@
         },
         {
             "fei": "10005693",
-            "note": "Won a round-trip flight to Europe in the 2017 US national 3* championship and used it to take OBOS O'Reilly to Badminton 2018 (RET XC). Trained by Karen and David O'Connor."
+            "note": "Won a round-trip flight to Europe in the 2017 US national 3* championship and used it to take OBOS O'Reilly to Badminton 2018. Trained by Karen and David O'Connor."
         }
     ]
 }
