@@ -48,3 +48,4 @@ Thumbs.db
 
 # project specific
 /src/assets/input.txt
+/src/assets/photo/*.jpg

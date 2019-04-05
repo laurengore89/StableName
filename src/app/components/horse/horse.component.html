@@ -529,8 +529,11 @@
     <p *ngIf="scoresShow.length > 0">
       Scores:<br /><ng-container *ngFor="let score of scoresShow">{{score.Competition.EventSeries}} {{score.Competition.Fei}}: {{ score.Result.p }}<br /></ng-container>
     </p>
-    <p *ngIf="true && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      
+    <p *ngIf="showNotes && horse.Notes !== ''"(click)="showNotes = false" innerHTML="{{ horse.Notes }}">      
     </p>
-    <!-- <p *ngIf="!showNotes && horse.Notes !== ''" (click)="showNotes = true">...</p> -->
+    <p *ngIf="!showNotes && horse.Notes !== ''" (click)="showNotes = true">...</p>
+    <p>
+      <img style="width:100%" src="../../../assets/photo/{{ horse.Fei }}.jpg" />
+    </p>
   </div>
 </div>

@@ -12,6 +12,7 @@ export class HorseComponent implements OnInit {
   @Input() ridername: string;
   @Input() riderFei: string;
   public scoresShow: Score[];
+  public showNotes: true;
 
   ngOnInit() {
     this.scoresShow = [];
