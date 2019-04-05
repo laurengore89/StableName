@@ -117,6 +117,10 @@
             "note": "Breeding is Thoroughbred x Oldenburg."
         },
         {
+            "fei": "102XO30",
+            "note": "Sire is a Thoroughbred, dam is 1/4 Shire."
+        },
+        {
             "fei": "USA41877",
             "note": "Ex-racer, born in Kentucky.<br />Cause of death: presumed aneurysm."
         },
@@ -127,6 +131,18 @@
         {
             "fei": "USA08508",
             "note": "Ex-racer from Maryland."
+        },
+        {
+            "fei": "102OV67",
+            "note": "Unraced, racing name Constock."
+        },
+        {
+            "fei": "103HL76",
+            "note": "Sweetest little pony face. Breeding is Connemara/TB."
+        },
+        {
+            "fei": "102WB25",
+            "note": "Breeding is Holsteiner/TB."
         },
         {
             "fei": "USA42564",
@@ -327,6 +343,10 @@
             "note": "Doesn't like wearing shoes."
         },
         {
+            "fei": "10009929",
+            "note": "Knew she wanted to event at 13 when she saw a poster of Karen O'Connor jumping into a water complex. Now trains with Karen! Parents aren't horsey, both are psychologists."
+        },
+        {
             "fei": "10004052",
             "note": "Also races cars and presents on TV. Most serious fall was from HHS Cooley at Burgham July 2016. Broken neck, horse broke a leg and had to be euthanised."
         },
@@ -455,8 +475,12 @@
             "note": "Day job as a maths teacher."
         },
         {
+            "fei": "10067218",
+            "note": "Non-horsey family. Introduced to horses aged eight at Girl Scout camp. Favours OTTBs. Barn is Rockwall Hills / Pegasus Eventing. Was once sued by Stormy Daniels - rumours of poor horse care, unpaid debts, over-horsed Pony Club kids, and loose dogs at events."
+        },
+        {
             "fei": "10016500",
-            "note": "Worked as a rider for Andrew Nicholson. Taller than William Fox-Pitt at 6'6\". Not from an equestrian family - dad is a doctor, mum teaches art."
+            "note": "Worked as a rider for Andrew Nicholson. Taller than William Fox-Pitt at 6'6\". Non-horsey family - dad is a doctor, mum teaches art."
         },
         {
             "fei": "10043941",
