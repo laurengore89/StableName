@@ -7,12 +7,14 @@ div.horse {
     background-color: $background-panels;
     padding: 10px;
 
-    &.horse-image {
+    &.horse-desc {
       border-radius: 10px 0 0 10px;
+      border-bottom: 3px solid black;
     }
 
-    &.horse-desc {
+    &.horse-image {
       border-radius: 0 10px 10px 0;
+      border-bottom: 3px solid black;
     }
   }
 }
