@@ -1,17 +1,28 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Datablock, Horse, Score } from 'src/app/models';
+import { Datablock, ScoreHorseRider } from 'src/app/models';
 
 @Component({
   selector: 'sn-scorelist',
   templateUrl: './scorelist.component.html',
   styleUrls: ['./scorelist.component.scss']
 })
+
+
 export class ScorelistComponent implements OnInit {
   @Input() datablock: Datablock;
-  horsesShow: Horse[];
+  scoresShow: ScoreHorseRider[];
 
   ngOnInit() {
-    let relevantScores: Score[] = this.datablock.scores.filter(score => score.Competition.Fei === '2019_LEXINGTON');
-    this.horsesShow = this.datablock.horses.filter(horse => relevantScores.some(score => score.Horse.Fei === horse.Fei)).sort((a, b) => { if (relevantScores.find(score => score.Horse.Fei === a.Fei).Draw > relevantScores.find(score => score.Horse.Fei === b.Fei).Draw) { return 1; } if (relevantScores.find(score => score.Horse.Fei === a.Fei).Draw < relevantScores.find(score => score.Horse.Fei === b.Fei).Draw) { return -1; } return 0; });
+    this.scoresShow = [];
+
+    this.datablock.scores.filter(score => score.Competition.Fei === '2019_LEXINGTON').sort((a, b) => { if (a.Draw > b.Draw) { return 1; } else if (a.Draw < b.Draw) { return -1; } return 0; }).forEach( s => this.scoresShow.push(new ScoreHorseRider(s)) );
+
+    this.scoresShow.forEach(
+      s => s.horse = this.datablock.horses.find(h => h.Fei === s.score.Horse.Fei)
+    );
+
+    this.scoresShow.forEach(
+      s => s.rider = this.datablock.riders.find(r => r.Fei === s.score.Rider.Fei)
+    );
   }
 }

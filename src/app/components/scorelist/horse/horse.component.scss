@@ -1,5 +1,6 @@
 @import "../../../../variables.scss";
 @import "horse-variables.scss";
+@import "horse-svg.scss";
 
 div.horse {
   div {
@@ -7,10 +8,13 @@ div.horse {
     padding: 10px;
 
     &.horse-desc {
-      border-radius: 10px;
+      border-radius: 0 0 0 10px;
+      border-bottom: 3px solid black;
+    }
+
+    &.horse-image {
+      border-radius: 0 0 10px 0;
       border-bottom: 3px solid black;
     }
   }
-
-  margin-bottom: 20px;
 }

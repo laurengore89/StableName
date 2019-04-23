@@ -1,0 +1,11 @@
+<div class="row rider">
+    <div class="col-sm-12 rider-desc">
+      <h2 class="rider-name">{{ draw }}: {{ rider.Name }}</h2> <ng-container *ngIf="rider.OtherName"> ({{ rider.OtherName }})</ng-container>, <ng-container
+        *ngIf="rider.Age">{{ rider.Age }} </ng-container>{{ rider.BaseDescriptor }} {{ rider.Fei }}
+        <p *ngIf="rider.Notes !== ''" innerHTML="{{ rider.Notes }}">      
+        </p>
+      </div>
+      <div class="col-sm-12">
+        <sn-scorelist-horse [horse]="horse"></sn-scorelist-horse>
+    </div>
+  </div>
