@@ -20,6 +20,7 @@ export class ScoreDTO {
     public c: string; // competition
     public r: string; // rider
     public h: string; // horse
+    public d?: number; // number on the draw list
     public t: Result; // result
 
     constructor(s: Score) {
