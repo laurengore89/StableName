@@ -47,7 +47,7 @@ export class Datablock {
     }
 
     private buildFromJson() {
-        this.scores = datajson.s.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t));
+        this.scores = datajson.s.map((s: ScoreDTO) => new Score(s.c, [s.t.p, s.r, '', s.h, '', ''], s.t, s.d));
         this.horses = datajson.h.map((h: HorseDTO) => new Horse(h));
         this.riders = datajson.r.map((r: RiderDTO) => new Rider(r));
         this.competitions = datajson.c.map((c: CompetitionDTO) => new Competition(c));
@@ -139,7 +139,7 @@ export class Datablock {
                             }
                         }
                         if (!updatePendingScore) {
-                            this.scores.push(new Score(competitionFei, currentEntry, result));
+                            this.scores.push(new Score(competitionFei, currentEntry, result, 0));
                         }
                         currentEntry = [];
                     }

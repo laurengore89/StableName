@@ -1,13 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Horse, Score } from '../../models';
+import { Horse, Score } from '../../../models';
 
 @Component({
-  selector: 'sn-horse',
+  selector: 'sn-riderlist-horse',
   templateUrl: './horse.component.html',
   styleUrls: ['./horse.component.scss']
 })
 
-export class HorseComponent implements OnInit {
+export class RiderlistHorseComponent implements OnInit {
   @Input() horse: Horse;
   @Input() ridername: string;
   @Input() riderFei: string;

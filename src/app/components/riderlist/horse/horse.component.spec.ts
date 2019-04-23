@@ -1,24 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HorseComponent } from './horse.component';
-import { Horse, Height } from '../models';
-import { Colour, Studbook, Sex } from '../enums';
+import { RiderlistHorseComponent } from './horse.component';
+import { Horse, HorseDTO } from '../../../models';
 
 describe('HorseComponent', () => {
-  let component: HorseComponent;
-  let fixture: ComponentFixture<HorseComponent>;
+  let component: RiderlistHorseComponent;
+  let fixture: ComponentFixture<RiderlistHorseComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HorseComponent ]
+      declarations: [ RiderlistHorseComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HorseComponent);
+    fixture = TestBed.createComponent(RiderlistHorseComponent);
     component = fixture.componentInstance;
-    component.horse = new Horse('Dobbin McElroy III', 'Dobs', Sex.Stallion, new Height(16, 2), 2000, Colour.Chestnut, Studbook.TB);
+    component.horse = new Horse(new HorseDTO('Dobbin McElroy III', '100AZ100', 'Dobs', 'S', 16.2, 2000, 'Ch', 'SSSS', 'TB', 2015));
     fixture.detectChanges();
   });
 

@@ -1,0 +1,16 @@
+@import "../../../../variables.scss";
+@import "horse-variables.scss";
+
+div.horse {
+  div {
+    background-color: $background-panels;
+    padding: 10px;
+
+    &.horse-desc {
+      border-radius: 10px;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  margin-bottom: 20px;
+}

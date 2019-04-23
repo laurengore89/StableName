@@ -27,6 +27,7 @@ export class ScoreDTO {
         this.c = s.Competition.Fei;
         this.r = s.Rider.Fei;
         this.h = s.Horse.Fei;
+        this.d = s.Draw;
         this.t = s.Result;
     }
 }
@@ -40,8 +41,9 @@ export class Score {
     private _horsestudbook: string;
     private _competition: string;
     private _result: Result;
+    private _draw?: number;
 
-    constructor(competition: string, scoreFacts: string[], result: Result) {
+    constructor(competition: string, scoreFacts: string[], result: Result, draw: number) {
         // [0] is final scored position at that competition
         // [1] is rider's FEI ID e.g. '10005015'
         // [2] is rider's name and nationality e.g. 'Michael JUNG (GER)'
@@ -59,6 +61,7 @@ export class Score {
         }
         this._result = result;
         this._result.p = scoreFacts[0].trim();
+        this._draw = draw;
     }
 
     get Dto() {
@@ -79,5 +82,9 @@ export class Score {
 
     get Competition() {
         return new Competition(new CompetitionDTO(this._competition, ''));
+    }
+
+    get Draw() {
+        return this._draw;
     }
 }

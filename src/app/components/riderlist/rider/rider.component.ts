@@ -1,12 +1,12 @@
 import { Component, Input, OnInit} from '@angular/core';
-import { Rider, Horse } from '../../models';
+import { Rider, Horse } from '../../../models';
 
 @Component({
-  selector: 'sn-rider',
+  selector: 'sn-riderlist-rider',
   templateUrl: './rider.component.html',
   styleUrls: ['./rider.component.scss']
 })
-export class RiderComponent implements OnInit {
+export class RiderlistRiderComponent implements OnInit {
   @Input() rider: Rider;
   horsesShow: Horse[];
 

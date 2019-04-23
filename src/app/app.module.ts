@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HorseComponent } from './components/horse/horse.component';
-import { RiderComponent } from './components/rider/rider.component';
+import { RiderlistHorseComponent } from './components/riderlist/horse/horse.component';
+import { RiderlistRiderComponent } from './components/riderlist/rider/rider.component';
 import { RiderlistComponent } from './components/riderlist/riderlist.component';
+import { ScorelistHorseComponent } from './components/scorelist/horse/horse.component';
+import { ScorelistComponent } from './components/scorelist/scorelist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HorseComponent,
-    RiderComponent,
-    RiderlistComponent
+    RiderlistHorseComponent,
+    RiderlistRiderComponent,
+    RiderlistComponent,
+    ScorelistHorseComponent,
+    ScorelistComponent
   ],
   imports: [
     BrowserModule,
