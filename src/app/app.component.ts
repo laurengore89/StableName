@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Datablock, Rider } from './models';
-import { RegexPattern } from './enums';
+import { Datablock } from './models';
 
 @Component({
   selector: 'sn-root',
@@ -12,13 +11,9 @@ import { RegexPattern } from './enums';
 export class AppComponent {
   title = 'StableName';
   datablock: Datablock;
-  ridersShow: Rider[];
 
   constructor(private http: HttpClient) {
     this.datablock = new Datablock(http, '', '', '', '');
-    // this.ridersShow = this.datablock.riders.filter(rider => true).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; }).slice(0, 25);
-    this.ridersShow = this.datablock.riders.filter(rider => this.datablock.scores.some(s => s.Rider.Fei === rider.Fei && s.Competition.Fei === '2019_LEXINGTON')).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; });
-    // this.ridersShow = this.datablock.riders.filter(rider => rider.Fei === '10013701');
   }
 
   // constructor(private http: HttpClient) {
