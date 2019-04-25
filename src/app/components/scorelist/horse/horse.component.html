@@ -1,9 +1,11 @@
 <div class="col-sm-12">
-  <div
-    class="row horse coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}"  [class.dnf]="dnf">
-    <div *ngIf="dnf" class="col-sm-12">
-        <h4>Result: {{ position }}</h4>
+  <div *ngIf="dnf" class="row" [class.dnf]="dnf">
+    <div class="col-sm-12">
+        <h4>Did not finish: {{ position }} -- {{ outcome }}</h4>
     </div>
+  </div>
+  <div
+    class="row coat-{{ horse.SvgColour }} nearfore-{{ horse.Nearfore }} offfore-{{ horse.Offfore }} offhind-{{ horse.Offhind }} nearhind-{{ horse.Nearhind }}"  [class.dnf]="dnf">
     <div class="col-sm-6 horse-desc">
       <h3>{{ horse.Name }}</h3>
       <div style="position:relative; width:100%; padding-top:100%">

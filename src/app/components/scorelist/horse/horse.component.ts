@@ -10,6 +10,7 @@ import { Horse } from 'src/app/models';
 export class ScorelistHorseComponent implements OnInit {
   @Input() horse: Horse;
   @Input() position: string;
+  @Input() outcome: string;
   public dnf: boolean;
 
   constructor() { }

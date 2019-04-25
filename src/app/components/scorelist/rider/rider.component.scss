@@ -1,7 +1,9 @@
 @import "../../../../variables.scss";
 
 div {
-  background-color: $background-panels;
+  &.row {    
+    margin-top: 50px;
+  }
 
   &.rider-desc {
     padding-bottom: 10px;

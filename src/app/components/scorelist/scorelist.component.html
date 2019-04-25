@@ -1,1 +1,5 @@
-<sn-scorelist-score *ngFor="let scorehorserider of scoresShow" [scorehorserider] = "scorehorserider"></sn-scorelist-score>
+<ng-container *ngFor="let scorehorserider of scoresShow">
+    <sn-scorelist-rider [draw]="scorehorserider.score.Draw" [rider]="scorehorserider.rider"></sn-scorelist-rider>
+    <sn-scorelist-horse [outcome]="scorehorserider.score.Result.o" [position]="scorehorserider.score.Result.p"
+        [horse]="scorehorserider.horse"></sn-scorelist-horse>
+</ng-container>

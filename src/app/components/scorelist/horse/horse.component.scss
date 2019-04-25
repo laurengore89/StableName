@@ -2,7 +2,7 @@
 @import "horse-variables.scss";
 @import "horse-svg.scss";
 
-div.horse {
+div.row {
   div {
     
     background-color: $background-panels;
@@ -18,7 +18,7 @@ div.horse {
       border-bottom: 3px solid black;
     }    
   }
-  
+
   &.dnf {
     font-style: italic;
     
