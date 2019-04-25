@@ -7,7 +7,9 @@ export class ScoreHorseRider {
     public horse: Horse;
     public rider: Rider;
 
-    constructor(score: Score) {
+    constructor(score: Score, horse: Horse, rider: Rider) {
       this.score = score;
+      this.horse = horse;
+      this.rider = rider;
     }
 }
