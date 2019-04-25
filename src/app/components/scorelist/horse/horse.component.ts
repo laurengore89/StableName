@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Horse } from 'src/app/models';
 
 @Component({
@@ -6,8 +6,15 @@ import { Horse } from 'src/app/models';
   templateUrl: './horse.component.html',
   styleUrls: ['./horse.component.scss']
 })
-export class ScorelistHorseComponent {
+
+export class ScorelistHorseComponent implements OnInit {
   @Input() horse: Horse;
+  @Input() position: string;
+  public dnf: boolean;
 
   constructor() { }
+
+  ngOnInit() {
+    this.dnf = this.position === 'EL' || this.position === 'WD' || this.position === 'RET' || this.position === 'DSQ';
+  }
 }

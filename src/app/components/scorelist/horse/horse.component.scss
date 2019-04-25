@@ -4,9 +4,10 @@
 
 div.horse {
   div {
+    
     background-color: $background-panels;
     padding: 10px;
-
+    
     &.horse-desc {
       border-radius: 0 0 0 10px;
       border-bottom: 3px solid black;
@@ -15,6 +16,14 @@ div.horse {
     &.horse-image {
       border-radius: 0 0 10px 0;
       border-bottom: 3px solid black;
+    }    
+  }
+  
+  &.dnf {
+    font-style: italic;
+    
+    h4 {
+      text-align: center;
     }
   }
 }

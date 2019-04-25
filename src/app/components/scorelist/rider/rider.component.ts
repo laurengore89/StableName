@@ -9,7 +9,6 @@ import { Rider, Horse } from 'src/app/models';
 export class ScorelistRiderComponent {
   @Input() draw: number;
   @Input() rider: Rider;
-  @Input() horse: Horse;
 
   constructor() { }
 }
