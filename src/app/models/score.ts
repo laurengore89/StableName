@@ -80,6 +80,17 @@ export class Score {
         return this._result;
     }
 
+    get Sum() {
+        if (this._result.p === 'EL' || this._result.p === 'RET' || this._result.p === 'DSQ' || this._result.p === 'WD') {
+            return 0;
+        }
+        return this._result.a + this._result.b + this._result.c + this._result.d + this._result.e;
+    }
+
+    get SumDisplay() {
+        return (this._result.a + this._result.b + this._result.c + this._result.d + this._result.e).toFixed(1);
+    }
+
     get Competition() {
         return new Competition(new CompetitionDTO(this._competition, ''));
     }

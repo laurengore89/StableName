@@ -8,6 +8,7 @@ import { Rider, Horse } from 'src/app/models';
 })
 export class ScorelistRiderComponent {
   @Input() draw: number;
+  @Input() sum: string;
   @Input() rider: Rider;
 
   constructor() { }

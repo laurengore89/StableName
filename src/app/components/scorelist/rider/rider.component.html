@@ -1,7 +1,7 @@
 <div class="col-sm-12">
   <div class="row">
     <div class="col-sm-12 rider-desc">
-      <h2 class="rider-name">{{ draw }}: {{ rider.Name }}</h2>
+      <h2 class="rider-name"><ng-container *ngIf="sum > 0">[{{ sum }}] </ng-container>{{ draw }}: {{ rider.Name }}</h2>
       <ng-container *ngIf="rider.OtherName"> ({{ rider.OtherName }})</ng-container>, <ng-container *ngIf="rider.Age">
         {{ rider.Age }} </ng-container>{{ rider.BaseDescriptor }} {{ rider.Fei }}
       <p *ngIf="rider.Notes !== ''" innerHTML="{{ rider.Notes }}">
