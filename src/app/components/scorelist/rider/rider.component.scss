@@ -10,9 +10,13 @@ div {
     border-radius: 10px 10px 0 0;
     background-color: $background-header;
 
-    h2.rider-name {
+    h3.rider-name {
       display: inline;
       font-weight: bold;
     }
+  }
+
+  &.dnf {
+    font-style: italic;
   }
 }
