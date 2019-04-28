@@ -14,7 +14,7 @@ export class ScorelistComponent implements OnInit {
 
   ngOnInit() {
     this.scoresShow = this.datablock.scores
-      .filter(s => s.Competition.Fei === '2018_CI_0408_C_S_01_01')
+      .filter(s => s.Competition.Fei === '2019_LEXINGTON')
       .map(s => new ScoreHorseRider(
         s,
         this.datablock.horses.find(h => h.Fei === s.Horse.Fei), this.datablock.riders.find(r => r.Fei === s.Rider.Fei)
