@@ -10,11 +10,12 @@ import { Horse, Score } from '../../../models';
 export class RiderlistHorseComponent implements OnInit {
   @Input() horse: Horse;
   @Input() ridername: string;
+  @Input() riderfei: string;
   public scoresShow: Score[];
   public showNotes = true;
 
   ngOnInit() {
-    this.scoresShow = [];
+    this.scoresShow = this.horse.scores.filter(s => s.Rider.Fei === this.riderfei).sort((a, b) => { if (a.Competition.Fei > b.Competition.Fei) { return -1; } else if (b.Competition.Fei > a.Competition.Fei) { return 1; } return 0; });
   }
 
   openDataPages(): void {
