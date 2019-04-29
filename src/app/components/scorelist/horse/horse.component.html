@@ -2,7 +2,7 @@
   <div class="row" [class.dnf]="dnf">
     <div class="col-sm-12">
         <h4 *ngIf="dnf">Did not finish: {{ position }} -- {{ outcome }}</h4>
-        <h3>{{ horse.Name }}</h3>
+        <h3>{{ horse.Name }}&nbsp;<a *ngIf="horse.Sex === ''" (click)="openDataPages()">[data]</a></h3>
     </div>
   </div>
   <div

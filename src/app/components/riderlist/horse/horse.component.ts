@@ -10,13 +10,11 @@ import { Horse, Score } from '../../../models';
 export class RiderlistHorseComponent implements OnInit {
   @Input() horse: Horse;
   @Input() ridername: string;
-  @Input() riderFei: string;
   public scoresShow: Score[];
   public showNotes = true;
 
   ngOnInit() {
     this.scoresShow = [];
-    // this.scoresShow = this.horse.scores.filter(s => s.Rider.Fei === this.riderFei && s.Result.p !== 'PEND');
   }
 
   openDataPages(): void {
