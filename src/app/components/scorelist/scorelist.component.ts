@@ -10,11 +10,12 @@ import { Datablock, ScoreHorseRider } from 'src/app/models';
 
 export class ScorelistComponent implements OnInit {
   @Input() datablock: Datablock;
+  @Input() compfei: string;
   scoresShow: ScoreHorseRider[];
 
   ngOnInit() {
     this.scoresShow = this.datablock.scores
-      .filter(s => s.Competition.Fei === '2019_LEXINGTON')
+      .filter(s => s.Competition.Fei === this.compfei)
       .map(s => new ScoreHorseRider(
         s,
         this.datablock.horses.find(h => h.Fei === s.Horse.Fei), this.datablock.riders.find(r => r.Fei === s.Rider.Fei)
