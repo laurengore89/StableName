@@ -40,7 +40,6 @@ export class Datablock {
 
     constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionPattern: string) {
         this.buildFromJson();
-        this.printOut();
 
         if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
             this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
