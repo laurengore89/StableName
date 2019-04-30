@@ -540,6 +540,9 @@
       <p>
         {{ horse.Notes }}
       </p>
+      <ng-container *ngIf="scoresShow.length > 0">
+        <table><tr><td colspan=2>Scores:</td></tr><tr *ngFor="let score of scoresShow"><td class="score-left">{{ score.substring(0,score.indexOf(':')).replace(' ', '&nbsp;') }}</td><td class="score-left">{{ score.substring(score.indexOf(':') + 1,score.length).replace(' ', '&nbsp;') }}</td></tr></table>
+      </ng-container>
     </div>
   </div>
 </div>

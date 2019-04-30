@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Datablock, ScoreHorseRider } from 'src/app/models';
+import { Datablock, ScoreHorseRider, EventSeries, Competition } from 'src/app/models';
 
 @Component({
   selector: 'sn-scorelist',
@@ -11,7 +11,9 @@ import { Datablock, ScoreHorseRider } from 'src/app/models';
 export class ScorelistComponent implements OnInit {
   @Input() datablock: Datablock;
   @Input() compfei: string;
-  scoresShow: ScoreHorseRider[];
+  public scoresShow: ScoreHorseRider[];
+  public comps: Competition[];
+  public eventserieses: EventSeries[];
 
   ngOnInit() {
     this.scoresShow = this.datablock.scores
@@ -49,5 +51,8 @@ export class ScorelistComponent implements OnInit {
         return 0;
       }
     });
+
+    this.comps = this.datablock.competitions;
+    this.eventserieses = this.datablock.eventseries;
   }
 }

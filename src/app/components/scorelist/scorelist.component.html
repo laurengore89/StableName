@@ -1,4 +1,4 @@
 <ng-container *ngFor="let scorehorserider of scoresShow">
     <sn-scorelist-rider [position]="scorehorserider.score.Result.p" [sum]="scorehorserider.score.SumDisplay" [draw]="scorehorserider.score.Draw" [rider]="scorehorserider.rider"></sn-scorelist-rider>
-    <sn-scorelist-horse [outcome]="scorehorserider.score.Result.o" [position]="scorehorserider.score.Result.p" [ridername]="scorehorserider.rider.Name" [horse]="scorehorserider.horse"></sn-scorelist-horse>
+    <sn-scorelist-horse [outcome]="scorehorserider.score.Result.o" [position]="scorehorserider.score.Result.p" [ridername]="scorehorserider.rider.Name" [riderfei]="scorehorserider.rider.Fei" [horse]="scorehorserider.horse" [comps]="comps" [eventserieses]="eventserieses"></sn-scorelist-horse>
 </ng-container>

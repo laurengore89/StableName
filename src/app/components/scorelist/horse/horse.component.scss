@@ -2,6 +2,13 @@
 @import "horse-variables.scss";
 @import "horse-svg.scss";
 
+td {
+  border-bottom: 1px solid #0d3532;
+  &.score-left {
+    padding-right: 10px;
+  }
+}
+
 div.row {
   div {
     
