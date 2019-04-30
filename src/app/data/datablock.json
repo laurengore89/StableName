@@ -2433,7 +2433,7 @@
       "d": 2002,
       "l": "BBCC",
       "b": "ISH",
-      "a": "Used to be a runaway but goes mostly in a snaffle now."
+      "a": "Was Kirsty Short's Pony Club horse, she owned him from a four year old. Used to be a runaway but goes mostly in a snaffle now."
     },
     {
       "n": "Charles RR",
@@ -21813,7 +21813,8 @@
       "f": "10009343",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Used to be in a pop group, toured with Boyzone."
     },
     {
       "n": "Cedric Lyard",
@@ -25083,7 +25084,8 @@
       "f": "10095836",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Not from a horsey family, got her first horse at 18."
     },
     {
       "n": "Sian Coleman",
@@ -35396,7 +35398,7 @@
         "c": 13.6,
         "d": 0,
         "e": 0,
-        "o": "SJ-OT",
+        "o": "2nd HI",
         "p": "EL"
       }
     },
@@ -35438,7 +35440,7 @@
         "c": 26.4,
         "d": 0,
         "e": 0,
-        "o": "SJ-OT",
+        "o": "2nd HI",
         "p": "EL"
       }
     },
