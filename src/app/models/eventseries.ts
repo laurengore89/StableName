@@ -37,6 +37,10 @@ export class EventSeries {
         return this._dto;
     }
 
+    get Id(): string {
+        return this._id;
+    }
+
     get Name(): string {
         return this._name;
     }

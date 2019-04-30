@@ -1,5 +1,5 @@
 import { Component, Input, OnInit} from '@angular/core';
-import { Rider, Horse } from '../../../models';
+import { Rider, Horse, Competition, EventSeries } from '../../../models';
 
 @Component({
   selector: 'sn-riderlist-rider',
@@ -8,6 +8,8 @@ import { Rider, Horse } from '../../../models';
 })
 export class RiderlistRiderComponent implements OnInit {
   @Input() rider: Rider;
+  @Input() comps: Competition[];
+  @Input() eventserieses: EventSeries[];
   horsesShow: Horse[];
 
   ngOnInit() {
