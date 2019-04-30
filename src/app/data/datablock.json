@@ -1095,7 +1095,8 @@
       "h": 16.1,
       "d": 2002,
       "l": "BBBB",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "'She kicks and she bites and she pins her ears'. AKA The Troll, AKA Piranhica. Trainer jokes that she kills babies; a baby doll is now kept in her stall and sometimes ends up in the water bucket."
     },
     {
       "n": "Zindane",
@@ -1409,7 +1410,8 @@
       "h": 16.2,
       "d": 2006,
       "l": "BBBB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Previous name Loroto He's a Star."
     },
     {
       "n": "Sula Blue",
@@ -1539,7 +1541,8 @@
       "h": 16.1,
       "d": 2002,
       "l": "BBFC",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "By a Thoroughbred out of a Clydesdale, allegedly. Biggest feet in eventing, the V8 Supercob."
     },
     {
       "n": "Fleet Street",
@@ -1945,7 +1948,8 @@
       "h": 16.1,
       "d": 2003,
       "l": "BBBB",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "a": "Sire is a Thoroughbred, dam is 1/4 Shire."
     },
     {
       "n": "MHS King Joules",
@@ -2087,7 +2091,8 @@
       "h": 16.2,
       "d": 2005,
       "l": "FFFB",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "a": "When bought, considered 'hairy and big-boned'."
     },
     {
       "n": "Ivar Gooden",
@@ -2109,7 +2114,8 @@
       "h": 16,
       "d": 2001,
       "l": "BBBB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Can be aggressive in his stable, so wears an Equilume mask with blue LEDs, a technique invented to alter perceived day length in broodmares."
     },
     {
       "n": "Away Cruising",
@@ -2142,7 +2148,8 @@
       "h": 17,
       "d": 2004,
       "l": "BBBB",
-      "b": "OLDBG"
+      "b": "OLDBG",
+      "a": "Frightened of crowds."
     },
     {
       "n": "Coolys Luxury",
@@ -2186,7 +2193,8 @@
       "h": 16.2,
       "d": 2007,
       "l": "BBSS",
-      "b": "HANN"
+      "b": "HANN",
+      "a": "Lives mostly outside. Has a Shetland pony friend called Sooty who keeps him calm."
     },
     {
       "n": "Foxwood High",
@@ -2240,7 +2248,8 @@
       "x": "G",
       "h": 17.2,
       "d": 2005,
-      "l": "FCCF"
+      "l": "FCCF",
+      "a": "'Miley' for his miles of leg as a foal."
     },
     {
       "n": "Junco CP",
@@ -2272,7 +2281,8 @@
       "h": 16.2,
       "d": 2004,
       "l": "SSBS",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "a": "Dumped his rider at Badminton 2016 and jumped three fences upstream towards the stables."
     },
     {
       "n": "Zagreb",
@@ -2422,7 +2432,8 @@
       "h": 16.2,
       "d": 2002,
       "l": "BBCC",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Used to be a runaway but goes mostly in a snaffle now."
     },
     {
       "n": "Charles RR",
@@ -2476,7 +2487,8 @@
       "h": 16.1,
       "d": 2003,
       "l": "CCCB",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "Bought by Tom Jackson's parents at four. Described at that time as gangly, cheap, and cribbing. Makes trouble by removing his own headcollar and rugs."
     },
     {
       "n": "Nereo",
@@ -2552,7 +2564,8 @@
       "h": 17.1,
       "d": 2006,
       "l": "HSHS",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Bought from a hunting yard at 4, 'nothing special .. moved like a sewing machine'. Has heavy feather in the off season."
     },
     {
       "n": "Fernhill Pimms",
@@ -2619,7 +2632,8 @@
       "d": 2005,
       "l": "BBBB",
       "b": "AES",
-      "z": 2018
+      "z": 2018,
+      "a": "Cause of death: destroyed suspensory ligament at Badminton 2018."
     },
     {
       "n": "Billy Beware",
@@ -2641,7 +2655,8 @@
       "h": 16.1,
       "d": 2001,
       "l": "BBBB",
-      "b": "HOLST"
+      "b": "HOLST",
+      "a": "Bought by Warren Lamperd as an unbroken broodmare. Described as 'Free range' because if they try to keep her in one paddock, she jumps between them. Likes sunbathing and scratches under the jaw."
     },
     {
       "n": "Perfect Stranger",
@@ -2662,7 +2677,8 @@
       "x": "G",
       "h": 16.2,
       "d": 2002,
-      "l": "BBBS"
+      "l": "BBBS",
+      "a": "Homebred grandson of Louise Harwood's Pony Club mare. Nephew to Bit of a Barney and Partly Pickled."
     },
     {
       "n": "Xavier Faer",
@@ -2738,7 +2754,8 @@
       "x": "",
       "h": 0,
       "d": 0,
-      "l": ""
+      "l": "",
+      "a": "Racing name Smart Gorky. Known as the Deer. Injury-prone in turnout and has to be hand-grazed. Hates hacking, bolts home."
     },
     {
       "n": "Wieloch's Utah Sun",
@@ -2778,7 +2795,8 @@
       "x": "S",
       "h": 17.1,
       "d": 2006,
-      "l": "BBBB"
+      "l": "BBBB",
+      "a": "Intended ride of the deceased George Crawford, headed to Badminton 2019 under Emily Parker in his memory but sadly withdrawn. A big horse, 'makes Harelaw Wizard look small'."
     },
     {
       "n": "Dargun",
@@ -2818,7 +2836,8 @@
       "x": "G",
       "h": 16.1,
       "d": 2007,
-      "l": "FFBB"
+      "l": "FFBB",
+      "a": "Named for his close-set eyes."
     },
     {
       "n": "Barrichello",
@@ -3194,7 +3213,8 @@
       "h": 0,
       "d": 0,
       "l": "",
-      "b": "TB"
+      "b": "TB",
+      "a": "Racing name Kalinga Demo. Has an 'over-excited, almost neurotic' dual personality that Elisa Wallace calls 'The Dragon'."
     },
     {
       "n": "Rubis de Prere",
@@ -3347,7 +3367,8 @@
       "h": 16.2,
       "d": 2005,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Described by Tina Cook as a racing reject."
     },
     {
       "n": "Allercombe Ellie",
@@ -3424,7 +3445,8 @@
       "h": 17,
       "d": 1999,
       "l": "BBBB",
-      "b": "CDE"
+      "b": "CDE",
+      "a": "Full brother to Nereo."
     },
     {
       "n": "R'du Temps Bliniere",
@@ -3694,7 +3716,8 @@
       "d": 2003,
       "l": "BBBF",
       "b": "TB",
-      "z": 2017
+      "z": 2017,
+      "a": "Cause of death: broken pastern at Pau 2017."
     },
     {
       "n": "Brookleigh",
@@ -4191,7 +4214,8 @@
       "h": 17.1,
       "d": 2000,
       "l": "BBBB",
-      "b": "BWP"
+      "b": "BWP",
+      "a": "Previous name Quattro Van De Kwakkelhoek."
     },
     {
       "n": "Horseware Bushman",
@@ -4236,7 +4260,8 @@
       "d": 2000,
       "l": "CBBB",
       "b": "ISH",
-      "z": 2016
+      "z": 2016,
+      "a": "Cause of death: broken fetlock at Belton 2016."
     },
     {
       "n": "Oloa",
@@ -4363,7 +4388,8 @@
       "h": 0,
       "d": 0,
       "l": "",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Michael Owen credits this horse with getting him through the death of his teenage sister in a car crash."
     },
     {
       "n": "Willy Do",
@@ -7779,7 +7805,8 @@
       "d": 2005,
       "l": "BBBB",
       "b": "SHBGB",
-      "z": 2017
+      "z": 2017,
+      "a": "Cause of death: complications after injury at Burghley 2017."
     },
     {
       "n": "Steady Eddie",
@@ -7789,7 +7816,8 @@
       "x": "G",
       "h": 16.1,
       "d": 2003,
-      "l": "BBSF"
+      "l": "BBSF",
+      "a": "Racing name Big Jet. Raced hard, sometimes consecutive days, on bad tracks in the outback. Scouted by Boyd Martin after his race retirement."
     },
     {
       "n": "Landioso",
@@ -7865,7 +7893,8 @@
       "h": 0,
       "d": 2003,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Racing name Captain Frank."
     },
     {
       "n": "Under Suspection",
@@ -7887,7 +7916,8 @@
       "h": 16.3,
       "d": 2007,
       "l": "BBSS",
-      "b": "AES"
+      "b": "AES",
+      "a": "Remarkably flaxen tail."
     },
     {
       "n": "Indy 500",
@@ -7898,7 +7928,8 @@
       "h": 0,
       "d": 2005,
       "l": "BBCF",
-      "b": "TB"
+      "b": "TB",
+      "a": "Racing name My Gifted Indyanna. Unraced because her farm was sold up by owner Alex Trebek. Nearly died after foaling Laguna Seca."
     },
     {
       "n": "LCC Barnaby",
@@ -7909,7 +7940,8 @@
       "h": 16.3,
       "d": 2006,
       "l": "CBBB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "'Nuts, out of control and generally we hated riding him'. Very strong and gets worse if you put a heavy bit on him."
     },
     {
       "n": "Pennlands Douglas",
@@ -8058,7 +8090,8 @@
       "h": 0,
       "d": 2002,
       "l": "BBBB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Named after basketball player Kobe Bryant."
     },
     {
       "n": "Balladeer Miller Man",
@@ -8089,7 +8122,8 @@
       "x": "G",
       "h": 16.3,
       "d": 2007,
-      "l": "SBSS"
+      "l": "SBSS",
+      "a": "Sire a TB, damsire a Clydesdale. According to Ben Hobday's hashtags, 'used to pull carts' and '5 star cob'."
     },
     {
       "n": "Simply Clover",
@@ -8253,7 +8287,8 @@
       "h": 15.2,
       "d": 2004,
       "l": "BBBB",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "When his showjumping wasn't much good, was broken to drive."
     },
     {
       "n": "Horseware Ardagh Highlight",
@@ -8407,7 +8442,8 @@
       "h": 16,
       "d": 2007,
       "l": "BBBC",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "a": "Born on the 4th of July."
     },
     {
       "n": "Cool Investment",
@@ -8429,7 +8465,8 @@
       "h": 0,
       "d": 0,
       "l": "",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Bought as a foal, Rachel Robinson turned down Andrew Nicholson when he offered to buy him from her. Has one-sided facial paralysis after a freak accident in his lorry as a two-year-old."
     },
     {
       "n": "Shamwari 4",
@@ -8581,7 +8618,8 @@
       "x": "M",
       "h": 16.2,
       "d": 2004,
-      "l": "BCBB"
+      "l": "BCBB",
+      "a": "According to Sarah Bullimore, 'evil' at 5 but merely 'sharp' at 9."
     },
     {
       "n": "Cooley On Show",
@@ -8901,7 +8939,8 @@
       "x": "G",
       "h": 16.3,
       "d": 2004,
-      "l": "BBBC"
+      "l": "BBBC",
+      "a": "Failed showjumper. Can be cheeky, David Britnell hacks him with a neck strap because he spins to try to throw his rider."
     },
     {
       "n": "Call Me Maggie May",
@@ -8956,7 +8995,8 @@
       "h": 0,
       "d": 0,
       "l": "",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Has struggled with stamina cross-country, but now has a new fitness regime."
     },
     {
       "n": "Barlison",
@@ -9000,7 +9040,8 @@
       "h": 0,
       "d": 2007,
       "l": "BBSC",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "Hallie Coon bought her having only seen a video."
     },
     {
       "n": "Santiago Bay",
@@ -9064,7 +9105,8 @@
       "x": "G",
       "h": 15.1,
       "d": 2006,
-      "l": "BBFB"
+      "l": "BBFB",
+      "a": "Everyone's favourite little golden pony. Has his own Facebook page. Unknown heritage but probably has Connemara."
     },
     {
       "n": "Isaac Newton",
@@ -9160,7 +9202,8 @@
       "h": 16.2,
       "d": 2008,
       "l": "BFBF",
-      "b": "HOLST"
+      "b": "HOLST",
+      "a": "Was Jonelle's ride til 2017 pregnancy, Tim got to keep her afterwards."
     },
     {
       "n": "Lowhill Clover",
@@ -9226,7 +9269,8 @@
       "h": 15.3,
       "d": 2002,
       "l": "BBCB",
-      "b": "CNN"
+      "b": "CNN",
+      "a": "By a Connemara out of a Thoroughbred. When first bought, was such a naughty pony they used to call him 'Rat'."
     },
     {
       "n": "Westeria Lane",
@@ -9248,7 +9292,8 @@
       "h": 15.3,
       "d": 2002,
       "l": "CBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Small, unimpressive, 'permanent hay belly'."
     },
     {
       "n": "Copper Beach",
@@ -9292,7 +9337,8 @@
       "h": 16.2,
       "d": 2003,
       "l": "BBBB",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "Was dyed pink in late 2015 by Emma Hyslop-Webb for a breast cancer charity."
     },
     {
       "n": "Lawless Lil",
@@ -10151,7 +10197,8 @@
       "h": 0,
       "d": 2007,
       "l": "BBBB",
-      "b": "HOLST"
+      "b": "HOLST",
+      "a": "Name is a portmanteau of his sire and damsire, Caresino and Levernois."
     },
     {
       "n": "Springpower",
@@ -10183,7 +10230,8 @@
       "x": "G",
       "h": 17.1,
       "d": 2006,
-      "l": "BBBF"
+      "l": "BBBF",
+      "a": "Out of a TB by a Welsh cob."
     },
     {
       "n": "Polaris",
@@ -10194,7 +10242,8 @@
       "h": 17.2,
       "d": 2005,
       "l": "BBCC",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "A bit spooky. Sara Gumbiner blames his Irish heritage,and once felt the need to check whether she could fall off XC on the flat, and still continue."
     },
     {
       "n": "Tactical Maneuver",
@@ -10205,7 +10254,8 @@
       "h": 0,
       "d": 2005,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Racing name Shykee's Thunder."
     },
     {
       "n": "Kelecyn Cognac",
@@ -10215,7 +10265,8 @@
       "x": "",
       "h": 0,
       "d": 0,
-      "l": ""
+      "l": "",
+      "a": "Racing name Heir Pegasus. Bought by Kevin McNab for $300, very lame and badly behaved. His sire has a reputation for 'difficult' horses."
     },
     {
       "n": "Mettraise",
@@ -10236,7 +10287,8 @@
       "h": 16,
       "d": 2007,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Trained to race but never actually went."
     },
     {
       "n": "Sir Oberon",
@@ -10246,7 +10298,8 @@
       "x": "G",
       "h": 0,
       "d": 2002,
-      "l": "BBBB"
+      "l": "BBBB",
+      "a": "Breeding is Holsteiner/TB."
     },
     {
       "n": "More Inspiration",
@@ -10278,7 +10331,8 @@
       "h": 15.2,
       "d": 2004,
       "l": "CBBB",
-      "b": "SHBGB"
+      "b": "SHBGB",
+      "a": "'Tiny but with a massive stride'. Snaffle-mouthed and uses a rubber bit in dressage."
     },
     {
       "n": "Johnny Royale",
@@ -10289,7 +10343,8 @@
       "h": 0,
       "d": 2008,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Racing name Chivas Royale."
     },
     {
       "n": "Ap Prime",
@@ -10438,7 +10493,8 @@
       "x": "",
       "h": 0,
       "d": 0,
-      "l": ""
+      "l": "",
+      "a": "Racing name Tsu Tsu Ro."
     },
     {
       "n": "Ballylaffin Bracken",
@@ -10480,7 +10536,8 @@
       "h": 0,
       "d": 2004,
       "l": "BBBB",
-      "b": "TRAK"
+      "b": "TRAK",
+      "a": "Adorable long ears. Has a non-competing horse friend called PJ, who he refuses to be without at home. A happy, calm hacker."
     },
     {
       "n": "Fernhill By Night",
@@ -10511,7 +10568,8 @@
       "x": "G",
       "h": 15.1,
       "d": 2003,
-      "l": "BBBB"
+      "l": "BBBB",
+      "a": "Sweetest little pony face. Breeding is Connemara/TB."
     },
     {
       "n": "Cecelia",
@@ -10522,7 +10580,8 @@
       "h": 0,
       "d": 2003,
       "l": "BBBB",
-      "b": "TB"
+      "b": "TB",
+      "a": "Unraced, racing name Constock."
     },
     {
       "n": "Parker",
@@ -10636,7 +10695,8 @@
       "x": "M",
       "h": 16.2,
       "d": 2006,
-      "l": "BBBB"
+      "l": "BBBB",
+      "a": "Trakehner/TB breeding. Barn diva."
     },
     {
       "n": "Abbey Gs",
@@ -10986,7 +11046,8 @@
       "h": 0,
       "d": 2000,
       "l": "BBCB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "Named after basketball player Reggie Miller. Sometimes coughs due to throat surgery, so isn't bridled until the last minute before dressage. His groom rode him down the aisle at her wedding."
     },
     {
       "n": "Fernhill Flutter",
@@ -11380,7 +11441,8 @@
       "d": 2000,
       "l": "CBCB",
       "b": "SHBGB",
-      "z": 2016
+      "z": 2016,
+      "a": "Cause of death: cancer."
     },
     {
       "n": "FRH Butts Abraxxas",
@@ -11426,7 +11488,8 @@
       "h": 16.1,
       "d": 1997,
       "l": "BBBB",
-      "z": 2014
+      "z": 2014,
+      "a": "By the Trakehner stallion Fleetwater Opposition out of a Thoroughbred. 'The ugliest foal you've ever seen' with an enormous head and mismatched front feet.<br />Cause of death: seizure."
     },
     {
       "n": "Boston Two Tip",
@@ -11860,7 +11923,8 @@
       "d": 2000,
       "l": "BBFF",
       "b": "TB",
-      "z": 0
+      "z": 0,
+      "a": "Bred by Tim Price's parents."
     },
     {
       "n": "Eleda All Black",
@@ -12000,7 +12064,8 @@
       "h": 0,
       "d": 2001,
       "l": "BBBB",
-      "z": 2018
+      "z": 2018,
+      "a": "Cause of death: unknown, during retirement."
     },
     {
       "n": "Mister Pooh",
@@ -12024,7 +12089,8 @@
       "d": 1993,
       "l": "BBBB",
       "b": "ISH",
-      "z": 0
+      "z": 0,
+      "a": "A crowd favourite, though he be but little, he is fierce."
     },
     {
       "n": "Rayef",
@@ -12141,7 +12207,8 @@
       "d": 1998,
       "l": "BBCF",
       "b": "ISH",
-      "z": 2012
+      "z": 2012,
+      "a": "Cause of death: euthanised, unknown cause."
     },
     {
       "n": "Roma M.l.",
@@ -12387,7 +12454,8 @@
       "d": 1999,
       "l": "BBBB",
       "b": "ISH",
-      "z": 2011
+      "z": 2011,
+      "a": "Cause of death: neurological issue."
     },
     {
       "n": "Kilpatrick River",
@@ -12421,7 +12489,8 @@
       "h": 16.3,
       "d": 1996,
       "l": "BBBB",
-      "z": 0
+      "z": 0,
+      "a": "Homebred out of Louise Harwood's Pony Club mare. Full brother to Bit of a Barney and uncle to Mr Potts."
     },
     {
       "n": "Thunder III",
@@ -12503,7 +12572,8 @@
       "h": 16.2,
       "d": 1996,
       "l": "SBSS",
-      "z": 2012
+      "z": 2012,
+      "a": "Cause of death: injury in Young Rider class at Weston."
     },
     {
       "n": "Shaabrak",
@@ -12539,7 +12609,8 @@
       "d": 2000,
       "l": "BBBB",
       "b": "TB",
-      "z": 0
+      "z": 0,
+      "a": "Same mother as Opposition Buzz."
     },
     {
       "n": "Phoebus",
@@ -12621,7 +12692,8 @@
       "d": 1996,
       "l": "BBBB",
       "b": "TB",
-      "z": 0
+      "z": 0,
+      "a": "Named after Manuel from Fawlty Towers. AKA 'Spinhead', spins in circles when excited. Once sent home from a hunt for being disruptive."
     },
     {
       "n": "Spring Along",
@@ -12808,7 +12880,8 @@
       "d": 1998,
       "l": "BBBB",
       "b": "TB",
-      "z": 2016
+      "z": 2016,
+      "a": "Cause of death: unknown, during retirement."
     },
     {
       "n": "Trebetherick",
@@ -13072,7 +13145,8 @@
       "h": 16.2,
       "d": 1995,
       "l": "BBBB",
-      "z": 0
+      "z": 0,
+      "a": "Homebred out of Louise Harwood's Pony Club mare. Full brother to Partly Pickled and uncle to Mr Potts."
     },
     {
       "n": "Some Day Soon",
@@ -13488,7 +13562,8 @@
       "d": 1999,
       "l": "SSSS",
       "b": "TB",
-      "z": 0
+      "z": 0,
+      "a": "Bought off the track for $850. Survived a barn fire in 2011, three months before Burghley. Boyd Martin calls him the Legend."
     },
     {
       "n": "Incognito",
@@ -13523,7 +13598,8 @@
       "d": 1997,
       "l": "BBBB",
       "z": 0,
-      "b": "TB"
+      "b": "TB",
+      "a": "Race name was War Buckaroo."
     },
     {
       "n": "Cadoc Z",
@@ -13568,7 +13644,8 @@
       "h": 0,
       "d": 2001,
       "l": "BBBB",
-      "z": 2012
+      "z": 2012,
+      "a": "Cause of death: acute encephalitis."
     },
     {
       "n": "Twizzel",
@@ -14580,7 +14657,8 @@
       "d": 2002,
       "l": "BBBF",
       "b": "WESTF",
-      "z": 2014
+      "z": 2014,
+      "a": "Cause of death: complications after colic surgery."
     },
     {
       "n": "Hildago De L’ile",
@@ -16154,7 +16232,8 @@
       "d": 2004,
       "l": "BSSS",
       "b": "ISH",
-      "z": 0
+      "z": 0,
+      "a": "Named Oscar because he's a grouch at home.<br />Cause of death: heart attack."
     },
     {
       "n": "Houston",
@@ -16232,7 +16311,8 @@
       "d": 2000,
       "l": "BBBB",
       "z": 0,
-      "b": "TB"
+      "b": "TB",
+      "a": "Ex-racer. Thinks he's people. Downhill and not much of a front end when starting out, Emily Beshear calls him 'spaghetti legs'."
     },
     {
       "n": "Expedience",
@@ -16597,7 +16677,7 @@
       "z": 0
     },
     {
-      "n": "Rf Rovano Rex",
+      "n": "RF Rovano Rex",
       "f": "NED40840",
       "s": "",
       "c": "",
@@ -16639,7 +16719,8 @@
       "h": 0,
       "d": 2003,
       "l": "BBBB",
-      "z": 0
+      "z": 0,
+      "a": "Breeding is Thoroughbred x Oldenburg."
     },
     {
       "n": "Killian O'Connor",
@@ -16663,7 +16744,8 @@
       "d": 2001,
       "l": "BBBB",
       "b": "TB",
-      "z": 2015
+      "z": 2015,
+      "a": "Ex-racer, born in Kentucky.<br />Cause of death: presumed aneurysm."
     },
     {
       "n": "Llewellyn",
@@ -16822,7 +16904,8 @@
       "d": 1997,
       "l": "BBBB",
       "z": 2014,
-      "b": "TB"
+      "b": "TB",
+      "a": "Brought Jessica Phoenix up through the levels.<br/>Cause of death: presumed aneurysm."
     },
     {
       "n": "Manny",
@@ -16856,7 +16939,8 @@
       "d": 1996,
       "l": "BBBF",
       "b": "TB",
-      "z": 2011
+      "z": 2011,
+      "a": "Ex-racer from New Zealand.<br />Cause of death: aortic aneurysm."
     },
     {
       "n": "The Foreman",
@@ -16868,7 +16952,8 @@
       "d": 1996,
       "l": "BCFF",
       "b": "TB",
-      "z": 0
+      "z": 0,
+      "a": "Ex-racer from Maryland."
     },
     {
       "n": "Amistad",
@@ -17028,7 +17113,8 @@
       "d": 1995,
       "l": "BFBF",
       "b": "TB",
-      "z": 2018
+      "z": 2018,
+      "a": "Throws a few happy crow-hops after a good showjumping round.<br />Cause of death: unknown, during retirement."
     },
     {
       "n": "Fleeceworks Mystere Du Val",
@@ -18393,7 +18479,7 @@
       "z": 0
     },
     {
-      "n": "Arco Bb",
+      "n": "Arco BB",
       "f": "103TJ54",
       "s": "",
       "c": "",
@@ -20831,7 +20917,8 @@
       "d": 2009,
       "l": "SHSS",
       "z": 0,
-      "b": "SF"
+      "b": "SF",
+      "a": "Lots of flax, lots of chrome, and a belly spot. With his pretty orange and white colours, known as The Koi."
     },
     {
       "n": "Colero",
@@ -20912,7 +20999,8 @@
       "d": 2007,
       "l": "BBBF",
       "z": 0,
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "Over-jumps, refuses to touch a rail or even a brush fence. Keen on his food, wears a grazing muzzle."
     },
     {
       "n": "Islandwood Captain Jack",
@@ -20935,7 +21023,8 @@
       "d": 2005,
       "l": "BBFF",
       "z": 0,
-      "b": "TB"
+      "b": "TB",
+      "a": "Never raced because he threw his jockeys, then when tried as a lesson horse, threw everyone else. Jumps for fun, repeatedly jumped out of his field. Now so good-natured Buck Davidson let spectators pat him during a hold on course."
     },
     {
       "n": "Unmarked Bills",
@@ -20959,7 +21048,8 @@
       "d": 2008,
       "l": "BBBB",
       "z": 0,
-      "b": "OLDBG"
+      "b": "OLDBG",
+      "a": "Lives in Frankie Thieriot Stutes's back garden and lets her kids sit on him. Likes a croissant and a nap after competing. When first bought, 'really ugly with the personality of Eeyore'."
     },
     {
       "n": "Silver Night Lady",
@@ -20987,7 +21077,8 @@
       "f": "10004203",
       "g": "F",
       "b": 1985,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Personal colour is lilac."
     },
     {
       "n": "Mary King",
@@ -21003,7 +21094,8 @@
       "f": "10000220",
       "g": "F",
       "b": 1962,
-      "t": "GER"
+      "t": "GER",
+      "a": "Terrifyingly good dressage."
     },
     {
       "n": "Michael Jung",
@@ -21025,7 +21117,8 @@
       "f": "10000156",
       "g": "M",
       "b": 1963,
-      "t": "USA"
+      "t": "USA",
+      "a": "Reduced his string since 2016 when his stepdaughter suffered a serious TBI in a horse fall."
     },
     {
       "n": "Sam Griffiths",
@@ -21040,14 +21133,16 @@
       "f": "10003843",
       "g": "M",
       "b": 1981,
-      "t": "AUS"
+      "t": "AUS",
+      "a": "Known for stylish appearance and high speed across country. Polishes his boots when nervous."
     },
     {
       "n": "Caroline Clarke",
       "f": "10099026",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Studied dentistry at Bristol. Won the CCI2* at Blair in 2016 while still a student and an amateur."
     },
     {
       "n": "Clarke Johnstone",
@@ -21062,7 +21157,8 @@
       "f": "10000553",
       "g": "M",
       "b": 1956,
-      "t": "NZL"
+      "t": "NZL",
+      "a": "Used to be a dairy farmer. Teammate Andrew Nicholson says he could go cross-country on a cow. Wanted to be a jockey but he's 6'2\"."
     },
     {
       "n": "Alex Hua Tian",
@@ -21098,7 +21194,8 @@
       "f": "10000230",
       "g": "M",
       "b": 1969,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Full name is William Speed Lane Fox-Pitt. Went to Eton, and the 'Pitt' is the same line as the former PM. Usually the tallest in the field at 6'5\". Suffered head trauma falling from Reinstated at Le Lion d'Angers October 2015, two weeks in ICU."
     },
     {
       "n": "Thibaut Vallette",
@@ -21112,7 +21209,8 @@
       "f": "10009695",
       "g": "F",
       "b": 0,
-      "t": "GER"
+      "t": "GER",
+      "a": "First job was as an apprentice bank clerk."
     },
     {
       "n": "Mathieu Lemoine",
@@ -21126,7 +21224,8 @@
       "f": "10003737",
       "g": "M",
       "b": 1979,
-      "t": "USA"
+      "t": "USA",
+      "a": "Married to a Grand Prix dressage rider. Co-hosts on the Eventing Radio Show."
     },
     {
       "n": "Jonelle Price",
@@ -21148,7 +21247,8 @@
       "f": "10007318",
       "g": "F",
       "b": 0,
-      "t": "NED"
+      "t": "NED",
+      "a": "Given name means 'Blackbird'. Has a master's degree in Dutch & fiscal law."
     },
     {
       "n": "Yoshiaki Oiwa",
@@ -21206,7 +21306,8 @@
       "f": "10000224",
       "g": "F",
       "b": 1968,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Runs the Billy stud with husband William. First winner of the Rolex Grand Slam in 2003. Writes children's books."
     },
     {
       "n": "Ludwig Svennerstal",
@@ -21235,7 +21336,8 @@
       "f": "10004727",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "No relation."
     },
     {
       "n": "Elmo Jankari",
@@ -21284,7 +21386,8 @@
       "f": "10003896",
       "g": "F",
       "b": 0,
-      "t": "IRL"
+      "t": "IRL",
+      "a": "Day job as a maths teacher."
     },
     {
       "n": "Jessica Phoenix",
@@ -21292,7 +21395,8 @@
       "f": "10004498",
       "g": "F",
       "b": 1983,
-      "t": "CAN"
+      "t": "CAN",
+      "a": "Thoroughbred fan. Married to a cattle farmer. Rode Western as a child. Had a rotational fall with Exultation in May 2015, broken ribs and liver surgery, three days in ICU."
     },
     {
       "n": "Marcio Appel Cheuiche",
@@ -21369,14 +21473,16 @@
       "f": "10016118",
       "g": "M",
       "b": 1979,
-      "t": "NZL"
+      "t": "NZL",
+      "a": "The calmest man in eventing. Beach bum who doesn't like wearing shoes."
     },
     {
       "n": "Lauren Kieffer",
       "f": "10016272",
       "g": "F",
       "b": 1987,
-      "t": "USA"
+      "t": "USA",
+      "a": "Personal colour: orange. The daughter of a 'non-horsey' dirt bike racer, got riding lessons for her sixth birthday. Trained by Karen and David O'Connor."
     },
     {
       "n": "Theo Van De Vendel",
@@ -21439,7 +21545,8 @@
       "f": "10101347",
       "g": "M",
       "b": 0,
-      "t": "IRL"
+      "t": "IRL",
+      "a": "Moved from showjumping to eventing when he met his wife, who came to see a horse he was selling. She bought it."
     },
     {
       "n": "Andrey Mitin",
@@ -21524,7 +21631,8 @@
       "f": "10032818",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Born in Cumbria of Scottish heritage."
     },
     {
       "n": "Piggy French",
@@ -21532,7 +21640,8 @@
       "f": "10005247",
       "g": "F",
       "b": 1980,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Nickname bestowed by an older sister, after Piglet from Winnie the Pooh."
     },
     {
       "n": "Frankie Thieriot Stutes",
@@ -21540,7 +21649,8 @@
       "f": "10004167",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Proud amateur with a 'normal job'. Took two horses to college, then cut down to just Fric Frac Berence to focus on work."
     },
     {
       "n": "James Sommerville",
@@ -21563,7 +21673,8 @@
       "f": "10000193",
       "g": "M",
       "b": 1961,
-      "t": "NZL"
+      "t": "NZL",
+      "a": "His middle name is Clifton. Broke his neck falling from Cillnabradden Evo at Gatcombe August 2015."
     },
     {
       "n": "Simon Grieve",
@@ -21584,7 +21695,8 @@
       "f": "10013306",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Personal colour is baby pink."
     },
     {
       "n": "Sara Squires",
@@ -21612,7 +21724,8 @@
       "f": "10013424",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Amateur eventer and full-time equine vet."
     },
     {
       "n": "Emma Forsyth",
@@ -21626,7 +21739,8 @@
       "f": "10016500",
       "g": "M",
       "b": 0,
-      "t": "NZL"
+      "t": "NZL",
+      "a": "Worked as a rider for Andrew Nicholson. Taller than William Fox-Pitt at 6'6\". Non-horsey family - dad is a doctor, mum teaches art."
     },
     {
       "n": "Georgie Strang",
@@ -21640,7 +21754,8 @@
       "f": "10013696",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Had a rotational fall with Tis A Beauty at Tweseldown July 2013, collapsed lung, six days in ICU."
     },
     {
       "n": "Thomas Rowland",
@@ -21654,7 +21769,8 @@
       "f": "10019985",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Survived cancer in 2015. Big deal on the Insta. #yehBoi"
     },
     {
       "n": "Roo Fox",
@@ -21712,7 +21828,8 @@
       "f": "10005138",
       "g": "M",
       "b": 1982,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Dad inherited Grandma's horse-drawn milk float, and ended up riding at Burghley as an amateur. Oliver is the first pro in the family."
     },
     {
       "n": "Francis Whittington",
@@ -21769,7 +21886,8 @@
       "f": "10004377",
       "g": "F",
       "b": 1984,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Personal colour is sky blue."
     },
     {
       "n": "Emily Parker",
@@ -21812,7 +21930,8 @@
       "f": "10005184",
       "g": "M",
       "b": 1975,
-      "t": "AUS"
+      "t": "AUS",
+      "a": "Personal colour is bright red; aka the Red Thunder from Down Under."
     },
     {
       "n": "Emily Lochore",
@@ -21840,7 +21959,8 @@
       "f": "10005309",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Lost left ring finger to a freak accident in his horsebox at Bramham 2017. Has modified his rein grip to cope."
     },
     {
       "n": "Ros Canter",
@@ -21848,14 +21968,16 @@
       "f": "10011524",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Only 5'2\" and can't run fast enough to trot up Allstar B."
     },
     {
       "n": "Imogen Murray",
       "f": "10043941",
       "g": "F",
       "b": 1994,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Penalised for going too fast at her first pony cross-country."
     },
     {
       "n": "Harry Mutch",
@@ -21869,7 +21991,8 @@
       "f": "10004298",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Was apprenticed to William Fox-Pitt. Shattered both elbows falling from Shannondale Santiago at Wellington August 2013."
     },
     {
       "n": "Dani Evans",
@@ -21905,7 +22028,8 @@
       "f": "10005434",
       "g": "F",
       "b": 0,
-      "t": "CAN"
+      "t": "CAN",
+      "a": "Trained under Bruce Davidson Sr. Admired his horse Eagle Lion and had signed posters of him."
     },
     {
       "n": "Ciaran Glynn",
@@ -21927,7 +22051,8 @@
       "f": "10005539",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Took a lot of 2018 off with a lingering concussion. Badminton first-timer blogger for H&H in 2015."
     },
     {
       "n": "Carlos Diaz Fernandez",
@@ -21948,7 +22073,8 @@
       "f": "10005018",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "No, not that one."
     },
     {
       "n": "Alex Bragg",
@@ -21956,7 +22082,8 @@
       "f": "10020430",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Farrier and ex semi-pro rugby player."
     },
     {
       "n": "Daniel Jocelyn",
@@ -21999,7 +22126,8 @@
       "f": "10069139",
       "g": "M",
       "b": 1996,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Played for England in U16 hockey. Amateur distance runner."
     },
     {
       "n": "Ashley Edmond",
@@ -22027,7 +22155,8 @@
       "f": "10057698",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Actually wants to be a PE teacher."
     },
     {
       "n": "Alicia Hawker",
@@ -22041,7 +22170,8 @@
       "f": "10007354",
       "g": "M",
       "b": 1975,
-      "t": "FRA"
+      "t": "FRA",
+      "a": "Trying to develop a new equine hydrotherapy system. Broke his leg falling from Tarastro at Jardy July 2018."
     },
     {
       "n": "Alan John Nolan",
@@ -22055,7 +22185,8 @@
       "f": "10068416",
       "g": "M",
       "b": 1993,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Dad is a farrier and does his horse's shoes."
     },
     {
       "n": "Harry Dzenis",
@@ -22105,7 +22236,8 @@
       "f": "10005693",
       "g": "M",
       "b": 1983,
-      "t": "USA"
+      "t": "USA",
+      "a": "Won a round-trip flight to Europe in the 2017 US national 3* championship and used it to take OBOS O'Reilly to Badminton 2018. Trained by Karen and David O'Connor."
     },
     {
       "n": "Millie Dumas",
@@ -22292,14 +22424,16 @@
       "f": "10005095",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Has run three Tough Mudders."
     },
     {
       "n": "Elisa Wallace",
       "f": "10016208",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Crowdfunded her trip to Badminton 2017."
     },
     {
       "n": "Pascal Leroy",
@@ -22372,7 +22506,8 @@
       "f": "10000231",
       "g": "M",
       "b": 1966,
-      "t": "GER"
+      "t": "GER",
+      "a": "Breeds exotic birds in his spare time."
     },
     {
       "n": "Rodolphe Scherer",
@@ -22444,7 +22579,8 @@
       "f": "10000238",
       "g": "M",
       "b": 1976,
-      "t": "USA"
+      "t": "USA",
+      "a": "Personal colour: red and white. Born in Florida."
     },
     {
       "n": "Lucy Jackson",
@@ -22459,7 +22595,8 @@
       "f": "10000154",
       "g": "M",
       "b": 0,
-      "t": "AUS"
+      "t": "AUS",
+      "a": "Writes a blog at BillLevett.com. Good singing voice, has done panto. Used to drive cattle in Australia."
     },
     {
       "n": "Vittoria Panizzon",
@@ -22487,7 +22624,8 @@
       "f": "10071867",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Daughter of Mary King."
     },
     {
       "n": "Andrew Heffernan",
@@ -22501,7 +22639,8 @@
       "f": "10007117",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Tina Cook's cousin. Is also a senior master of hounds."
     },
     {
       "n": "Spencer Wilton",
@@ -22704,7 +22843,8 @@
       "f": "10007367",
       "g": "M",
       "b": 0,
-      "t": "IRL"
+      "t": "IRL",
+      "a": "Founded EquiRatings with Diarm Byrne. Co-hosts on the EquiRatings Eventing Podcast."
     },
     {
       "n": "Gabriel Figueiredo Silva Cury",
@@ -24533,7 +24673,8 @@
       "f": "10009662",
       "g": "F",
       "b": 1986,
-      "t": "USA"
+      "t": "USA",
+      "a": "Double major in Literature and Foreign Affairs, Middle East expert. Trained by Boyd Martin."
     },
     {
       "n": "Emma Hyslop-Webb",
@@ -24597,7 +24738,8 @@
       "f": "10091339",
       "g": "F",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Has a business degree and worked as brand manager for a novelty umbrella company. Burghley first-timer blogger for H&H in 2018."
     },
     {
       "n": "Sam Ecroyd",
@@ -24676,7 +24818,8 @@
       "f": "10004052",
       "g": "F",
       "b": 1978,
-      "t": "USA"
+      "t": "USA",
+      "a": "Also races cars and presents on TV. Broke her neck falling from HHS Cooley at Burgham July 2016, horse broke a leg and had to be euthanised."
     },
     {
       "n": "Patricia Ryan",
@@ -24711,7 +24854,8 @@
       "f": "10031395",
       "g": "",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Chartered surveyor, runs her own business."
     },
     {
       "n": "Felix Etzel",
@@ -24901,14 +25045,16 @@
       "f": "10005367",
       "g": "M",
       "b": 0,
-      "t": "AUS"
+      "t": "AUS",
+      "a": "Broke his entire face at Ocala January 2009, repaired with 3 metal plates and 25 screws."
     },
     {
       "n": "David Britnell",
       "f": "10100935",
       "g": "M",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Loves cleaning tack. Didn't ride til he was 13. Hobbies are cross-country running, downhill mountain biking, and taking cars to bits. Badminton first-timer blogger for H&H in 2019."
     },
     {
       "n": "Yasmin Ingham",
@@ -24952,14 +25098,16 @@
       "f": "10071802",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Tom Crisp calls her 'Flat White'. She likes coffee."
     },
     {
       "n": "Sharon Polding",
       "f": "10011916",
       "g": "",
       "b": 0,
-      "t": "GBR"
+      "t": "GBR",
+      "a": "Accounts manager for a telecoms company."
     },
     {
       "n": "Patricia Pytches",
@@ -25037,7 +25185,8 @@
       "f": "10004540",
       "g": "M",
       "b": 0,
-      "t": "NZL"
+      "t": "NZL",
+      "a": "Personal colour: red. AKA Smokey Joe, after Smokey Joe Myers."
     },
     {
       "n": "Bella English",
@@ -25438,7 +25587,8 @@
       "f": "10059212",
       "g": "F",
       "b": 1994,
-      "t": "USA"
+      "t": "USA",
+      "a": "Trained by Buck Davidson. Collects shoes. Very tall, six foot. Not related to Boyd."
     },
     {
       "n": "Lisa Marie Fergusson",
@@ -25452,7 +25602,8 @@
       "f": "10092184",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Only 5'1\" and looks daft on 17.2hh Polaris. Kickboxes for a hobby. Religious, prays and meditates before competing."
     },
     {
       "n": "Ashley Johnson",
@@ -25481,7 +25632,8 @@
       "f": "10067218",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Personal colour: baby blue. Non-horsey family. Introduced to horses aged eight at Girl Scout camp. Favours OTTBs. Was once sued by Stormy Daniels - rumours of poor horse care, unpaid debts, over-horsed Pony Club kids, and loose dogs at events."
     },
     {
       "n": "Holly Jacks",
@@ -25503,7 +25655,8 @@
       "f": "10004300",
       "g": "F",
       "b": 0,
-      "t": "CAN"
+      "t": "CAN",
+      "a": "Wanted to be a gymnast til she broke her ankle. 'Grew up in a divorced family' and worked at McDonalds from age 15. Likes American football, supports Philadelphia. Trained by Buck Davidson."
     },
     {
       "n": "Leah Lang-Gluscic",
@@ -25573,7 +25726,8 @@
       "f": "10005691",
       "g": "M",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Broke his neck falling from Hans Dampf at Five Points September 2015. Got a skull and crossbones tattoo for his comeback. Likes Captain Hook."
     },
     {
       "n": "Sally Cousins",
@@ -25581,7 +25735,8 @@
       "f": "10005408",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "16 years as a stockbroker before she went pro."
     },
     {
       "n": "Kristin Schmolze",
@@ -25626,7 +25781,8 @@
       "f": "10009929",
       "g": "F",
       "b": 0,
-      "t": "MEX"
+      "t": "MEX",
+      "a": "Knew she wanted to event at 13 when she saw a poster of Karen O'Connor jumping into a water complex. Now trains with Karen! Parents aren't horsey, both are psychologists."
     },
     {
       "n": "James Alliston",
@@ -25668,7 +25824,8 @@
       "f": "10011120",
       "g": "F",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Wears socks with owls on, in order to make wise decisions across country."
     },
     {
       "n": "Maya Black",
@@ -26142,7 +26299,8 @@
       "f": "10000216",
       "g": "",
       "b": 0,
-      "t": "USA"
+      "t": "USA",
+      "a": "Career ended by a fall from Veronica at Morven Park October 2012, landed on her head with multiple broken vertebrae."
     },
     {
       "n": "Didier Dhennin",
@@ -28758,7 +28916,8 @@
       "f": "10012819",
       "g": "M",
       "b": 0,
-      "t": "AUS"
+      "t": "AUS",
+      "a": "Owns a dog called Vegemite and married to a woman called Jimmie."
     },
     {
       "n": "Matthew Flynn",
@@ -83219,7 +83378,7 @@
       "h": "104BH81",
       "d": 55,
       "t": {
-        "a": 33.0,
+        "a": 33,
         "b": 0,
         "c": 8.4,
         "d": 4,
@@ -83369,7 +83528,7 @@
       "h": "103JM00",
       "d": 38,
       "t": {
-        "a": 39.0,
+        "a": 39,
         "b": 0,
         "c": 9.6,
         "d": 8,

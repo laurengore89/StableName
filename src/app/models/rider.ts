@@ -2,8 +2,6 @@ import { Nationality, Gender } from '../enums';
 import { Horse } from './horse';
 import { Score } from './score';
 
-import notesjson from '../data/notes.json';
-
 export class RiderDTO {
     public n: string; // competition name
     public f: string; // FEI ID
@@ -11,14 +9,16 @@ export class RiderDTO {
     public b?: number; // year of birth
     public g?: string; // gender, per Gender enum
     public t?: string; // nationality, per Nationality enum
+    public a?: string; // notes
 
-    constructor(name: string, othername: string, fei: string, gender: string, born: number, nationality: string) {
+    constructor(name: string, othername: string, fei: string, gender: string, born: number, nationality: string, notes: string) {
         this.n = name;
         this.m = othername;
         this.f = fei;
         this.g = gender;
         this.b = born;
         this.t = nationality;
+        this.a = notes;
     }
 }
 
@@ -29,6 +29,7 @@ export class Rider {
     private _born?: number;
     private _gender?: Gender;
     private _nationality?: Nationality;
+    private _notes: string;
     private _dto: RiderDTO;
 
     public horses: Horse[];
@@ -43,6 +44,7 @@ export class Rider {
         this._gender = Gender[dto.g];
         this._born = dto.b;
         this._nationality = Nationality[dto.t];
+        this._notes = dto.a;
     }
 
     get Dto(): RiderDTO {
@@ -62,11 +64,10 @@ export class Rider {
     }
 
     get Notes(): string {
-        let note = notesjson.riders.filter(nt => nt.fei === this.Fei);
-        if (note[0] !== undefined) {
-            return note[0].note;
+        if (!this._notes) {
+            return '';
         }
-        return '';
+        return this._notes;
     }
 
     get Nationality(): string {

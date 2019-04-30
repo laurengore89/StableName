@@ -1,8 +1,6 @@
 import { Studbook, Colour, Legmarking, Sex } from '../enums';
 import { Score } from './score';
 
-import notesjson from '../data/notes.json';
-
 export class Height {
     public Hands: number;
     public Inches: number;
@@ -41,8 +39,9 @@ export class HorseDTO {
     public l?: string; // leg markings, as NEAR FORE - OFF FORE - OFF HIND - NEAR HIND
     public b?: string; // studbook, per Studbook enum
     public z?: number; // deceased
+    public a?: string; // notes
 
-    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string, deceased: number) {
+    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string, deceased: number, notes: string) {
         this.n = regdName;
         this.f = fei;
         this.s = stableName;
@@ -53,6 +52,7 @@ export class HorseDTO {
         this.l = legs;
         this.b = studbook;
         this.z = deceased;
+        this.a = notes;
     }
 }
 
@@ -67,8 +67,9 @@ export class Horse {
     private _legs?: Legs;
     private _studbook?: string;
     private _deceased?: number;
+    private _notes?: string;
     private _dto: HorseDTO;
-    
+
     public scores: Score[];
 
     constructor(dto: HorseDTO) {
@@ -84,6 +85,7 @@ export class Horse {
         this._legs = new Legs(dto.l);
         this._studbook = dto.b;
         this._deceased = dto.z;
+        this._notes = dto.a;
     }
 
     get Dto(): HorseDTO {
@@ -146,11 +148,10 @@ export class Horse {
     }
 
     get Notes(): string {
-        let note = notesjson.horses.filter(nt => nt.fei === this.Fei);
-        if (note[0] !== undefined) {
-            return note[0].note;
+        if (!this._notes) {
+            return '';
         }
-        return '';
+        return this._notes;
     }
 
     get Nearfore(): string {

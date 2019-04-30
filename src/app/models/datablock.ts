@@ -40,9 +40,12 @@ export class Datablock {
 
     constructor(private http: HttpClient, filename: string, competitionFei: string, competitionName: string, competitionPattern: string) {
         this.buildFromJson();
+        this.printOut();
 
         if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
             this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
+
+            this.printOut();
         }
     }
 
@@ -159,9 +162,11 @@ export class Datablock {
                         this.riders.push(s.Rider);
                     }
                 });
-
-                let jsonStringify = require('json-pretty');
-                saveAs(new Blob([jsonStringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
             });
+    }
+
+    private printOut() {
+        let jsonStringify = require('json-pretty');
+        saveAs(new Blob([jsonStringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
     }
 }
