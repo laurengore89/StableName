@@ -1736,7 +1736,8 @@
       "h": 16.2,
       "d": 2005,
       "l": "BBBB",
-      "b": "KWPN"
+      "b": "KWPN",
+      "a": "Already had his stable name when Emily Philp bought him in Ireland. The family named him over dinner."
     },
     {
       "n": "Camelot",
@@ -2837,7 +2838,7 @@
       "h": 16.1,
       "d": 2007,
       "l": "FFBB",
-      "a": "Named for his close-set eyes."
+      "a": "Named for his close-set eyes. Bought by Caroline Powell as a newly broke 4-year-old, when she was 16."
     },
     {
       "n": "Barrichello",
@@ -5536,7 +5537,9 @@
       "x": "G",
       "h": 16.2,
       "d": 2009,
-      "l": "BBBB"
+      "l": "BBBB",
+      "b": "SF",
+      "a": "Froggy because he's French, Vendredi because he was foaled on a Friday. Rolls, bucks, bites his stablemates."
     },
     {
       "n": "Toots",
@@ -21142,7 +21145,7 @@
       "g": "F",
       "b": 0,
       "t": "GBR",
-      "a": "Studied dentistry at Bristol. Won the CCI2* at Blair in 2016 while still a student and an amateur."
+      "a": "Day job as a dentist. Was encouraged by seeing fellow dentist Henrich Romeike at Badminton 2007. Won the CCI2* at Blair in 2016 while still a dentistry student."
     },
     {
       "n": "Clarke Johnstone",
@@ -22340,7 +22343,8 @@
       "f": "10020602",
       "g": "M",
       "b": 0,
-      "t": "ITA"
+      "t": "ITA",
+      "a": "Represents the Italian police force and is entitled to ride and trot-up in uniform."
     },
     {
       "n": "Andrew Hoy",
@@ -29813,6 +29817,21 @@
         "e": 0,
         "o": "XC",
         "p": "WD"
+      }
+    },
+    {
+      "c": "2019_BADMINTON",
+      "r": "10067769",
+      "h": "103RB61",
+      "d": 30,
+      "t": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "e": 0,
+        "o": "0.0",
+        "p": "PEND"
       }
     },
     {
