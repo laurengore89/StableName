@@ -29,12 +29,16 @@ div.row {
       margin-bottom: 0;
     }
   }
+}
 
-  &.dnf {
-    font-style: italic;
-    
-    h4 {
-      text-align: center;
-    }
+div.dnf {
+  font-style: italic;
+  
+  h4 {
+    text-align: center;
+  }
+
+  div.main {
+    display:none;
   }
 }
