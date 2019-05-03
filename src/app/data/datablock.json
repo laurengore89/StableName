@@ -1456,7 +1456,8 @@
       "h": 15.2,
       "d": 2007,
       "l": "BBFC",
-      "b": "TB"
+      "b": "TB",
+      "a": "Owned by Katie Preston from a two-year-old."
     },
     {
       "n": "Soltair Justice",
@@ -3005,7 +3006,8 @@
       "h": 17.2,
       "d": 2005,
       "l": "BBFB",
-      "b": "ISH"
+      "b": "ISH",
+      "a": "It's pronounced 'Dunlock'."
     },
     {
       "n": "Mouse",
@@ -21395,7 +21397,8 @@
       "f": "10012571",
       "g": "F",
       "b": 1987,
-      "t": "ITA"
+      "t": "ITA",
+      "a": "Entitled to ride in Italian police uniform."
     },
     {
       "n": "Camilla Kruger",
@@ -21624,7 +21627,7 @@
       "n": "Toshiyuki Tanaka",
       "f": "10047558",
       "g": "M",
-      "b": 0,
+      "b": 1985,
       "t": "JPN"
     },
     {
@@ -21687,7 +21690,7 @@
       "n": "James Sommerville",
       "f": "10020180",
       "g": "M",
-      "b": 0,
+      "b": 1987,
       "t": "GBR"
     },
     {
@@ -22139,7 +22142,7 @@
       "m": "Virginia Thompson",
       "f": "10032339",
       "g": "F",
-      "b": 0,
+      "b": 1992,
       "t": "NZL",
       "a": "Likes hiking, fishing, kayaking, outdoor swimming."
     },
@@ -22378,7 +22381,7 @@
       "g": "M",
       "b": 1992,
       "t": "ITA",
-      "a": "Represents the Italian police force and is entitled to ride and trot-up in uniform."
+      "a": "Represents the Italian police force and is entitled to ride and trot-up in uniform. Also does mixed martial arts."
     },
     {
       "n": "Andrew Hoy",
@@ -22633,7 +22636,7 @@
       "m": "William Levett",
       "f": "10000154",
       "g": "M",
-      "b": 0,
+      "b": 1963,
       "t": "AUS",
       "a": "Writes a blog at BillLevett.com. Good singing voice, has done panto. Used to drive cattle in Australia."
     },
@@ -22967,8 +22970,9 @@
       "n": "Matthew Heath",
       "f": "10016671",
       "g": "M",
-      "b": 0,
-      "t": "GBR"
+      "b": 1983,
+      "t": "GBR",
+      "a": "Got suspended in 2013 after a fistfight at a party."
     },
     {
       "n": "Gary Parsonage",
@@ -24691,7 +24695,7 @@
       "m": "Savannah Fulton",
       "f": "10074507",
       "g": "F",
-      "b": 0,
+      "b": 1996,
       "t": "USA"
     },
     {
@@ -24815,7 +24819,7 @@
       "m": "Kai Rueder",
       "f": "10000179",
       "g": "M",
-      "b": 0,
+      "b": 1972,
       "t": "GER"
     },
     {
@@ -25237,7 +25241,7 @@
       "m": "Isabel English",
       "f": "10070768",
       "g": "F",
-      "b": 0,
+      "b": 1995,
       "t": "AUS"
     },
     {
@@ -25727,7 +25731,7 @@
       "n": "Jenny Caras",
       "f": "10065533",
       "g": "F",
-      "b": 0,
+      "b": 1996,
       "t": "USA"
     },
     {
@@ -26190,9 +26194,10 @@
       "n": "Matthew Wright",
       "m": "",
       "f": "10009344",
-      "g": "",
-      "b": 0,
-      "t": "GBR"
+      "g": "M",
+      "b": 1982,
+      "t": "GBR",
+      "a": "Got suspended in 2013 after a fistfight at a party, then fined in 2018 for faking vaccination records."
     },
     {
       "n": "Sarah Wardell",
