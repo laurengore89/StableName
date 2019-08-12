@@ -43,8 +43,6 @@ export class Datablock {
 
         if (filename !== '' && competitionFei !== '' && competitionName !== '' && competitionPattern !== '') {
             this.processRawTextToScores(filename, competitionFei, competitionName, competitionPattern);
-
-            this.printOut();
         }
     }
 
@@ -87,16 +85,18 @@ export class Datablock {
                         // check we're not duplicating existing scores
                         let result = new Result();
                         let updatePendingScore = false;
+                        let position = currentEntry[0];
                         let rider = currentEntry[1];
                         let horse = currentEntry[3];
                         let oldScore = this.scores.find(s => s.Horse.Fei === horse && s.Rider.Fei === rider && s.Competition.Fei === competitionFei);
                         if (oldScore !== undefined && oldScore.Result !== null && oldScore.Result !== undefined) {
-                            if (oldScore.Result.p !== 'PEND')  {
+                            if (oldScore.Result.p !== 'PEND' && oldScore.Result.p !== 'WD' && oldScore.Result.p !== 'RET' && oldScore.Result.p !== 'EL')  {
                                 console.log('Duplicate non-pending score for rider ' + rider + ' horse ' + horse + '! Result position ' + oldScore.Result.p);
                                 return;
                             }
                             console.log('Updating pending score for rider ' + rider + ' horse ' + horse + '...');
                             result = oldScore.Result;
+                            result.p = position.trimRight();
                             updatePendingScore = true;
                         }
 
@@ -161,6 +161,8 @@ export class Datablock {
                         this.riders.push(s.Rider);
                     }
                 });
+
+                this.printOut();
             });
     }
 
