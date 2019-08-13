@@ -13,11 +13,11 @@ export class AppComponent {
   title = 'StableName';
   datablock: Datablock;
 
-  constructor(private http: HttpClient) {
-    this.datablock = new Datablock(http, '', '', '', '');
-  }
-
 //   constructor(private http: HttpClient) {
-//     this.datablock = new Datablock(http, 'assets/bd2019.txt', '2019_CI_0296_C_S_01_01', '5LBn', RegexPattern.Eventing);
+//     this.datablock = new Datablock(http, '', '', '', '');
 //   }
+
+  constructor(private http: HttpClient) {
+    this.datablock = new Datablock(http, 'assets/input.txt', '2019_Burghley', '5LBy', RegexPattern.Eventing);
+  }
 }
