@@ -17243,7 +17243,7 @@
         "c": "BrB",
         "x": "G",
         "h": 16.2,
-        "d": 2009,
+        "d": 2008,
         "l": "CBBB",
         "b": "BWP",
         "z": 0
@@ -21080,7 +21080,8 @@
         "d": 2009,
         "l": "CBBF",
         "z": 0,
-        "b": "TB"
+        "b": "TB",
+        "a": "Won $67,250 on the track."
       },
       {
         "n": "Chatwin",
@@ -21136,7 +21137,7 @@
       {
         "n": "Dollarney",
         "f": "103AO11",
-        "s": "",
+        "s": "Dolly",
         "c": "B",
         "x": "M",
         "h": 17.0,
@@ -21458,7 +21459,7 @@
         "n": "Ludwig Svennerstal",
         "f": "10017075",
         "g": "M",
-        "b": 0,
+        "b": 1990,
         "t": "SWE"
       },
       {
@@ -21963,9 +21964,9 @@
         "m": "Dee Hankey",
         "f": "10009343",
         "g": "F",
-        "b": 0,
+        "b": 1978,
         "t": "GBR",
-        "a": "Used to be in a pop group, toured with Boyzone."
+        "a": "Used to be in a pop group called Paperdolls, toured with Boyzone."
       },
       {
         "n": "Cedric Lyard",
@@ -21987,7 +21988,7 @@
         "n": "Francis Whittington",
         "f": "10004160",
         "g": "M",
-        "b": 0,
+        "b": 1978,
         "t": "GBR"
       },
       {
@@ -22682,8 +22683,9 @@
         "m": "Zara Phillips",
         "f": "10005717",
         "g": "F",
-        "b": 0,
-        "t": "GBR"
+        "b": 1981,
+        "t": "GBR",
+        "a": "Daughter of the Princess Royal, and godmother to Prince George. Married to a rugby player."
       },
       {
         "n": "Camille Lejeune",
@@ -24865,7 +24867,7 @@
       {
         "n": "Rebecca Gibbs",
         "f": "10005283",
-        "g": "",
+        "g": "F",
         "b": 0,
         "t": "GBR"
       },
@@ -25295,8 +25297,8 @@
       {
         "n": "David Doel",
         "f": "10042982",
-        "g": "",
-        "b": 0,
+        "g": "M",
+        "b": 1993,
         "t": "GBR"
       },
       {
@@ -25521,8 +25523,9 @@
       },
       {
         "n": "Samantha Lissington",
+        "m": "Samantha Felton",
         "f": "10041737",
-        "g": "",
+        "g": "F",
         "b": 0,
         "t": "NZL",
         "a": "Born in Australia but doesn't like to talk about it. Spent two years living on a boat on the Pacific as a kid."
@@ -26210,7 +26213,7 @@
       },
       {
         "n": "Selina Milnes",
-        "m": "",
+        "m": "Selina Elliott",
         "f": "10005435",
         "g": "",
         "b": 0,
@@ -28118,8 +28121,8 @@
         "n": "Ginny Howe",
         "m": "Virginia Howe",
         "f": "10013517",
-        "g": "",
-        "b": 0,
+        "g": "F",
+        "b": 1988,
         "t": "GBR"
       },
       {
@@ -28535,7 +28538,7 @@
         "n": "Richard Skelt",
         "m": "",
         "f": "10046686",
-        "g": "",
+        "g": "M",
         "b": 0,
         "t": "GBR"
       },
@@ -29077,12 +29080,12 @@
       },
       {
         "n": "Dom Schramm",
-        "m": "Dominic Schramm",
+        "m": "Schrammo, Dominic Schramm",
         "f": "10012819",
         "g": "M",
         "b": 0,
         "t": "AUS",
-        "a": "Owns a dog called Vegemite and married to a woman called Jimmie."
+        "a": "Owns a dog called Vegemite and married to a Texan woman called Jimmie. Made some training videos as 'Evention TV'."
       },
       {
         "n": "Matthew Flynn",
@@ -29097,7 +29100,7 @@
         "m": "",
         "f": "10013432",
         "g": "F",
-        "b": 0,
+        "b": 1989,
         "t": "USA"
       },
       {
@@ -29105,8 +29108,9 @@
         "m": "",
         "f": "10098293",
         "g": "M",
-        "b": 0,
-        "t": "USA"
+        "b": 1991,
+        "t": "USA",
+        "a": "Good hair. Good face, honestly. Once took Unmarked Bills down the jog strip in a leather jacket and leather trousers. "
       },
       {
         "n": "Katie Magee",
