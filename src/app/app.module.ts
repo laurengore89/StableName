@@ -9,6 +9,7 @@ import { RiderlistComponent } from './components/riderlist/riderlist.component';
 import { ScorelistHorseComponent } from './components/scorelist/horse/horse.component';
 import { ScorelistComponent } from './components/scorelist/scorelist.component';
 import { ScorelistRiderComponent } from './components/scorelist/rider/rider.component';
+import { ScorelistScoretableComponent } from './components/scorelist/scoretable/scoretable.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ScorelistRiderComponent } from './components/scorelist/rider/rider.comp
     RiderlistComponent,
     ScorelistHorseComponent,
     ScorelistComponent,
-    ScorelistRiderComponent
+    ScorelistRiderComponent,
+    ScorelistScoretableComponent
   ],
   imports: [
     BrowserModule,

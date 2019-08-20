@@ -542,18 +542,6 @@
       <p>
         {{ horse.Notes }}
       </p>
-      <ng-container *ngIf="scoresShow.length > 0">
-        <table><tr><td>Scores:</td><td>P</td><td>dr</td><td>xc</td><td>sj</td></tr>
-          <tr *ngFor="let score of scoresShow">
-            <td class="score-left">{{ score.substring(0,score.indexOf(':')).replace(' ', '&nbsp;') }}</td>
-            <td *ngIf="score.substring(score.indexOf(':') + 1,score.length).indexOf(':') === -1" colspan=4>{{ score.substring(score.indexOf(':') + 1,score.length).replace(' ', '&nbsp;') }}</td>
-            <td class="score-part" *ngIf="score.substring(score.indexOf(':') + 1,score.length).indexOf(':') > -1">{{ score.substring(score.indexOf(':') + 1,score.length).split(':')[0] }}</td>
-            <td class="score-part" *ngIf="score.substring(score.indexOf(':') + 1,score.length).indexOf(':') > -1">{{ score.substring(score.indexOf(':') + 1,score.length).split(':')[1].split('|')[0] }}</td>
-            <td class="score-part" *ngIf="score.substring(score.indexOf(':') + 1,score.length).indexOf(':') > -1">{{ score.substring(score.indexOf(':') + 1,score.length).split(':')[1].split('|')[1] }}</td>
-            <td class="score-part" *ngIf="score.substring(score.indexOf(':') + 1,score.length).indexOf(':') > -1">{{ score.substring(score.indexOf(':') + 1,score.length).split(':')[1].split('|')[2] }}</td>
-          </tr>
-        </table>
-      </ng-container>
     </div>
   </div>
 </div>

@@ -1,0 +1,21 @@
+@import "../../../../variables.scss";
+
+div.scoretable {
+    div {
+        background-color: $background-panels;
+        padding: 10px;
+    }
+
+    border-radius: 10px 0 0 10px;
+    border-bottom: 3px solid black;
+  
+td {
+    border-bottom: 1px solid #0d3532;
+    &.score-left {
+      padding-right: 10px;
+    }
+    &.score-part {
+      padding-right: 6px;
+    }
+  }
+}
