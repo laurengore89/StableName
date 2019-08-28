@@ -22,9 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [
-              "src/assets/photo"
-            ],
+            "assets": [],
             "styles": [
               "src/styles.scss"
             ],
