@@ -17,7 +17,7 @@ export class AppComponent {
     this.datablock = new Datablock(http, '', '', '', '');
   }
 
-//   constructor(private http: HttpClient) {
-//     this.datablock = new Datablock(http, 'assets/input.txt', '2019_Burghley', '5LBy', RegexPattern.Eventing);
-//   }
+  // constructor(private http: HttpClient) {
+  //   this.datablock = new Datablock(http, 'assets/input.txt', '2019_CI_0019_C_S_02_01', '5LLh', RegexPattern.Eventing);
+  // }
 }

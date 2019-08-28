@@ -22,7 +22,9 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [],
+            "assets": [
+              "src/assets/input.txt"
+            ],
             "styles": [
               "src/styles.scss"
             ],
