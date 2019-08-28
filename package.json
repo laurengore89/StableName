@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "postbuild": "sed -i 's/script /script inline /g' ./dist/index.html && sed -i 's/link rel=\"stylesheet\" /link inline rel=\"stylesheet\" /g' ./dist/index.html && inline-source --root ./dist ./dist/index.html ./dist/index.html && rm ./dist/*.js && rm ./dist/*.ico && rm ./dist/*.css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -33,6 +34,8 @@
     "@types/node": "^8.10.44",
     "codelyzer": "~4.5.0",
     "file-saver": "^2.0.1",
+    "inline-source": "^7.1.0",
+    "inline-source-cli": "^1.2.0",
     "json-pretty": "0.0.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
