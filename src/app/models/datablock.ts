@@ -166,7 +166,7 @@ export class Datablock {
             });
     }
 
-    private printOut() {
+    public printOut() {
         let jsonStringify = require('json-pretty');
         saveAs(new Blob([jsonStringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
     }
