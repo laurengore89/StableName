@@ -20,7 +20,7 @@ export class ScorelistComponent implements OnInit {
         // this line generates a new datablock.json containing only the data for a single event
         // that block can then be used in a production build for a form guide
         // subset datablocks can be under 5MB while the full datablock is getting ever larger
-        this.buildSubsetDatablock(entries);
+        // this.buildSubsetDatablock(entries);
 
         this.scoresShow = entries
             .map(s => new ScoreHorseRider(
