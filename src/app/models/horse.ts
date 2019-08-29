@@ -130,7 +130,7 @@ export class Horse {
         if (this._deceased) {
             dateTo = new Date(this._deceased, 1, 1);
         }
-        return Math.floor((dateTo.getTime() - new Date(this._foaled, 1, 1).getTime()) / (1000 * 60 * 60 * 24 * 365.26)) + 'yo';
+        return (dateTo.getFullYear() - this._foaled) + 'yo';
     }
 
     get Sex(): string {
