@@ -14,10 +14,16 @@ export class AppComponent {
   datablock: Datablock;
 
   constructor(private http: HttpClient) {
+    // just load whatever's in datablock.json
     this.datablock = new Datablock(http, '', '', '', '');
-  }
 
-  // constructor(private http: HttpClient) {
-  //   this.datablock = new Datablock(http, 'assets/input.txt', '2018_CI_0608_C_S_01_01', '5LP', RegexPattern.Eventing);
-  // }
+    // load whatever's in datablock.json,
+    // then add new or updated show entries from an input file
+    // and print it out so it can be saved as the new datablock.json
+    // this.datablock = new Datablock(http, 'assets/input.txt', '2018_CI_0608_C_S_01_01', '5LP', RegexPattern.Eventing);
+
+    // generate a new datablock.json containing only the data for a single event
+    // and print it out so it can be used in a production formguide build
+    // this.datablock.createSubset('2019_Burghley');
+  }
 }

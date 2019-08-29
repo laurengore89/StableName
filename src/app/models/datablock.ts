@@ -166,8 +166,30 @@ export class Datablock {
             });
     }
 
-    public printOut() {
+    private printOut() {
         let jsonStringify = require('json-pretty');
         saveAs(new Blob([jsonStringify(new DatablockDTO(this))], {type: 'application/json'}), 'datablock.json');
+    }
+
+    public createSubset(competitionFei: string) {
+        const entries = this.scores
+            .filter(s => s.Competition.Fei === competitionFei);
+
+        this.horses = this.horses
+            .filter(h => entries.map(s => s.Horse.Fei).includes(h.Fei));
+
+        this.riders = this.riders
+            .filter(r => entries.map(s => s.Rider.Fei).includes(r.Fei));
+
+        this.scores = this.scores
+            .filter(s => this.riders.map(r => r.Fei).includes(s.Rider.Fei) && this.horses.map(h => h.Fei).includes(s.Horse.Fei));
+
+        this.competitions = this.competitions
+            .filter(c => this.scores.map(s => s.Competition.Fei).includes(c.Fei));
+
+        this.eventseries = this.eventseries
+            .filter(e => this.competitions.map(c => c.EventSeries).includes(e.Id));
+
+        this.printOut();
     }
 }

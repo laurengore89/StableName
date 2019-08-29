@@ -17,11 +17,6 @@ export class ScorelistComponent implements OnInit {
         const entries = this.datablock.scores
             .filter(s => s.Competition.Fei === this.compfei);
 
-        // this line generates a new datablock.json containing only the data for a single event
-        // that block can then be used in a production build for a form guide
-        // subset datablocks can be under 5MB while the full datablock is getting ever larger
-        // this.buildSubsetDatablock(entries);
-
         this.scoresShow = entries
             .map(s => new ScoreHorseRider(
                 s,
@@ -56,24 +51,5 @@ export class ScorelistComponent implements OnInit {
                 return 0;
             }
         });
-    }
-
-    private buildSubsetDatablock(entries: Score[]) {
-        this.datablock.horses = this.datablock.horses
-            .filter(h => entries.map(s => s.Horse.Fei).includes(h.Fei));
-
-        this.datablock.riders = this.datablock.riders
-            .filter(r => entries.map(s => s.Rider.Fei).includes(r.Fei));
-
-        this.datablock.scores = this.datablock.scores
-            .filter(s => this.datablock.riders.map(r => r.Fei).includes(s.Rider.Fei) && this.datablock.horses.map(h => h.Fei).includes(s.Horse.Fei));
-
-        this.datablock.competitions = this.datablock.competitions
-            .filter(c => this.datablock.scores.map(s => s.Competition.Fei).includes(c.Fei));
-
-        this.datablock.eventseries = this.datablock.eventseries
-            .filter(e => this.datablock.competitions.map(c => c.EventSeries).includes(e.Id));
-
-        this.datablock.printOut();
     }
 }
