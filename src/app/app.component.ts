@@ -23,10 +23,6 @@ export class AppComponent {
     // and print it out so it can be saved as the new datablock.json
     // this.datablock = new Datablock(http, 'assets/input.txt', '2018_CI_0608_C_S_01_01', '5LP', RegexPattern.Eventing);
 
-    // generate a new datablock.json containing only the data for a single event
-    // and print it out so it can be used in a production formguide build
-    // this.datablock.createSubset('2019_Burghley');
-
     // show entries for a single event
     this.compfei = '2019_Burghley';
   }
