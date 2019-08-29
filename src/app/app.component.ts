@@ -27,7 +27,6 @@ export class AppComponent {
     // and print it out so it can be used in a production formguide build
     // this.datablock.createSubset('2019_Burghley');
 
-    // if using scorelist component,
     // show entries for a single event
     this.compfei = '2019_Burghley';
   }
