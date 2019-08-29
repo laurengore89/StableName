@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "postbuild": "sed -i 's/script /script inline /g' ./dist/index.html && sed -i 's/link rel=\"stylesheet\" /link inline rel=\"stylesheet\" /g' ./dist/index.html && inline-source --root ./dist ./dist/index.html ./dist/index.html && rm ./dist/*.js && rm ./dist/*.css && rm -rf ./dist/assets",
+    "postbuild": "sed -i 's/script /script inline /g' ./dist/index.html & sed -i 's/link rel=\"stylesheet\" /link inline rel=\"stylesheet\" /g' ./dist/index.html && inline-source --root ./dist ./dist/index.html ./dist/index.html && rm ./dist/*.js & rm ./dist/*.css & rm -rf ./dist/assets",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
