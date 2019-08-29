@@ -10,8 +10,9 @@ import { RegexPattern } from './enums';
 })
 
 export class AppComponent {
-  title = 'StableName';
-  datablock: Datablock;
+  public title = 'StableName';
+  public compfei: string;
+  public datablock: Datablock;
 
   constructor(private http: HttpClient) {
     // just load whatever's in datablock.json
@@ -25,5 +26,9 @@ export class AppComponent {
     // generate a new datablock.json containing only the data for a single event
     // and print it out so it can be used in a production formguide build
     // this.datablock.createSubset('2019_Burghley');
+
+    // if using scorelist component,
+    // show entries for a single event
+    this.compfei = '2019_Burghley';
   }
 }
