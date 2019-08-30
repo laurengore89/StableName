@@ -180,4 +180,18 @@ export class Horse {
     get Nearhind(): string {
         return this._legs.nearhind ? this._legs.nearhind.toLocaleLowerCase() : 'none';
     }
+
+    static sortHorsesByRecent(horses: Horse[], riderScores: Score[]): Horse[] {
+        return horses.sort((a, b) => {
+            const sortScoresByRecent = (x: Score, y: Score) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; };
+            const horseAMostRecentCompetitionYear = riderScores.filter(s => s.Horse.Fei === a.Fei).sort(sortScoresByRecent)[0].Competition.Fei.substring(0, 4);
+            const horseBMostRecentCompetitionYear = riderScores.filter(s => s.Horse.Fei === b.Fei).sort(sortScoresByRecent)[0].Competition.Fei.substring(0, 4);
+            if (horseAMostRecentCompetitionYear > horseBMostRecentCompetitionYear) {
+                return -1;
+            } else if (horseBMostRecentCompetitionYear > horseAMostRecentCompetitionYear) {
+                return 1;
+            }
+            return 0;
+        });
+    }
 }

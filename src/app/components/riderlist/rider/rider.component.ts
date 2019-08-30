@@ -12,8 +12,8 @@ export class RiderlistRiderComponent implements OnInit {
   @Input() eventserieses: EventSeries[];
   horsesShow: Horse[];
 
-  ngOnInit() {
-    this.horsesShow = this.rider.horses.sort((a, b) => { if (this.rider.scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > this.rider.scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return -1; } else if (this.rider.scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > this.rider.scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return 1; } if (this.rider.scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > this.rider.scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return -1; } else if (this.rider.scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > this.rider.scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return 1; } return 0; });
-  }
+    ngOnInit() {
+        this.horsesShow = Horse.sortHorsesByRecent(this.rider.horses, this.rider.scores);
+    }
 }
 

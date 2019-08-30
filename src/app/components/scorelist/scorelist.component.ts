@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Datablock, ScoreHorseRider, Score } from 'src/app/models';
+import { Datablock, ScoreHorseRider, Horse } from 'src/app/models';
 
 @Component({
     selector: 'sn-scorelist',
@@ -53,13 +53,9 @@ export class ScorelistComponent implements OnInit {
         });
 
         this.scoresShow.map(shr => {
-            const scores = this.datablock.scores
-                .filter(s => s.Rider.Fei === shr.rider.Fei);
-            const horses = scores
-                .map(s => this.datablock.horses.find(h => h.Fei === s.Horse.Fei))
-                .sort((a, b) => { if (scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return -1; } else if (scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return 1; } if (scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return -1; } else if (scores.filter(s => s.Horse.Fei === b.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei > scores.filter(s => s.Horse.Fei === a.Fei).sort((x, y) => { if (x.Competition.Fei > y.Competition.Fei) { return -1; } else if (y.Competition.Fei > x.Competition.Fei) { return 1; } return 0; })[0].Competition.Fei) { return 1; } return 0; });
-            const uniqueHorses = [...new Set(horses.map(h => h.Name.indexOf('(') > -1 ? h.Name.substring(0, h.Name.indexOf('(') - 1) : h.Name))];
-            shr.rider.horseList = uniqueHorses.length < 11 ? uniqueHorses.join(', ') : uniqueHorses.slice(0, 10).join(', ') + '...';
+            const riderScores = this.datablock.scores.filter(s => s.Rider.Fei === shr.rider.Fei);
+            const uniqueHorseNames = [...new Set(Horse.sortHorsesByRecent(riderScores.map(s => this.datablock.horses.find(h => h.Fei === s.Horse.Fei)), riderScores).map(h => h.Name.indexOf('(') > -1 ? h.Name.substring(0, h.Name.indexOf('(') - 1) : h.Name))];
+            shr.rider.horseList = uniqueHorseNames.length < 11 ? uniqueHorseNames.join(', ') : uniqueHorseNames.slice(0, 10).join(', ') + '...';
         });
     }
 }
