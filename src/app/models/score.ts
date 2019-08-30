@@ -64,6 +64,10 @@ export class Score {
         this._draw = draw;
     }
 
+    get Dnf() {
+        return this._result.p === 'EL' || this._result.p === 'WD' || this._result.p === 'RET' || this._result.p === 'DSQ';
+    }
+
     get Dto() {
         return new ScoreDTO(this);
     }
