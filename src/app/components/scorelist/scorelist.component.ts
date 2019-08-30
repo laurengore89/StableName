@@ -24,11 +24,11 @@ export class ScorelistComponent implements OnInit {
             ))
             .sort(ScoreHorseRider.sortByResult);
 
-        // this.scoresShow.map(shr => {
-        //     const riderScores = this.datablock.scores.filter(s => s.Rider.Fei === shr.rider.Fei);
-        //     const uniqueHorseNames = [...new Set(Horse.sortHorsesByRecent(riderScores.map(s => this.datablock.horses.find(h => h.Fei === s.Horse.Fei)), riderScores).map(h => h.Name.indexOf('(') > -1 ? h.Name.substring(0, h.Name.indexOf('(') - 1) : h.Name))];
+        this.scoresShow.map(shr => {
+            const riderScores = this.datablock.scores.filter(s => s.Rider.Fei === shr.rider.Fei);
+            const uniqueHorseNames = [...new Set(Horse.sortHorsesByRecent(riderScores.map(s => this.datablock.horses.find(h => h.Fei === s.Horse.Fei)), riderScores).map(h => h.Name.indexOf('(') > -1 ? h.Name.substring(0, h.Name.indexOf('(') - 1) : h.Name))];
 
-        //     shr.rider.horseList = uniqueHorseNames.length < 11 ? uniqueHorseNames.join(', ') : uniqueHorseNames.slice(0, 10).join(', ') + '...';
-        // });
+            shr.rider.horseList = uniqueHorseNames.length < 11 ? uniqueHorseNames.join(', ') : uniqueHorseNames.slice(0, 10).join(', ') + '...';
+        });
     }
 }
