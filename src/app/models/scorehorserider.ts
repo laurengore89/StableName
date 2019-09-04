@@ -23,9 +23,9 @@ export class ScoreHorseRider {
         const aDnf = a.score.Dnf;
         const bDnf = b.score.Dnf;
 
-        if (aPosition === 'PEND' && bPosition !== 'PEND' || aDnf && !bDnf) {
+        if (aDnf && !bDnf || aPosition !== 'PEND' && bPosition === 'PEND') {
             return -1;
-        } else if (bPosition === 'PEND' && aPosition !== 'PEND' || bDnf && !aDnf) {
+        } else if (bDnf && !aDnf || bPosition !== 'PEND' && aPosition === 'PEND') {
             return 1;
         } else {
             if (aPenalties > bPenalties || (aPenalties === 0 && bPenalties !== 0)) {
