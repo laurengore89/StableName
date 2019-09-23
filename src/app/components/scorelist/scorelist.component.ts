@@ -18,10 +18,10 @@ export class ScorelistComponent implements OnInit {
     }
 
     ngOnInit() {
-        const riders = this.dbService.GetRiders();
-        const horses = this.dbService.GetHorses();
-        const scores = this.dbService.GetScores();
-        const compfei = this.dbService.GetCompFei();
+        const riders = this.dbService.Riders();
+        const horses = this.dbService.Horses();
+        const scores = this.dbService.Scores();
+        const compfei = this.dbService.CompFei();
 
         const entries = scores
             .filter(s => s.Competition.Fei === compfei);
@@ -40,7 +40,7 @@ export class ScorelistComponent implements OnInit {
             shr.rider.horseList = uniqueHorseNames.length < 11 ? uniqueHorseNames.join(', ') : uniqueHorseNames.slice(0, 10).join(', ') + '...';
         });
 
-        this.comps = this.dbService.GetComps();
-        this.eventserieses = this.dbService.GetEventSerieses();
+        this.comps = this.dbService.Competitions();
+        this.eventserieses = this.dbService.EventSerieses();
     }
 }

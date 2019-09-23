@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { RiderlistComponent } from './components/riderlist/riderlist.component';
 import { ScorelistComponent } from './components/scorelist/scorelist.component';
+import { EventlistComponent } from './components/eventlist/eventlist.component';
 
 const routes: Routes = [
     {
@@ -13,6 +15,10 @@ const routes: Routes = [
     {
         path: 'scores',
         component: ScorelistComponent
+    },
+    {
+        path: 'events',
+        component: EventlistComponent
     }
 ];
 

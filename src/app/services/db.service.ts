@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Datablock } from '../models';
+import { Datablock, Rider, Horse, Score, Competition, EventSeries } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -23,27 +23,36 @@ export class DbService {
     this.compfei = '2019_CI_0065_C_S_01_01';
    }
 
-   public GetRiders() {
-       return this.datablock.riders;
+    public CompFei() {
+        return this.compfei;
+    }
+
+    public Riders() {
+        return this.datablock.riders;
+    }
+
+    public Horses() {
+        return this.datablock.horses;
+    }
+
+    public Scores() {
+        return this.datablock.scores;
+    }
+
+    public Competitions() {
+        return this.datablock.competitions;
+    }
+
+    public EventSerieses() {
+        return this.datablock.eventseries;
+    }
+
+
+   public GetHorse(fei: string): Horse {
+       return this.Horses().find(h => h.Fei === fei);
    }
 
-   public GetHorses() {
-       return this.datablock.horses;
-   }
-
-   public GetScores() {
-       return this.datablock.scores;
-   }
-
-   public GetComps() {
-       return this.datablock.competitions;
-   }
-
-   public GetEventSerieses() {
-       return this.datablock.eventseries;
-   }
-
-   public GetCompFei() {
-       return this.compfei;
+   public GetRider(fei: string): Rider {
+       return this.Riders().find(r => r.Fei === fei);
    }
 }

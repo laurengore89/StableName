@@ -11,6 +11,8 @@ import { ScorelistHorseComponent } from './components/scorelist/horse/horse.comp
 import { ScorelistComponent } from './components/scorelist/scorelist.component';
 import { ScorelistRiderComponent } from './components/scorelist/rider/rider.component';
 import { ScorelistScoretableComponent } from './components/scorelist/scoretable/scoretable.component';
+import { EventlistComponent } from './components/eventlist/eventlist.component';
+import { EventComponent } from './components/eventlist/event/event.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ScorelistScoretableComponent } from './components/scorelist/scoretable/
     ScorelistHorseComponent,
     ScorelistComponent,
     ScorelistRiderComponent,
-    ScorelistScoretableComponent
+    ScorelistScoretableComponent,
+    EventlistComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
