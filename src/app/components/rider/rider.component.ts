@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Rider, Horse } from '../../models';
+import { Rider, Horse } from 'src/app/models';
 import { DbService } from 'src/app/services';
 
 @Component({

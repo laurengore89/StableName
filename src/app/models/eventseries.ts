@@ -1,4 +1,4 @@
-import { Level } from '../enums';
+import { Level } from 'src/app/enums';
 
 export class EventSeriesDTO {
     public i: string;

@@ -1,8 +1,8 @@
-import { Studbook } from '../enums';
+import { Studbook } from 'src/app/enums';
 import { Horse, HorseDTO } from './horse';
 import { Rider, RiderDTO } from './rider';
 import { Competition, CompetitionDTO } from './competition';
-import { ToTitleCase } from '../shared/utils';
+import { ToTitleCase } from 'src/app/shared/utils';
 
 export class Result {
     public p: string; // final position on scoreboard, or EL / RET / WD / DSQ

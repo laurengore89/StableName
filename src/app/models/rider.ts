@@ -1,4 +1,4 @@
-import { Nationality, Gender } from '../enums';
+import { Nationality, Gender } from 'src/app/enums';
 import { Horse } from './horse';
 import { Score } from './score';
 

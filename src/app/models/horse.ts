@@ -1,4 +1,4 @@
-import { Studbook, Colour, Legmarking, Sex } from '../enums';
+import { Studbook, Colour, Legmarking, Sex } from 'src/app/enums';
 import { Score } from './score';
 
 export class Height {

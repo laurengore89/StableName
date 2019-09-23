@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Horse, Score } from '../../../models';
+import { Horse, Score } from 'src/app/models';
 import { DbService } from 'src/app/services';
 
 @Component({

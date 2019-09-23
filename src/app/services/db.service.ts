@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Datablock, Rider, Horse, Score, Competition, EventSeries } from '../models';
+import { Datablock, Rider, Horse, Score, Competition, EventSeries } from 'src/app/models';
 
 @Injectable({
     providedIn: 'root'
