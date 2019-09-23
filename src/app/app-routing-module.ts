@@ -27,6 +27,11 @@ const routes: Routes = [
     {
         path: 'events',
         component: EventlistComponent
+    },
+    {
+        path: '',
+        redirectTo: '/events',
+        pathMatch: 'full'
     }
 ];
 

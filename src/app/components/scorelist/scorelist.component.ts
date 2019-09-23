@@ -21,7 +21,7 @@ export class ScorelistComponent implements OnInit {
         const riders = this.dbService.Riders;
         const horses = this.dbService.Horses;
         const scores = this.dbService.Scores;
-        
+
         const compfei = this.route.snapshot.paramMap.get('compfei');
 
         const entries = scores
