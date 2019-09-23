@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DbService } from 'src/app/services';
+import { Competition } from 'src/app/models';
 
 @Component({
-  selector: 'app-event',
-  templateUrl: './event.component.html',
-  styleUrls: ['./event.component.scss']
+    selector: 'sn-event',
+    templateUrl: './event.component.html',
+    styleUrls: ['./event.component.scss']
 })
 export class EventComponent implements OnInit {
+    @Input() eventseriesid: string;
+    public competitions: Competition[];
 
-  constructor() { }
+    constructor(private dbService: DbService) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this.competitions = this.dbService.Competitions.filter(c => c.EventSeries === this.eventseriesid);
+    }
 
 }
