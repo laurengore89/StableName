@@ -17,7 +17,7 @@ export class EventComponent implements OnInit {
     ngOnInit() {
         this.competitions = this.dbService.Competitions
         .filter(c => c.EventSeries === this.eventseriesid)
-        .sort((a, b) => a.Year - b.Year);
+        .sort((a, b) => b.Year - a.Year);
     }
 
 }
