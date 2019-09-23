@@ -3,12 +3,12 @@ import { Horse, Score } from '../../../models';
 import { DbService } from 'src/app/services';
 
 @Component({
-  selector: 'sn-riderlist-horse',
+  selector: 'sn-rider-horse',
   templateUrl: './horse.component.html',
   styleUrls: ['./horse.component.scss']
 })
 
-export class RiderlistHorseComponent implements OnInit {
+export class RiderHorseComponent implements OnInit {
   @Input() horsefei: string;
   @Input() ridername: string;
   @Input() riderfei: string;

@@ -3,18 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { RiderlistComponent } from './components/riderlist/riderlist.component';
+import { RiderComponent } from './components/rider/rider.component';
 import { ScorelistComponent } from './components/scorelist/scorelist.component';
 import { EventlistComponent } from './components/eventlist/eventlist.component';
 
 const routes: Routes = [
     {
-        path: 'riders/:compfei',
-        component: RiderlistComponent
-    },
-    {
-        path: 'riders',
-        component: RiderlistComponent
+        path: 'rider/:fei',
+        component: RiderComponent
     },
     {
         path: 'scores/:compfei',

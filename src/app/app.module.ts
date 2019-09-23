@@ -4,9 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
-import { RiderlistHorseComponent } from './components/riderlist/horse/horse.component';
-import { RiderlistRiderComponent } from './components/riderlist/rider/rider.component';
-import { RiderlistComponent } from './components/riderlist/riderlist.component';
+import { RiderHorseComponent } from './components/rider/horse/horse.component';
+import { RiderComponent } from './components/rider/rider.component';
 import { ScorelistHorseComponent } from './components/scorelist/horse/horse.component';
 import { ScorelistComponent } from './components/scorelist/scorelist.component';
 import { ScorelistRiderComponent } from './components/scorelist/rider/rider.component';
@@ -17,9 +16,8 @@ import { EventComponent } from './components/eventlist/event/event.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RiderlistHorseComponent,
-    RiderlistRiderComponent,
-    RiderlistComponent,
+    RiderHorseComponent,
+    RiderComponent,
     ScorelistHorseComponent,
     ScorelistComponent,
     ScorelistRiderComponent,
