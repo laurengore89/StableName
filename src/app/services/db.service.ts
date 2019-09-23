@@ -7,8 +7,8 @@ import { Datablock } from '../models';
   providedIn: 'root'
 })
 export class DbService {
-    public compfei: string;
-    public datablock: Datablock;
+    private compfei: string;
+    private datablock: Datablock;
 
     constructor(private http: HttpClient) {
     // just load whatever's in datablock.json
