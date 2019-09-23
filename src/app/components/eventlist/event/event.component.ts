@@ -9,6 +9,7 @@ import { Competition } from 'src/app/models';
 })
 export class EventComponent implements OnInit {
     @Input() eventseriesid: string;
+    @Input() eventseriesname: string;
     public competitions: Competition[];
 
     constructor(private dbService: DbService) {

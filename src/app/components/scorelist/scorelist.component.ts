@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { ScoreHorseRider, Horse, EventSeries, Competition } from 'src/app/models';
 import { DbService } from 'src/app/services';
 
@@ -7,21 +9,20 @@ import { DbService } from 'src/app/services';
     templateUrl: './scorelist.component.html',
     styleUrls: ['./scorelist.component.scss']
 })
-
-
 export class ScorelistComponent implements OnInit {
     public scoresShow: ScoreHorseRider[];
     public comps: Competition[];
     public eventserieses: EventSeries[];
 
-    constructor(private dbService: DbService) {
+    constructor(private dbService: DbService, private route: ActivatedRoute) {
     }
 
     ngOnInit() {
         const riders = this.dbService.Riders;
         const horses = this.dbService.Horses;
         const scores = this.dbService.Scores;
-        const compfei = this.dbService.CompFei;
+        
+        const compfei = this.route.snapshot.paramMap.get('compfei');
 
         const entries = scores
             .filter(s => s.Competition.Fei === compfei);

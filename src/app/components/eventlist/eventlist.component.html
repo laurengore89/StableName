@@ -1,4 +1,4 @@
 <ng-container *ngFor="let es of eventserieses">
     <p style="color: white;">{{es.Month}} - {{es.Level}} {{es.Name}}</p>
-    <sn-event [eventseriesid]="es.Id"></sn-event>
+    <sn-event [eventseriesid]="es.Id" [eventseriesname]="es.Name"></sn-event>
 </ng-container>

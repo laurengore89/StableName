@@ -7,7 +7,6 @@ import { Datablock, Rider, Horse, Score, Competition, EventSeries } from '../mod
     providedIn: 'root'
 })
 export class DbService {
-    private compfei: string;
     private datablock: Datablock;
 
     constructor(private http: HttpClient) {
@@ -18,32 +17,25 @@ export class DbService {
         // then add new or updated show entries from an input file
         // and print it out so it can be saved as the new datablock.json
         // this.datablock = new Datablock(http, 'assets/input.txt', '2019_CI_0065_C_S_01_01', '5LBy', RegexPattern.Eventing);
-
-        // show entries for a single event
-        this.compfei = '2019_CI_0065_C_S_01_01';
     }
 
-    get CompFei() {
-        return this.compfei;
-    }
-
-    get Riders() {
+    get Riders(): Rider[] {
         return this.datablock.riders;
     }
 
-    get Horses() {
+    get Horses(): Horse[] {
         return this.datablock.horses;
     }
 
-    get Scores() {
+    get Scores(): Score[] {
         return this.datablock.scores;
     }
 
-    get Competitions() {
+    get Competitions(): Competition[] {
         return this.datablock.competitions;
     }
 
-    get EventSerieses() {
+    get EventSerieses(): EventSeries[] {
         return this.datablock.eventseries;
     }
 

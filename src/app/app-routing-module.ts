@@ -9,8 +9,16 @@ import { EventlistComponent } from './components/eventlist/eventlist.component';
 
 const routes: Routes = [
     {
+        path: 'riders/:compfei',
+        component: RiderlistComponent
+    },
+    {
         path: 'riders',
         component: RiderlistComponent
+    },
+    {
+        path: 'scores/:compfei',
+        component: ScorelistComponent
     },
     {
         path: 'scores',
