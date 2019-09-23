@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { RiderlistHorseComponent } from './components/riderlist/horse/horse.component';
 import { RiderlistRiderComponent } from './components/riderlist/rider/rider.component';
@@ -24,6 +25,7 @@ import { ScorelistScoretableComponent } from './components/scorelist/scoretable/
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [],
