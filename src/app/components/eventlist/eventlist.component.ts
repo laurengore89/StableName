@@ -16,6 +16,7 @@ export class EventlistComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.eventserieses = this.dbService.EventSerieses;
+        this.eventserieses = this.dbService.EventSerieses
+        .sort((a, b) => a.MonthNum - b.MonthNum);
     }
 }

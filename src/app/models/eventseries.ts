@@ -56,4 +56,8 @@ export class EventSeries {
     get Month(): string {
         return (new Date(2000, this._month, 1)).toLocaleDateString('en-gb', { month: 'long' });
     }
+
+    get MonthNum(): number {
+        return this._month;
+    }
 }
