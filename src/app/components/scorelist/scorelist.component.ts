@@ -14,6 +14,9 @@ export class ScorelistComponent implements OnInit {
     public comps: Competition[];
     public eventserieses: EventSeries[];
 
+    constructor(private dbService: DbService) {
+    }
+
     ngOnInit() {
         const riders = this.dbService.GetRiders();
         const horses = this.dbService.GetHorses();
@@ -39,8 +42,5 @@ export class ScorelistComponent implements OnInit {
 
         this.comps = this.dbService.GetComps();
         this.eventserieses = this.dbService.GetEventSerieses();
-    }
-
-    constructor(private dbService: DbService) {
     }
 }
