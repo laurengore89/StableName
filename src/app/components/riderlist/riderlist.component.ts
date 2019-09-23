@@ -17,10 +17,10 @@ export class RiderlistComponent implements OnInit {
     }
 
     ngOnInit() {
-        const riders = this.dbService.Riders();
-        const scores = this.dbService.Scores();
+        const riders = this.dbService.Riders;
+        const scores = this.dbService.Scores;
 
-        const compfei = this.dbService.CompFei();
+        const compfei = this.dbService.CompFei;
 
         if (compfei) {
             this.ridersShow = riders.filter(rider => scores.some(s => s.Rider.Fei === rider.Fei && s.Competition.Fei === compfei)).sort((a, b) => { if (a.scores.length > b.scores.length) { return -1; } if (a.scores.length < b.scores.length) { return 1; } return 0; });
@@ -30,7 +30,7 @@ export class RiderlistComponent implements OnInit {
 
         // this.ridersShow = riders.filter(rider => rider.Fei === '10005138');
 
-        this.comps = this.dbService.Competitions();
-        this.eventserieses = this.dbService.EventSerieses();
+        this.comps = this.dbService.Competitions;
+        this.eventserieses = this.dbService.EventSerieses;
     }
 }

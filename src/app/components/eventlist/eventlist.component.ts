@@ -17,7 +17,7 @@ export class EventlistComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.competitions = this.dbService.Competitions();
-        this.eventserieses = this.dbService.EventSerieses();
+        this.competitions = this.dbService.Competitions;
+        this.eventserieses = this.dbService.EventSerieses;
     }
 }

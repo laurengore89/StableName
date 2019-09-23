@@ -17,8 +17,8 @@ export class ScorelistScoretableComponent implements OnInit {
     }
 
     ngOnInit() {
-        const eventserieses = this.dbService.EventSerieses();
-        const competitions = this.dbService.Competitions();
+        const eventserieses = this.dbService.EventSerieses;
+        const competitions = this.dbService.Competitions;
         const horse = this.dbService.GetHorse(this.horsefei);
 
         let scores: Score[] = horse.scores.filter(s => s.Rider.Fei === this.riderfei && s.Result.p !== 'PEND').sort((a, b) => { if (a.Competition.Fei > b.Competition.Fei) { return -1; } else if (b.Competition.Fei > a.Competition.Fei) { return 1; } return 0; });

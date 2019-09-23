@@ -20,8 +20,8 @@ export class RiderlistHorseComponent implements OnInit {
   }
 
   ngOnInit() {
-    const comps = this.dbService.Competitions();
-    const eventserieses = this.dbService.EventSerieses();
+    const comps = this.dbService.Competitions;
+    const eventserieses = this.dbService.EventSerieses;
 
     this.horse = this.dbService.GetHorse(this.horsefei);
 
