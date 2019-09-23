@@ -8,7 +8,7 @@ import { HorseDTO, Horse } from './horse';
 import { RiderDTO, Rider } from './rider';
 import { RegexPattern } from 'src/app/enums';
 
-const datajson = require('src/app/data/datablock.json');
+import datajson from 'src/app/data/datablock.json';
 
 class DatablockDTO {
     public c: CompetitionDTO[];
