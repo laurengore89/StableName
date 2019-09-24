@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Horse } from 'src/app/models';
+import { Horse, Photo } from 'src/app/models';
 import { DbService } from 'src/app/services';
 
 @Component({
@@ -15,6 +15,7 @@ export class ScorelistHorseComponent implements OnInit {
   @Input() outcome: string;
   public dnf: boolean;
   public horse: Horse;
+  public photoDisplay: string;
 
   constructor(private dbService: DbService) {
   }
@@ -23,6 +24,12 @@ export class ScorelistHorseComponent implements OnInit {
     this.dnf = this.position === 'EL' || this.position === 'WD' || this.position === 'RET' || this.position === 'DSQ';
 
     this.horse = this.dbService.GetHorse(this.horsefei);
+
+    const photo = this.dbService.GetPhoto(this.horsefei);
+    this.photoDisplay = '';
+    if (photo && photo.Photo) {
+        this.photoDisplay = photo.Photo;
+    }
   }
 
   openDataPages(): void {

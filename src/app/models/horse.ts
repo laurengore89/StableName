@@ -40,9 +40,8 @@ export class HorseDTO {
     public b?: string; // studbook, per Studbook enum
     public z?: number; // deceased
     public a?: string; // notes
-    public p?: string; // photograph, as base64 JPG
 
-    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string, deceased: number, notes: string, photo: string) {
+    constructor(regdName: string, fei: string, stableName: string, sex: string, height: number, foaled: number, colour: string, legs: string, studbook: string, deceased: number, notes: string) {
         this.n = regdName;
         this.f = fei;
         this.s = stableName;
@@ -54,7 +53,6 @@ export class HorseDTO {
         this.b = studbook;
         this.z = deceased;
         this.a = notes;
-        this.p = photo;
     }
 }
 
@@ -70,7 +68,6 @@ export class Horse {
     private _studbook?: string;
     private _deceased?: number;
     private _notes?: string;
-    private _photo?: string;
     private _dto: HorseDTO;
 
     public scores: Score[];
@@ -89,7 +86,6 @@ export class Horse {
         this._studbook = dto.b;
         this._deceased = dto.z;
         this._notes = dto.a;
-        this._photo = dto.p;
     }
 
     get Dto(): HorseDTO {
@@ -156,13 +152,6 @@ export class Horse {
             return '';
         }
         return this._notes;
-    }
-
-    get Photo(): string {
-        if (!this._photo) {
-            return '';
-        }
-        return this._photo;
     }
 
     get Nearfore(): string {

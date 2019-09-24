@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Datablock, Rider, Horse, Score, Competition, EventSeries } from 'src/app/models';
+import { Photo } from '../models/photo';
 
 @Injectable({
     providedIn: 'root'
@@ -27,6 +28,10 @@ export class DbService {
         return this.datablock.horses;
     }
 
+    get Photos(): Photo[] {
+        return this.datablock.photos;
+    }
+
     get Scores(): Score[] {
         return this.datablock.scores;
     }
@@ -39,6 +44,10 @@ export class DbService {
         return this.datablock.eventseries;
     }
 
+
+    public GetPhoto(fei: string): Photo {
+        return this.Photos.find(p => p.Fei === fei);
+    }
 
     public GetHorse(fei: string): Horse {
         return this.Horses.find(h => h.Fei === fei);
