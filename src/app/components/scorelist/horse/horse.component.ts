@@ -25,7 +25,7 @@ export class ScorelistHorseComponent implements OnInit {
 
     this.horse = this.dbService.GetHorse(this.horsefei);
 
-    const photo = this.dbService.GetPhoto(this.horsefei);
+    const photo: Photo = this.dbService.GetPhoto(this.horsefei);
     this.photoDisplay = '';
     if (photo && photo.Photo) {
         this.photoDisplay = photo.Photo;

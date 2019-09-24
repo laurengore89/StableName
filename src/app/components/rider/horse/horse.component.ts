@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Horse, Score, Photo } from 'src/app/models';
+import { Horse, Score, Photo, Competition, EventSeries } from 'src/app/models';
 import { DbService } from 'src/app/services';
 
 @Component({
@@ -21,12 +21,12 @@ export class RiderHorseComponent implements OnInit {
   }
 
   ngOnInit() {
-    const comps = this.dbService.Competitions;
-    const eventserieses = this.dbService.EventSerieses;
+    const comps: Competition[] = this.dbService.Competitions;
+    const eventserieses: EventSeries[] = this.dbService.EventSerieses;
 
     this.horse = this.dbService.GetHorse(this.horsefei);
 
-    const photo = this.dbService.GetPhoto(this.horsefei);
+    const photo: Photo = this.dbService.GetPhoto(this.horsefei);
     this.photoDisplay = '';
     if (photo && photo.Photo) {
         this.photoDisplay = photo.Photo;
