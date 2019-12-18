@@ -33,7 +33,7 @@
     "@angular/language-service": "~8.2.14",
     "@types/file-saver": "^2.0.0",
     "@types/node": "^12.12.20",
-    "codelyzer": "~4.5.0",
+    "codelyzer": "~5.2.0",
     "file-saver": "^2.0.1",
     "inline-source": "^7.1.0",
     "inline-source-cli": "^2.0.0",
